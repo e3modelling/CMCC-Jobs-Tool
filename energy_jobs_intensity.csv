@@ -1,0 +1,3601 @@
+"iso3","category","fuel","value","energyquantity"
+"AUS","Construction","Biomass",1000,0
+"AUT","Construction","Biomass",6155,0.00114
+"BEL","Construction","Biomass",6155,0.00190000000000004
+"BGD","Construction","Biomass",7213.65835244972,0.0074
+"BLR","Construction","Biomass",7213.65835244972,0
+"BLZ","Construction","Biomass",7213.65835244972,0
+"BOL","Construction","Biomass",7213.65835244972,0
+"BRA","Construction","Biomass",7213.65835244972,0.1092
+"CAN","Construction","Biomass",6154.99999995449,0.02798
+"CHE","Construction","Biomass",6155,0.003346
+"CHL","Construction","Biomass",6154.99999995449,0.01598
+"CHN","Construction","Biomass",7213.65835244972,0.1474
+"COL","Construction","Biomass",7213.65835244972,0
+"CRI","Construction","Biomass",7213.65835244972,0
+"CZE","Construction","Biomass",6155,0.00512
+"DEU","Construction","Biomass",6155,0.010314
+"DNK","Construction","Biomass",6155,0.000140000000000014
+"ECU","Construction","Biomass",7213.65835244972,0
+"ESP","Construction","Biomass",6155,0.007
+"EST","Construction","Biomass",6155,0.00128
+"FIN","Construction","Biomass",6155,0.0322
+"FRA","Construction","Biomass",6155,0.02348
+"GBR","Construction","Biomass",2460,0
+"GRC","Construction","Biomass",9850,0
+"GTM","Construction","Biomass",7213.65835244972,0
+"GUF","Construction","Biomass",7213.65835244972,0
+"HND","Construction","Biomass",7213.65835244972,0
+"HRV","Construction","Biomass",6155,0
+"HUN","Construction","Biomass",6155,0.0148
+"IDN","Construction","Biomass",7500,0.006
+"IND","Construction","Biomass",7500,0.0377
+"IRL","Construction","Biomass",6155,0
+"ITA","Construction","Biomass",6155,0.0176398
+"JPN","Construction","Biomass",6154.99999995449,0.00272
+"KHM","Construction","Biomass",7213.65835244972,0
+"KOR","Construction","Biomass",6154.99999995449,0
+"LAO","Construction","Biomass",7213.65835244972,0
+"LKA","Construction","Biomass",7213.65835244972,0
+"LTU","Construction","Biomass",6155,0.0022
+"LUX","Construction","Biomass",6155,0
+"LVA","Construction","Biomass",6155,0.0076798
+"MEX","Construction","Biomass",6154.99999995449,0
+"MYS","Construction","Biomass",7213.65835244972,0.0064
+"NLD","Construction","Biomass",6155,0.0098
+"NZL","Construction","Biomass",1000,0
+"PAK","Construction","Biomass",7213.65835244972,0
+"PHL","Construction","Biomass",7213.65835244972,0
+"POL","Construction","Biomass",6155,0.066
+"PRT","Construction","Biomass",6155,0
+"REU","Construction","Biomass",7213.65835244972,0
+"ROU","Construction","Biomass",6155,0.00194
+"RUS","Construction","Biomass",7213.65835244972,0
+"SGP","Construction","Biomass",7213.65835244972,0
+"SVK","Construction","Biomass",6155,0.005246
+"SWE","Construction","Biomass",6155,0.02712
+"THA","Construction","Biomass",7213.65835244972,0.04614
+"TWN","Construction","Biomass",7213.65835244972,0
+"UKR","Construction","Biomass",7213.65835244972,0
+"URY","Construction","Biomass",7213.65835244972,0.0014
+"USA","Construction","Biomass",6154.99999995449,0.14982
+"VEN","Construction","Biomass",7213.65835244972,0
+"ZWE","Construction","Biomass",7213.65835244972,0
+"AUS","Manufacturing","Biomass",2650,0
+"AUT","Manufacturing","Biomass",2650,0.00114
+"BEL","Manufacturing","Biomass",2650,0.00190000000000004
+"BGD","Manufacturing","Biomass",3373.24605505947,0.0074
+"BLR","Manufacturing","Biomass",3373.24605505947,0
+"BLZ","Manufacturing","Biomass",3373.24605505947,0
+"BOL","Manufacturing","Biomass",3373.24605505947,0
+"BRA","Manufacturing","Biomass",3373.24605505947,0.1092
+"CAN","Manufacturing","Biomass",2650,0.02798
+"CHE","Manufacturing","Biomass",2650,0.003346
+"CHL","Manufacturing","Biomass",2650,0.01598
+"CHN","Manufacturing","Biomass",3373.24605505947,0.1474
+"COL","Manufacturing","Biomass",3373.24605505947,0
+"CRI","Manufacturing","Biomass",3373.24605505947,0
+"CZE","Manufacturing","Biomass",2650,0.00512
+"DEU","Manufacturing","Biomass",2650,0.010314
+"DNK","Manufacturing","Biomass",2650,0.000140000000000014
+"ECU","Manufacturing","Biomass",3373.24605505947,0
+"ESP","Manufacturing","Biomass",2650,0.007
+"EST","Manufacturing","Biomass",2650,0.00128
+"FIN","Manufacturing","Biomass",2650,0.0322
+"FRA","Manufacturing","Biomass",2650,0.02348
+"GBR","Manufacturing","Biomass",2650,0
+"GRC","Manufacturing","Biomass",2650,0
+"GTM","Manufacturing","Biomass",3373.24605505947,0
+"GUF","Manufacturing","Biomass",3373.24605505947,0
+"HND","Manufacturing","Biomass",3373.24605505947,0
+"HRV","Manufacturing","Biomass",2650,0
+"HUN","Manufacturing","Biomass",2650,0.0148
+"IDN","Manufacturing","Biomass",3373.24605505947,0.006
+"IND","Manufacturing","Biomass",3600,0.0377
+"IRL","Manufacturing","Biomass",2650,0
+"ITA","Manufacturing","Biomass",2650,0.0176398
+"JPN","Manufacturing","Biomass",2650,0.00272
+"KHM","Manufacturing","Biomass",3373.24605505947,0
+"KOR","Manufacturing","Biomass",2650,0
+"LAO","Manufacturing","Biomass",3373.24605505947,0
+"LKA","Manufacturing","Biomass",3373.24605505947,0
+"LTU","Manufacturing","Biomass",2650,0.0022
+"LUX","Manufacturing","Biomass",2650,0
+"LVA","Manufacturing","Biomass",2650,0.0076798
+"MEX","Manufacturing","Biomass",2650,0
+"MYS","Manufacturing","Biomass",3373.24605505947,0.0064
+"NLD","Manufacturing","Biomass",2650,0.0098
+"NZL","Manufacturing","Biomass",2650,0
+"PAK","Manufacturing","Biomass",3373.24605505947,0
+"PHL","Manufacturing","Biomass",3373.24605505947,0
+"POL","Manufacturing","Biomass",2650,0.066
+"PRT","Manufacturing","Biomass",2650,0
+"REU","Manufacturing","Biomass",3373.24605505947,0
+"ROU","Manufacturing","Biomass",2650,0.00194
+"RUS","Manufacturing","Biomass",3373.24605505947,0
+"SGP","Manufacturing","Biomass",3373.24605505947,0
+"SVK","Manufacturing","Biomass",2650,0.005246
+"SWE","Manufacturing","Biomass",2650,0.02712
+"THA","Manufacturing","Biomass",3373.24605505947,0.04614
+"TWN","Manufacturing","Biomass",3373.24605505947,0
+"UKR","Manufacturing","Biomass",3373.24605505947,0
+"URY","Manufacturing","Biomass",3373.24605505947,0.0014
+"USA","Manufacturing","Biomass",2650,0.14982
+"VEN","Manufacturing","Biomass",3373.24605505947,0
+"ZWE","Manufacturing","Biomass",3373.24605505947,0
+"AUS","O&M","Biomass",1000,0.122
+"AUT","O&M","Biomass",870.459983499882,0.219365
+"BEL","O&M","Biomass",870.459983499882,1.12205
+"BGD","O&M","Biomass",2948.62771826061,0.03725
+"BLR","O&M","Biomass",2948.62771826061,0.0059
+"BLZ","O&M","Biomass",2948.62771826061,0.0335
+"BOL","O&M","Biomass",2948.62771826061,0.0059
+"BRA","O&M","Biomass",2948.62771826061,2.75183
+"CAN","O&M","Biomass",1900,0.752765
+"CHE","O&M","Biomass",870.459983499882,0.04926
+"CHL","O&M","Biomass",2111.48436488723,0.21614
+"CHN","O&M","Biomass",3222,2.149
+"COL","O&M","Biomass",2948.62771826061,0.04
+"CRI","O&M","Biomass",2948.62771826061,5e-04
+"CZE","O&M","Biomass",870.459983499882,0.03433
+"DEU","O&M","Biomass",870.459983499882,0.846327
+"DNK","O&M","Biomass",870.459983499882,0.81371
+"ECU","O&M","Biomass",2948.62771826061,0.025
+"ESP","O&M","Biomass",870.459983499882,0.22674
+"EST","O&M","Biomass",870.459983499882,0.0569
+"FIN","O&M","Biomass",870.459983499882,1.180732
+"FRA","O&M","Biomass",870.459983499882,0.157103
+"GBR","O&M","Biomass",870,1.4541
+"GRC","O&M","Biomass",3100,3e-04
+"GTM","O&M","Biomass",2948.62771826061,0.04064
+"GUF","O&M","Biomass",2948.62771826061,0.0019
+"HND","O&M","Biomass",2948.62771826061,0.0612
+"HRV","O&M","Biomass",870.459983499882,0.0105
+"HUN","O&M","Biomass",870.459983499882,0.208
+"IDN","O&M","Biomass",2500,0.0744
+"IND","O&M","Biomass",2500,0.9866
+"IRL","O&M","Biomass",870.459983499882,0.0045
+"ITA","O&M","Biomass",870.459983499882,0.394246
+"JPN","O&M","Biomass",2111.48436488723,0.0716
+"KHM","O&M","Biomass",3060,0.0025
+"KOR","O&M","Biomass",2111.48436488723,0.012
+"LAO","O&M","Biomass",3060,0.03
+"LKA","O&M","Biomass",2948.62771826061,0.00225
+"LTU","O&M","Biomass",870.459983499882,0.0317
+"LUX","O&M","Biomass",870.459983499882,0.0027
+"LVA","O&M","Biomass",870.459983499882,0.040249
+"MEX","O&M","Biomass",2111.48436488723,0.04
+"MYS","O&M","Biomass",3060,0.0712
+"NLD","O&M","Biomass",870.459983499882,0.1413
+"NZL","O&M","Biomass",1000,0.0396
+"PAK","O&M","Biomass",2948.62771826061,0.03
+"PHL","O&M","Biomass",3060,0.060804
+"POL","O&M","Biomass",870.459983499882,0.4071
+"PRT","O&M","Biomass",870.459983499882,0.075935
+"REU","O&M","Biomass",2948.62771826061,0.056
+"ROU","O&M","Biomass",870.459983499882,0.01702
+"RUS","O&M","Biomass",2948.62771826061,0.0022
+"SGP","O&M","Biomass",3060,0.00253
+"SVK","O&M","Biomass",870.459983499882,0.04147
+"SWE","O&M","Biomass",870.459983499882,1.89663
+"THA","O&M","Biomass",3060,0.67821
+"TWN","O&M","Biomass",3222,0.004
+"UKR","O&M","Biomass",2948.62771826061,0.006
+"URY","O&M","Biomass",2948.62771826061,0.05785
+"USA","O&M","Biomass",4900,4.27505
+"VEN","O&M","Biomass",2948.62771826061,0.1
+"ZWE","O&M","Biomass",2948.62771826061,0.015
+"ARG","Construction","Coal",981.199565978468,0
+"AUS","Construction","Coal",1240,0
+"AUT","Construction","Coal",2695.99999999406,0
+"BEL","Construction","Coal",2695.99999999406,0
+"BGD","Construction","Coal",3030.30303030303,0
+"BGR","Construction","Coal",981.199565978468,0.134
+"BIH","Construction","Coal",981.199565978468,0
+"BLR","Construction","Coal",2696,0
+"BRA","Construction","Coal",981.199565978468,0.362
+"BWA","Construction","Coal",1428.57142857143,0.06
+"CAN","Construction","Coal",2695.99999999406,0
+"CHL","Construction","Coal",2695.99999999406,0.377
+"CHN","Construction","Coal",981.199565978468,0
+"COL","Construction","Coal",981.199565978468,0.00280000000000002
+"CZE","Construction","Coal",2695.99999999406,0
+"DEU","Construction","Coal",2695.99999999406,0.91736
+"DNK","Construction","Coal",2695.99999999406,0
+"DOM","Construction","Coal",981.199565978468,0
+"ESP","Construction","Coal",2695.99999999406,0
+"FIN","Construction","Coal",2695.99999999406,0
+"FRA","Construction","Coal",2695.99999999406,0
+"GBR","Construction","Coal",2695.99999999406,0
+"GLP","Construction","Coal",981.199565978468,0
+"GRC","Construction","Coal",2695.99999999406,0
+"GTM","Construction","Coal",981.199565978468,0.0226
+"HRV","Construction","Coal",981.199565978468,0
+"HUN","Construction","Coal",2695.99999999406,0
+"IDN","Construction","Coal",981.199565978468,2.1638
+"IND","Construction","Coal",920,12.3134
+"IRL","Construction","Coal",2695.99999999406,0
+"ISR","Construction","Coal",2695.99999999406,0
+"ITA","Construction","Coal",2695.99999999406,0
+"JPN","Construction","Coal",2695.99999999406,0.319999999999999
+"KAZ","Construction","Coal",2696,0.0319999999999997
+"KEN","Construction","Coal",1428.57142857143,0
+"KGZ","Construction","Coal",2696,0
+"KHM","Construction","Coal",981.199565978468,0.024
+"KOR","Construction","Coal",2695.99999999406,0.0954799999999999
+"LKA","Construction","Coal",3030.30303030303,0
+"MAR","Construction","Coal",981.199565978468,0
+"MDA","Construction","Coal",2696,0
+"MEX","Construction","Coal",2695.99999999406,0
+"MKD","Construction","Coal",981.199565978468,0
+"MMR","Construction","Coal",981.199565978468,0.0016
+"MNE","Construction","Coal",981.199565978468,0
+"MNG","Construction","Coal",2696,0
+"MUS","Construction","Coal",1428.57142857143,0
+"MYS","Construction","Coal",981.199565978468,0
+"NAM","Construction","Coal",1428.57142857143,0
+"NCL","Construction","Coal",1240,0
+"NER","Construction","Coal",1428.57142857143,0
+"NLD","Construction","Coal",2695.99999999406,0.16
+"NOR","Construction","Coal",2695.99999999406,0
+"NZL","Construction","Coal",1240,0
+"PAK","Construction","Coal",3030.30303030303,0
+"PAN","Construction","Coal",981.199565978468,0
+"PER","Construction","Coal",981.199565978468,0
+"PHL","Construction","Coal",981.199565978468,0.1734
+"POL","Construction","Coal",2695.99999999406,0.0585999999999996
+"PRK","Construction","Coal",981.199565978468,0
+"PRT","Construction","Coal",2695.99999999406,0
+"REU","Construction","Coal",1428.57142857143,0
+"ROU","Construction","Coal",981.199565978468,0
+"RUS","Construction","Coal",2696,0.227799999999999
+"SDN","Construction","Coal",1428.57142857143,0
+"SGP","Construction","Coal",981.199565978468,0
+"SRB","Construction","Coal",981.199565978468,0
+"SVK","Construction","Coal",2695.99999999406,0
+"SVN","Construction","Coal",2695.99999999406,0
+"SWE","Construction","Coal",2695.99999999406,0
+"THA","Construction","Coal",981.199565978468,0.14
+"TJK","Construction","Coal",2696,0
+"TUR","Construction","Coal",2696,0.49
+"TWN","Construction","Coal",981.199565978468,0
+"UKR","Construction","Coal",2696,0.164
+"USA","Construction","Coal",2695.99999999406,0.1324
+"UZB","Construction","Coal",2696,0
+"VNM","Construction","Coal",981.199565978468,0.9168
+"ZAF","Construction","Coal",981.199565978468,0
+"ZWE","Construction","Coal",1428.57142857143,0
+"ALB","Extraction","Coal",31.1850742659639,0.0857000000000002
+"ARG","Extraction","Coal",64.2336920537982,0.568149999999998
+"ARM","Extraction","Coal",30.0157593549914,0.02927
+"AUS","Extraction","Coal",4.73793253184075,12226.76023
+"BEL","Extraction","Coal",31.1850742659639,0.31728
+"BGD","Extraction","Coal",55.9578576617997,21.38638
+"BGR","Extraction","Coal",31.1850742659639,213.59249
+"BIH","Extraction","Coal",31.1850742659639,147.39613
+"BLR","Extraction","Coal",30.0157593549914,13.62
+"BRA","Extraction","Coal",55.9578576617997,110.35337
+"BWA","Extraction","Coal",55.9578576617997,44.29157
+"CAN","Extraction","Coal",9.37700175024848,1257.03516
+"CHL","Extraction","Coal",64.2336920537982,42.4402099999999
+"CHN","Extraction","Coal",73.8158060057796,71967.0675300001
+"COL","Extraction","Coal",64.2336920537982,2463.19354
+"CZE","Extraction","Coal",30.285850383041,674.891899999999
+"DEU","Extraction","Coal",12.5621332021903,1663.20467
+"ESP","Extraction","Coal",31.1850742659639,30.82251
+"EST","Extraction","Coal",31.1850742659639,0.14964
+"FIN","Extraction","Coal",31.1850742659639,30.15844
+"GBR","Extraction","Coal",31.1850742659639,104.72945
+"GEO","Extraction","Coal",30.0157593549914,5.04898999999999
+"GRC","Extraction","Coal",10.8348017621145,166.32327
+"HUN","Extraction","Coal",31.1850742659639,61.2311100000001
+"IDN","Extraction","Coal",15.0159812943776,10418.70334
+"IND","Extraction","Coal",32.7566525283642,11355.22711
+"IRL","Extraction","Coal",31.1850742659639,28.4344
+"IRN","Extraction","Coal",55.9578576617997,30.94862
+"JPN","Extraction","Coal",9.37700175024848,27.60056
+"KAZ","Extraction","Coal",7.03605980650836,1892.63774
+"KGZ","Extraction","Coal",30.0157593549914,28.09846
+"KOR","Extraction","Coal",9.37700175024848,32.15709
+"LTU","Extraction","Coal",31.1850742659639,0.19925
+"LVA","Extraction","Coal",31.1850742659639,0.04019
+"MEX","Extraction","Coal",9.37700175024848,291.39496
+"MKD","Extraction","Coal",31.1850742659639,31.20564
+"MMR","Extraction","Coal",55.9578576617997,10.95133
+"MNE","Extraction","Coal",31.1850742659639,12.87558
+"MNG","Extraction","Coal",30.0157593549914,817.204
+"MOZ","Extraction","Coal",55.9578576617997,164.0006
+"MYS","Extraction","Coal",55.9578576617997,59.62405
+"NER","Extraction","Coal",55.9578576617997,2.9393
+"NGA","Extraction","Coal",55.9578576617997,1.18679
+"NOR","Extraction","Coal",31.1850742659639,22.98578
+"NPL","Extraction","Coal",55.9578576617997,0.52754
+"NZL","Extraction","Coal",4.73793253184075,68.32836
+"PAK","Extraction","Coal",55.9578576617997,73.4126500000001
+"PER","Extraction","Coal",64.2336920537982,7.35629
+"PHL","Extraction","Coal",55.9578576617997,247.74066
+"POL","Extraction","Coal",45.9298253116517,2190.0267
+"PRK","Extraction","Coal",55.9578576617997,798.971109999998
+"ROU","Extraction","Coal",46.2641836412001,177.32923
+"RUS","Extraction","Coal",20.768358318365,8757.06984
+"SRB","Extraction","Coal",31.1850742659639,301.48494
+"SVK","Extraction","Coal",31.1850742659639,18.91328
+"SVN","Extraction","Coal",31.1850742659639,39.4344600000001
+"SWE","Extraction","Coal",31.1850742659639,5.29998999999998
+"THA","Extraction","Coal",55.9578576617997,180.28302
+"TJK","Extraction","Coal",30.0157593549914,25.09237
+"TUR","Extraction","Coal",66.7229475739774,648.854390000002
+"TZA","Extraction","Coal",55.9578576617997,7.12077999999998
+"UKR","Extraction","Coal",135.138428273618,957.49817
+"USA","Extraction","Coal",3.2307157635091,14589.48443
+"UZB","Extraction","Coal",30.0157593549914,65.1439699999999
+"VEN","Extraction","Coal",64.2336920537982,22.89242
+"VNM","Extraction","Coal",55.9578576617997,903.30403
+"ZAF","Extraction","Coal",15.1645237397216,6052.20977999999
+"ZMB","Extraction","Coal",55.9578576617997,8.10354999999999
+"ZWE","Extraction","Coal",55.9578576617997,44.1654599999999
+"ARG","Manufacturing","Coal",1020,0
+"AUS","Manufacturing","Coal",1020,0
+"AUT","Manufacturing","Coal",1020,0
+"BEL","Manufacturing","Coal",1020,0
+"BGD","Manufacturing","Coal",1020,0
+"BGR","Manufacturing","Coal",1020,0.134
+"BIH","Manufacturing","Coal",1020,0
+"BLR","Manufacturing","Coal",1020,0
+"BRA","Manufacturing","Coal",1020,0.362
+"BWA","Manufacturing","Coal",1020,0.06
+"CAN","Manufacturing","Coal",1020,0
+"CHL","Manufacturing","Coal",1020,0.377
+"CHN","Manufacturing","Coal",1020,0
+"COL","Manufacturing","Coal",1020,0.00280000000000002
+"CZE","Manufacturing","Coal",1020,0
+"DEU","Manufacturing","Coal",1020,0.91736
+"DNK","Manufacturing","Coal",1020,0
+"DOM","Manufacturing","Coal",1020,0
+"ESP","Manufacturing","Coal",1020,0
+"FIN","Manufacturing","Coal",1020,0
+"FRA","Manufacturing","Coal",1020,0
+"GBR","Manufacturing","Coal",1020,0
+"GLP","Manufacturing","Coal",1020,0
+"GRC","Manufacturing","Coal",1020,0
+"GTM","Manufacturing","Coal",1020,0.0226
+"HRV","Manufacturing","Coal",1020,0
+"HUN","Manufacturing","Coal",1020,0
+"IDN","Manufacturing","Coal",1020,2.1638
+"IND","Manufacturing","Coal",1020,12.3134
+"IRL","Manufacturing","Coal",1020,0
+"ISR","Manufacturing","Coal",1020,0
+"ITA","Manufacturing","Coal",1020,0
+"JPN","Manufacturing","Coal",1020,0.319999999999999
+"KAZ","Manufacturing","Coal",1020,0.0319999999999997
+"KGZ","Manufacturing","Coal",1020,0
+"KHM","Manufacturing","Coal",1020,0.024
+"KOR","Manufacturing","Coal",1020,0.0954799999999999
+"LKA","Manufacturing","Coal",1020,0
+"MAR","Manufacturing","Coal",1020,0
+"MDA","Manufacturing","Coal",1020,0
+"MEX","Manufacturing","Coal",1020,0
+"MKD","Manufacturing","Coal",1020,0
+"MMR","Manufacturing","Coal",1020,0.0016
+"MNE","Manufacturing","Coal",1020,0
+"MNG","Manufacturing","Coal",1020,0
+"MUS","Manufacturing","Coal",1020,0
+"MYS","Manufacturing","Coal",1020,0
+"NAM","Manufacturing","Coal",1020,0
+"NCL","Manufacturing","Coal",1020,0
+"NER","Manufacturing","Coal",1020,0
+"NLD","Manufacturing","Coal",1020,0.16
+"NOR","Manufacturing","Coal",1020,0
+"NZL","Manufacturing","Coal",1020,0
+"PAK","Manufacturing","Coal",1020,0
+"PAN","Manufacturing","Coal",1020,0
+"PER","Manufacturing","Coal",1020,0
+"PHL","Manufacturing","Coal",1020,0.1734
+"POL","Manufacturing","Coal",1020,0.0585999999999996
+"PRK","Manufacturing","Coal",1020,0
+"PRT","Manufacturing","Coal",1020,0
+"REU","Manufacturing","Coal",1020,0
+"ROU","Manufacturing","Coal",1020,0
+"RUS","Manufacturing","Coal",1020,0.227799999999999
+"SDN","Manufacturing","Coal",1020,0
+"SGP","Manufacturing","Coal",1020,0
+"SRB","Manufacturing","Coal",1020,0
+"SVK","Manufacturing","Coal",1020,0
+"SVN","Manufacturing","Coal",1020,0
+"SWE","Manufacturing","Coal",1020,0
+"THA","Manufacturing","Coal",1020,0.14
+"TJK","Manufacturing","Coal",1020,0
+"TUR","Manufacturing","Coal",1020,0.49
+"TWN","Manufacturing","Coal",1020,0
+"UKR","Manufacturing","Coal",1020,0.164
+"USA","Manufacturing","Coal",1020,0.1324
+"UZB","Manufacturing","Coal",1020,0
+"VNM","Manufacturing","Coal",1020,0.9168
+"ZAF","Manufacturing","Coal",1020,0
+"ZWE","Manufacturing","Coal",1020,0
+"ARG","O&M","Coal",1071.23572114723,0.35
+"AUS","O&M","Coal",200,26.957
+"AUT","O&M","Coal",295.601949300399,1.2522
+"BEL","O&M","Coal",295.601949300399,0.8572
+"BGD","O&M","Coal",454.545454545455,0.25
+"BGR","O&M","Coal",295.601949300399,4.256
+"BIH","O&M","Coal",295.601949300399,1.535
+"BLR","O&M","Coal",180,0.00125
+"BRA","O&M","Coal",1071.23572114723,3.225
+"BWA","O&M","Coal",476.190476190476,0.432
+"CAN","O&M","Coal",100,9.5177
+"CHL","O&M","Coal",211.980247785428,4.57969
+"CHN","O&M","Coal",1322,780.36815
+"COL","O&M","Coal",1071.23572114723,1.1322
+"CZE","O&M","Coal",530,8.974445
+"DEU","O&M","Coal",240,52.628843
+"DNK","O&M","Coal",295.601949300399,3.6
+"DOM","O&M","Coal",1071.23572114723,0.305
+"ESP","O&M","Coal",330,10.8582
+"FIN","O&M","Coal",295.601949300399,4.36653
+"FRA","O&M","Coal",190,5.559
+"GBR","O&M","Coal",230,20.6674
+"GLP","O&M","Coal",1071.23572114723,0.102
+"GRC","O&M","Coal",410,5.1265
+"GTM","O&M","Coal",1071.23572114723,0.272
+"HRV","O&M","Coal",295.601949300399,0.335
+"HUN","O&M","Coal",295.601949300399,1.1043
+"IDN","O&M","Coal",1071.23572114723,21.8365
+"IND","O&M","Coal",570,152.47083
+"IRL","O&M","Coal",295.601949300399,1.813
+"ISR","O&M","Coal",211.980247785428,4.9
+"ITA","O&M","Coal",295.601949300399,10.752
+"JPN","O&M","Coal",211.980247785428,40.2348
+"KAZ","O&M","Coal",180,10.1065
+"KEN","O&M","Coal",476.190476190476,0
+"KGZ","O&M","Coal",180,0.83
+"KHM","O&M","Coal",1071.23572114723,0.1301
+"KOR","O&M","Coal",211.980247785428,21.04305
+"LKA","O&M","Coal",454.545454545455,0.9
+"MAR","O&M","Coal",1071.23572114723,1.885
+"MDA","O&M","Coal",180,1.61
+"MEX","O&M","Coal",211.980247785428,5.92
+"MKD","O&M","Coal",295.601949300399,0.824
+"MMR","O&M","Coal",1071.23572114723,0.128
+"MNE","O&M","Coal",295.601949300399,0.225
+"MNG","O&M","Coal",180,0.908
+"MUS","O&M","Coal",476.190476190476,0.195
+"MYS","O&M","Coal",1071.23572114723,7.929
+"NAM","O&M","Coal",476.190476190476,0.12
+"NCL","O&M","Coal",200,0.1
+"NER","O&M","Coal",476.190476190476,0.0376
+"NLD","O&M","Coal",295.601949300399,4.866
+"NOR","O&M","Coal",295.601949300399,0.008
+"NZL","O&M","Coal",200,0.5
+"PAK","O&M","Coal",454.545454545455,0.04
+"PAN","O&M","Coal",1071.23572114723,0.12
+"PER","O&M","Coal",1071.23572114723,0.135
+"PHL","O&M","Coal",1071.23572114723,5.58025
+"POL","O&M","Coal",295.601949300399,29.87214
+"PRK","O&M","Coal",1071.23572114723,3.5
+"PRT","O&M","Coal",295.601949300399,1.878
+"REU","O&M","Coal",476.190476190476,0.151
+"ROU","O&M","Coal",560,6.829
+"RUS","O&M","Coal",180,44.7145
+"SDN","O&M","Coal",476.190476190476,0.1
+"SGP","O&M","Coal",1071.23572114723,0.102
+"SRB","O&M","Coal",295.601949300399,4.314
+"SVK","O&M","Coal",295.601949300399,0.6829
+"SVN","O&M","Coal",295.601949300399,0.594
+"SWE","O&M","Coal",295.601949300399,0.3254
+"THA","O&M","Coal",1071.23572114723,5.293
+"TJK","O&M","Coal",180,0.1
+"TUR","O&M","Coal",180,13.9634
+"TWN","O&M","Coal",1322,15.5174
+"UKR","O&M","Coal",180,24.781
+"USA","O&M","Coal",180,319.461218
+"UZB","O&M","Coal",180,2.5
+"VNM","O&M","Coal",1071.23572114723,7.274
+"ZAF","O&M","Coal",209.358825393472,37.598
+"ZWE","O&M","Coal",476.190476190476,1.1175
+"AFG","Construction","Gas",2166.08053451384,0
+"AGO","Construction","Gas",2166.08053451384,0.014
+"AND","Construction","Gas",2166.08053451384,0
+"ARE","Construction","Gas",2361.33333333333,0.97828
+"ARG","Construction","Gas",2166.08053451384,0.3702
+"ARM","Construction","Gas",1490,0.08598
+"AUS","Construction","Gas",1202.01492991397,0.3062058
+"AUT","Construction","Gas",1202.01492991397,0
+"AZE","Construction","Gas",1490,0.2366
+"BEL","Construction","Gas",1202.01492991397,0.1405412
+"BEN","Construction","Gas",2166.08053451384,0
+"BGD","Construction","Gas",2166.08053451384,0.3669844
+"BGR","Construction","Gas",2166.08053451384,0.01
+"BHR","Construction","Gas",2361.33333333333,0.1872
+"BLR","Construction","Gas",1490,0.132539
+"BOL","Construction","Gas",2166.08053451384,0.05536
+"BRA","Construction","Gas",2166.08053451384,0.1376
+"BRN","Construction","Gas",2166.08053451384,0
+"CAN","Construction","Gas",1700,0.158754
+"CHE","Construction","Gas",1202.01492991397,0.028662
+"CHL","Construction","Gas",1202.01492991397,0.00118799999999988
+"CHN","Construction","Gas",2166.08053451384,3.53024
+"CIV","Construction","Gas",2166.08053451384,0.022
+"CMR","Construction","Gas",2166.08053451384,0
+"COG","Construction","Gas",2166.08053451384,0.03
+"COL","Construction","Gas",2166.08053451384,0.0338
+"CPV","Construction","Gas",2166.08053451384,0
+"CRI","Construction","Gas",2166.08053451384,0
+"CUB","Construction","Gas",2166.08053451384,0.03
+"CYP","Construction","Gas",2166.08053451384,0
+"CZE","Construction","Gas",1202.01492991397,0.0126202
+"DEU","Construction","Gas",1202.01492991397,0.2793472
+"DNK","Construction","Gas",1202.01492991397,0.00724300000000001
+"DOM","Construction","Gas",2166.08053451384,0.02239
+"DZA","Construction","Gas",2361.33333333333,0.8818
+"ECU","Construction","Gas",2166.08053451384,0
+"EGY","Construction","Gas",2361.33333333333,1.4044
+"ESP","Construction","Gas",1202.01492991397,0.358729999999999
+"EST","Construction","Gas",1202.01492991397,0.05362
+"FIN","Construction","Gas",1202.01492991397,0.0258
+"FRA","Construction","Gas",1202.01492991397,0.4318508
+"GAB","Construction","Gas",2166.08053451384,0.021
+"GBR","Construction","Gas",1202.01492991397,0.524304400000001
+"GEO","Construction","Gas",1490,0
+"GHA","Construction","Gas",2166.08053451384,0.0841
+"GNQ","Construction","Gas",2166.08053451384,0.0252
+"GRC","Construction","Gas",1202.01492991397,0.173176
+"GUM","Construction","Gas",2166.08053451384,0
+"HND","Construction","Gas",2166.08053451384,0
+"HRV","Construction","Gas",2166.08053451384,0.000599599999999997
+"HUN","Construction","Gas",1202.01492991397,0.210007
+"IDN","Construction","Gas",2727.27272727273,0.4897
+"IMN","Construction","Gas",2166.08053451384,0
+"IND","Construction","Gas",2300,0.8436132
+"IRL","Construction","Gas",1202.01492991397,0.00394080000000012
+"IRN","Construction","Gas",2361.33333333333,2.187688
+"IRQ","Construction","Gas",2361.33333333333,1.2796
+"ISL","Construction","Gas",1202.01492991397,0
+"ISR","Construction","Gas",2361.33333333333,0.301
+"ITA","Construction","Gas",1202.01492991397,0.567322199999999
+"JOR","Construction","Gas",2361.33333333333,0.1794
+"JPN","Construction","Gas",1202.01492991397,1.688794
+"KAZ","Construction","Gas",1490,7.20000000000061e-05
+"KEN","Construction","Gas",2166.08053451384,0
+"KGZ","Construction","Gas",1490,0
+"KHM","Construction","Gas",2166.08053451384,0
+"KOR","Construction","Gas",1202.01492991397,1.47117
+"KWT","Construction","Gas",2361.33333333333,0.27
+"LBY","Construction","Gas",2361.33333333333,0.3834
+"LIE","Construction","Gas",2166.08053451384,0
+"LTU","Construction","Gas",2166.08053451384,0.095
+"LUX","Construction","Gas",1202.01492991397,0
+"LVA","Construction","Gas",2166.08053451384,0.0401
+"MAR","Construction","Gas",2361.33333333333,0
+"MCO","Construction","Gas",2166.08053451384,0
+"MDA","Construction","Gas",1490,0
+"MEX","Construction","Gas",1202.01492991397,0.536
+"MKD","Construction","Gas",2166.08053451384,0.051
+"MLT","Construction","Gas",2166.08053451384,0
+"MMR","Construction","Gas",2166.08053451384,0.11526
+"MOZ","Construction","Gas",2166.08053451384,0.08132
+"MTQ","Construction","Gas",2166.08053451384,0
+"MYS","Construction","Gas",2166.08053451384,0.1171452
+"NGA","Construction","Gas",2166.08053451384,0.471088
+"NLD","Construction","Gas",1202.01492991397,0.70444
+"NOR","Construction","Gas",1202.01492991397,0.00223999999999999
+"NZL","Construction","Gas",1202.01492991397,0.06
+"OMN","Construction","Gas",2361.33333333333,0.5046
+"PAK","Construction","Gas",2166.08053451384,0.221824
+"PER","Construction","Gas",2166.08053451384,0.2
+"PHL","Construction","Gas",2166.08053451384,0.000459999999999957
+"POL","Construction","Gas",1202.01492991397,0.00665799999999999
+"PRT","Construction","Gas",1202.01492991397,0.116
+"QAT","Construction","Gas",2361.33333333333,0.282364
+"ROU","Construction","Gas",2166.08053451384,0.00348000000000006
+"RUS","Construction","Gas",1490,2.737356
+"RWA","Construction","Gas",2166.08053451384,0.004998
+"SAU","Construction","Gas",2361.33333333333,0.93344
+"SDN","Construction","Gas",2166.08053451384,0
+"SGP","Construction","Gas",2166.08053451384,0.6734
+"SRB","Construction","Gas",2166.08053451384,0.000170000000000004
+"SVK","Construction","Gas",1202.01492991397,0.100432
+"SVN","Construction","Gas",1202.01492991397,0.000958800000000004
+"SWE","Construction","Gas",1202.01492991397,0.00800000000000002
+"SYR","Construction","Gas",2361.33333333333,0.2448
+"THA","Construction","Gas",2166.08053451384,0.912958
+"TJK","Construction","Gas",1490,0
+"TKM","Construction","Gas",1490,0.12
+"TTO","Construction","Gas",2166.08053451384,0.144
+"TUN","Construction","Gas",2361.33333333333,0.1332
+"TUR","Construction","Gas",1490,0.999065400000001
+"TWN","Construction","Gas",2166.08053451384,0
+"TZA","Construction","Gas",2166.08053451384,0.0198
+"UKR","Construction","Gas",1490,0.004842
+"USA","Construction","Gas",1062.85714285714,5.143283
+"UZB","Construction","Gas",1490,0.10094
+"VEN","Construction","Gas",2166.08053451384,0.4948
+"VNM","Construction","Gas",2166.08053451384,0.1004
+"YEM","Construction","Gas",2361.33333333333,0
+"ZAF","Construction","Gas",2166.08053451384,0
+"AGO","Extraction","Gas",8.40202532195795,58.4820200000002
+"ALB","Extraction","Gas",8.61244019138756,1.46521
+"ARE","Extraction","Gas",0.92822966507177,2071.4157
+"ARG","Extraction","Gas",7.26532969659613,1505.69009
+"AUS","Extraction","Gas",3.11004784688995,3036.01498
+"AUT","Extraction","Gas",8.61244019138756,40.8042200000002
+"AZE","Extraction","Gas",5.3353722227439,657.999
+"BGD","Extraction","Gas",7.26532969659613,967.248020000002
+"BGR","Extraction","Gas",8.61244019138756,3.20939
+"BHR","Extraction","Gas",0.92822966507177,503.717379999998
+"BLR","Extraction","Gas",5.3353722227439,5.8392
+"BOL","Extraction","Gas",7.26532969659613,724.934710000001
+"BRA","Extraction","Gas",3.34928229665072,840.699889999999
+"BRN","Extraction","Gas",2.41626794258373,380.145610000001
+"CAN","Extraction","Gas",5.1858895596959,6114.10232000002
+"CHL","Extraction","Gas",5.1858895596959,42.4008100000001
+"CHN","Extraction","Gas",58.3732057416268,4795.46191000001
+"CIV","Extraction","Gas",8.40202532195795,78.9110899999999
+"CMR","Extraction","Gas",8.40202532195795,18.63901
+"COD","Extraction","Gas",8.40202532195795,0.0126
+"COG","Extraction","Gas",8.40202532195795,8.9307
+"COL","Extraction","Gas",7.26532969659613,401.030079999998
+"CUB","Extraction","Gas",7.26532969659613,39.4281
+"CZE","Extraction","Gas",8.61244019138756,7.54562000000002
+"DEU","Extraction","Gas",8.61244019138756,274.27409
+"DNK","Extraction","Gas",8.61244019138756,169.73551
+"DZA","Extraction","Gas",0.92822966507177,3372.9192
+"ECU","Extraction","Gas",7.26532969659613,24.97229
+"EGY","Extraction","Gas",0.92822966507177,1243.4724
+"ESP","Extraction","Gas",8.61244019138756,2.00791
+"FRA","Extraction","Gas",8.61244019138756,0.753289999999999
+"GAB","Extraction","Gas",10.5263157894737,18.69842
+"GBR","Extraction","Gas",8.61244019138756,1499.31179
+"GEO","Extraction","Gas",5.3353722227439,0.23132
+"GHA","Extraction","Gas",8.40202532195795,22.28851
+"GRC","Extraction","Gas",8.61244019138756,0.401389999999999
+"HRV","Extraction","Gas",8.61244019138756,57.3228200000002
+"HUN","Extraction","Gas",8.61244019138756,59.8212100000001
+"IDN","Extraction","Gas",7.26532969659613,2702.87821
+"IND","Extraction","Gas",11.2200956937799,1085.292
+"IRL","Extraction","Gas",8.61244019138756,103.9662
+"IRN","Extraction","Gas",0.92822966507177,7078.4604
+"IRQ","Extraction","Gas",0.92822966507177,261.35731
+"ISR","Extraction","Gas",0.92822966507177,317.44079
+"ITA","Extraction","Gas",8.61244019138756,198.36811
+"JOR","Extraction","Gas",0.92822966507177,3.6099
+"JPN","Extraction","Gas",5.1858895596959,102.54419
+"KAZ","Extraction","Gas",5.3353722227439,1467.7947
+"KGZ","Extraction","Gas",5.3353722227439,0.938679999999998
+"KOR","Extraction","Gas",5.1858895596959,5.79692000000002
+"KWT","Extraction","Gas",0.92822966507177,591.352210000001
+"LBY","Extraction","Gas",0.92822966507177,338.57998
+"MAR","Extraction","Gas",0.92822966507177,2.5524
+"MDA","Extraction","Gas",5.3353722227439,0.0036
+"MEX","Extraction","Gas",6.9377990430622,1274.1714
+"MMR","Extraction","Gas",2.41626794258373,670.130079999998
+"MOZ","Extraction","Gas",8.40202532195795,174.8025
+"MYS","Extraction","Gas",2.41626794258373,2396.06821
+"NGA","Extraction","Gas",8.37320574162679,1378.26002
+"NLD","Extraction","Gas",8.61244019138756,1594.29961
+"NOR","Extraction","Gas",8.61244019138756,4284.64351000001
+"NZL","Extraction","Gas",3.11004784688995,177.1119
+"OMN","Extraction","Gas",0.92822966507177,1208.78731
+"PAK","Extraction","Gas",7.26532969659613,1048.63861
+"PER","Extraction","Gas",7.26532969659613,588.3867
+"PHL","Extraction","Gas",2.41626794258373,137.93132
+"POL","Extraction","Gas",8.61244019138756,148.74482
+"QAT","Extraction","Gas",0.92822966507177,6293.87011000001
+"ROU","Extraction","Gas",8.61244019138756,325.89988
+"RUS","Extraction","Gas",5.32874790925244,22541.81942
+"SAU","Extraction","Gas",0.92822966507177,3105.16019
+"SEN","Extraction","Gas",8.40202532195795,0.790220000000002
+"SRB","Extraction","Gas",8.61244019138756,17.44292
+"SVK","Extraction","Gas",8.61244019138756,3.20579
+"SVN","Extraction","Gas",8.61244019138756,0.17911
+"SYR","Extraction","Gas",0.92822966507177,127.23748
+"THA","Extraction","Gas",2.41626794258373,1059.12542
+"TJK","Extraction","Gas",5.3353722227439,0.10982
+"TKM","Extraction","Gas",5.3353722227439,2720.16538
+"TTO","Extraction","Gas",7.26532969659613,1212.32248
+"TUN","Extraction","Gas",0.92822966507177,95.4549
+"TUR","Extraction","Gas",17.1291866028708,12.66122
+"TWN","Extraction","Gas",58.3732057416268,9.69031000000001
+"TZA","Extraction","Gas",8.40202532195795,29.12129
+"UKR","Extraction","Gas",5.3353722227439,635.333420000002
+"USA","Extraction","Gas",4.30622009569378,26264.49212
+"UZB","Extraction","Gas",5.3353722227439,1919.71801
+"VEN","Extraction","Gas",7.26532969659613,892.0224
+"VNM","Extraction","Gas",2.41626794258373,397.1601
+"YEM","Extraction","Gas",0.92822966507177,18.0405
+"ZAF","Extraction","Gas",7.26532969659613,38.5109799999998
+"AFG","Manufacturing","Gas",1450,0
+"AGO","Manufacturing","Gas",1450,0.014
+"AND","Manufacturing","Gas",1450,0
+"ARE","Manufacturing","Gas",1450,0.97828
+"ARG","Manufacturing","Gas",1450,0.3702
+"ARM","Manufacturing","Gas",1450,0.08598
+"AUS","Manufacturing","Gas",1450,0.3062058
+"AUT","Manufacturing","Gas",1450,0
+"AZE","Manufacturing","Gas",1450,0.2366
+"BEL","Manufacturing","Gas",1450,0.1405412
+"BEN","Manufacturing","Gas",1450,0
+"BGD","Manufacturing","Gas",1450,0.3669844
+"BGR","Manufacturing","Gas",1450,0.01
+"BHR","Manufacturing","Gas",1450,0.1872
+"BLR","Manufacturing","Gas",1450,0.132539
+"BOL","Manufacturing","Gas",1450,0.05536
+"BRA","Manufacturing","Gas",1450,0.1376
+"BRN","Manufacturing","Gas",1450,0
+"CAN","Manufacturing","Gas",1450,0.158754
+"CHE","Manufacturing","Gas",1450,0.028662
+"CHL","Manufacturing","Gas",1450,0.00118799999999988
+"CHN","Manufacturing","Gas",1450,3.53024
+"CIV","Manufacturing","Gas",1450,0.022
+"CMR","Manufacturing","Gas",1450,0
+"COG","Manufacturing","Gas",1450,0.03
+"COL","Manufacturing","Gas",1450,0.0338
+"CPV","Manufacturing","Gas",1450,0
+"CRI","Manufacturing","Gas",1450,0
+"CUB","Manufacturing","Gas",1450,0.03
+"CYP","Manufacturing","Gas",1450,0
+"CZE","Manufacturing","Gas",1450,0.0126202
+"DEU","Manufacturing","Gas",1450,0.2793472
+"DNK","Manufacturing","Gas",1450,0.00724300000000001
+"DOM","Manufacturing","Gas",1450,0.02239
+"DZA","Manufacturing","Gas",1450,0.8818
+"ECU","Manufacturing","Gas",1450,0
+"EGY","Manufacturing","Gas",1450,1.4044
+"ESP","Manufacturing","Gas",1450,0.358729999999999
+"EST","Manufacturing","Gas",1450,0.05362
+"FIN","Manufacturing","Gas",1450,0.0258
+"FRA","Manufacturing","Gas",1450,0.4318508
+"GAB","Manufacturing","Gas",1450,0.021
+"GBR","Manufacturing","Gas",1450,0.524304400000001
+"GEO","Manufacturing","Gas",1450,0
+"GHA","Manufacturing","Gas",1450,0.0841
+"GNQ","Manufacturing","Gas",1450,0.0252
+"GRC","Manufacturing","Gas",1450,0.173176
+"GUM","Manufacturing","Gas",1450,0
+"HND","Manufacturing","Gas",1450,0
+"HRV","Manufacturing","Gas",1450,0.000599599999999997
+"HUN","Manufacturing","Gas",1450,0.210007
+"IDN","Manufacturing","Gas",1450,0.4897
+"IMN","Manufacturing","Gas",1450,0
+"IND","Manufacturing","Gas",1450,0.8436132
+"IRL","Manufacturing","Gas",1450,0.00394080000000012
+"IRN","Manufacturing","Gas",1450,2.187688
+"IRQ","Manufacturing","Gas",1450,1.2796
+"ISL","Manufacturing","Gas",1450,0
+"ISR","Manufacturing","Gas",1450,0.301
+"ITA","Manufacturing","Gas",1450,0.567322199999999
+"JOR","Manufacturing","Gas",1450,0.1794
+"JPN","Manufacturing","Gas",1450,1.688794
+"KAZ","Manufacturing","Gas",1450,7.20000000000061e-05
+"KEN","Manufacturing","Gas",1450,0
+"KGZ","Manufacturing","Gas",1450,0
+"KHM","Manufacturing","Gas",1450,0
+"KOR","Manufacturing","Gas",1450,1.47117
+"KWT","Manufacturing","Gas",1450,0.27
+"LBY","Manufacturing","Gas",1450,0.3834
+"LIE","Manufacturing","Gas",1450,0
+"LTU","Manufacturing","Gas",1450,0.095
+"LUX","Manufacturing","Gas",1450,0
+"LVA","Manufacturing","Gas",1450,0.0401
+"MAR","Manufacturing","Gas",1450,0
+"MCO","Manufacturing","Gas",1450,0
+"MDA","Manufacturing","Gas",1450,0
+"MEX","Manufacturing","Gas",1450,0.536
+"MKD","Manufacturing","Gas",1450,0.051
+"MLT","Manufacturing","Gas",1450,0
+"MMR","Manufacturing","Gas",1450,0.11526
+"MOZ","Manufacturing","Gas",1450,0.08132
+"MTQ","Manufacturing","Gas",1450,0
+"MYS","Manufacturing","Gas",1450,0.1171452
+"NGA","Manufacturing","Gas",1450,0.471088
+"NLD","Manufacturing","Gas",1450,0.70444
+"NOR","Manufacturing","Gas",1450,0.00223999999999999
+"NZL","Manufacturing","Gas",1450,0.06
+"OMN","Manufacturing","Gas",1450,0.5046
+"PAK","Manufacturing","Gas",1450,0.221824
+"PER","Manufacturing","Gas",1450,0.2
+"PHL","Manufacturing","Gas",1450,0.000459999999999957
+"POL","Manufacturing","Gas",1450,0.00665799999999999
+"PRT","Manufacturing","Gas",1450,0.116
+"QAT","Manufacturing","Gas",1450,0.282364
+"ROU","Manufacturing","Gas",1450,0.00348000000000006
+"RUS","Manufacturing","Gas",1450,2.737356
+"RWA","Manufacturing","Gas",1450,0.004998
+"SAU","Manufacturing","Gas",1450,0.93344
+"SDN","Manufacturing","Gas",1450,0
+"SGP","Manufacturing","Gas",1450,0.6734
+"SRB","Manufacturing","Gas",1450,0.000170000000000004
+"SVK","Manufacturing","Gas",1450,0.100432
+"SVN","Manufacturing","Gas",1450,0.000958800000000004
+"SWE","Manufacturing","Gas",1450,0.00800000000000002
+"SYR","Manufacturing","Gas",1450,0.2448
+"THA","Manufacturing","Gas",1450,0.912958
+"TJK","Manufacturing","Gas",1450,0
+"TKM","Manufacturing","Gas",1450,0.12
+"TTO","Manufacturing","Gas",1450,0.144
+"TUN","Manufacturing","Gas",1450,0.1332
+"TUR","Manufacturing","Gas",1450,0.999065400000001
+"TWN","Manufacturing","Gas",1450,0
+"TZA","Manufacturing","Gas",1450,0.0198
+"UKR","Manufacturing","Gas",1450,0.004842
+"USA","Manufacturing","Gas",1450,5.143283
+"UZB","Manufacturing","Gas",1450,0.10094
+"VEN","Manufacturing","Gas",1450,0.4948
+"VNM","Manufacturing","Gas",1450,0.1004
+"YEM","Manufacturing","Gas",1450,0
+"ZAF","Manufacturing","Gas",1450,0
+"AFG","O&M","Gas",487.851267380297,0.063
+"AGO","O&M","Gas",487.851267380297,0.08
+"AND","O&M","Gas",487.851267380297,0.0186
+"ARE","O&M","Gas",666.666666666667,28.514964
+"ARG","O&M","Gas",487.851267380297,15.446401
+"ARM","O&M","Gas",140,0.8209
+"AUS","O&M","Gas",100,16.24908
+"AUT","O&M","Gas",233.025706768383,3.453221
+"AZE","O&M","Gas",140,4.73384
+"BEL","O&M","Gas",233.025706768383,6.631769
+"BEN","O&M","Gas",487.851267380297,0.08
+"BGD","O&M","Gas",487.851267380297,6.68612
+"BGR","O&M","Gas",487.851267380297,0.46359
+"BHR","O&M","Gas",666.666666666667,4.083
+"BLR","O&M","Gas",140,7.044848
+"BOL","O&M","Gas",487.851267380297,1.080643
+"BRA","O&M","Gas",487.851267380297,5.260652
+"BRN","O&M","Gas",487.851267380297,0.8984
+"CAN","O&M","Gas",80,17.611181
+"CHE","O&M","Gas",233.025706768383,0.547554
+"CHL","O&M","Gas",233.025706768383,4.137185
+"CHN","O&M","Gas",770,49.633822
+"CIV","O&M","Gas",487.851267380297,0.819
+"CMR","O&M","Gas",487.851267380297,0.15003
+"COG","O&M","Gas",487.851267380297,0.3
+"COL","O&M","Gas",487.851267380297,3.7338
+"CPV","O&M","Gas",487.851267380297,0.00032
+"CRI","O&M","Gas",487.851267380297,0.03
+"CUB","O&M","Gas",487.851267380297,0.5075
+"CYP","O&M","Gas",487.851267380297,0.001005
+"CZE","O&M","Gas",233.025706768383,0.790181
+"DEU","O&M","Gas",233.025706768383,21.551914
+"DNK","O&M","Gas",233.025706768383,2.875284
+"DOM","O&M","Gas",487.851267380297,0.64095
+"DZA","O&M","Gas",666.666666666667,15.8871
+"ECU","O&M","Gas",487.851267380297,0.14
+"EGY","O&M","Gas",666.666666666667,28.04081
+"ESP","O&M","Gas",233.025706768383,27.793216
+"EST","O&M","Gas",233.025706768383,0.47602
+"FIN","O&M","Gas",233.025706768383,2.322023
+"FRA","O&M","Gas",233.025706768383,6.998841
+"GAB","O&M","Gas",487.851267380297,0.1084
+"GBR","O&M","Gas",233.025706768383,32.827723
+"GEO","O&M","Gas",140,0.41
+"GHA","O&M","Gas",487.851267380297,0.693
+"GNQ","O&M","Gas",487.851267380297,0.1364
+"GRC","O&M","Gas",233.025706768383,5.149105
+"GUM","O&M","Gas",100,0.01
+"HND","O&M","Gas",487.851267380297,0.002191
+"HRV","O&M","Gas",487.851267380297,0.358298
+"HUN","O&M","Gas",233.025706768383,3.244051
+"IDN","O&M","Gas",71.0227272727273,10.909062
+"IMN","O&M","Gas",487.851267380297,0.0707
+"IND","O&M","Gas",310,18.595955
+"IRL","O&M","Gas",233.025706768383,5.9814
+"IRN","O&M","Gas",666.666666666667,48.0039
+"IRQ","O&M","Gas",666.666666666667,10.6145
+"ISL","O&M","Gas",233.025706768383,0.000465
+"ISR","O&M","Gas",666.666666666667,5.852528
+"ITA","O&M","Gas",233.025706768383,47.239564
+"JOR","O&M","Gas",666.666666666667,2.935
+"JPN","O&M","Gas",233.025706768383,81.131798
+"KAZ","O&M","Gas",140,3.03452
+"KEN","O&M","Gas",487.851267380297,0.00017
+"KGZ","O&M","Gas",140,0.05
+"KHM","O&M","Gas",487.851267380297,7e-05
+"KOR","O&M","Gas",233.025706768383,27.733574
+"KWT","O&M","Gas",666.666666666667,5.271
+"LBY","O&M","Gas",666.666666666667,4.226
+"LIE","O&M","Gas",487.851267380297,0.001083
+"LTU","O&M","Gas",487.851267380297,2.077411
+"LUX","O&M","Gas",233.025706768383,0.457038
+"LVA","O&M","Gas",487.851267380297,1.086322
+"MAR","O&M","Gas",666.666666666667,1.156
+"MCO","O&M","Gas",487.851267380297,0.003
+"MDA","O&M","Gas",140,0.902
+"MEX","O&M","Gas",233.025706768383,25.95237
+"MKD","O&M","Gas",487.851267380297,0.3154
+"MLT","O&M","Gas",487.851267380297,0.0017
+"MMR","O&M","Gas",487.851267380297,1.75128
+"MOZ","O&M","Gas",487.851267380297,0.4799
+"MTQ","O&M","Gas",487.851267380297,0.0072
+"MYS","O&M","Gas",487.851267380297,13.966706
+"NGA","O&M","Gas",487.851267380297,7.653522
+"NLD","O&M","Gas",233.025706768383,14.305469
+"NOR","O&M","Gas",233.025706768383,0.67401
+"NZL","O&M","Gas",100,1.864136
+"OMN","O&M","Gas",666.666666666667,7.659
+"PAK","O&M","Gas",487.851267380297,9.87734
+"PER","O&M","Gas",487.851267380297,3.7222
+"PHL","O&M","Gas",487.851267380297,3.1506
+"POL","O&M","Gas",233.025706768383,0.774829
+"PRT","O&M","Gas",233.025706768383,4.11764
+"QAT","O&M","Gas",666.666666666667,9.74182
+"ROU","O&M","Gas",487.851267380297,3.334445
+"RUS","O&M","Gas",140,103.306934
+"RWA","O&M","Gas",487.851267380297,0.02859
+"SAU","O&M","Gas",666.666666666667,29.6581
+"SDN","O&M","Gas",487.851267380297,0.0945
+"SGP","O&M","Gas",487.851267380297,9.4922
+"SRB","O&M","Gas",487.851267380297,0.21685
+"SVK","O&M","Gas",233.025706768383,1.315068
+"SVN","O&M","Gas",233.025706768383,0.355802
+"SWE","O&M","Gas",233.025706768383,1.594801
+"SYR","O&M","Gas",666.666666666667,6.947
+"THA","O&M","Gas",487.851267380297,29.479746
+"TJK","O&M","Gas",140,0.18
+"TKM","O&M","Gas",140,5.0126
+"TTO","O&M","Gas",487.851267380297,2.39804
+"TUN","O&M","Gas",666.666666666667,3.00933
+"TUR","O&M","Gas",140,20.605389
+"TWN","O&M","Gas",770,14.229501
+"TZA","O&M","Gas",487.851267380297,0.558245
+"UKR","O&M","Gas",140,1.938569
+"USA","O&M","Gas",243.127572016461,443.821184
+"UZB","O&M","Gas",140,7.7502
+"VEN","O&M","Gas",487.851267380297,9.1144
+"VNM","O&M","Gas",487.851267380297,7.1407
+"YEM","O&M","Gas",666.666666666667,0.4065
+"ZAF","O&M","Gas",487.851267380297,0.0222
+"AFG","Construction","Hydro",4249.48996934717,5.00000000000283e-06
+"AGO","Construction","Hydro",4604.05156537753,0.01796
+"ALB","Construction","Hydro",4249.48996934717,0.0303242
+"AND","Construction","Hydro",4249.48996934717,0
+"ARG","Construction","Hydro",4249.48996934717,0.00322799999999991
+"ARM","Construction","Hydro",3982.28992709055,0.00555999999999998
+"AUS","Construction","Hydro",1500,0.000327599999999997
+"AUT","Construction","Hydro",4095.64722608019,0.1356054
+"AZE","Construction","Hydro",3982.28992709055,0.024604
+"BDI","Construction","Hydro",3236.45262183046,0
+"BEL","Construction","Hydro",4095.64722608019,0.00149320000000001
+"BEN","Construction","Hydro",3236.45262183046,0
+"BFA","Construction","Hydro",3236.45262183046,0
+"BGD","Construction","Hydro",4249.48996934717,0.000400000000000004
+"BGR","Construction","Hydro",4249.48996934717,0.0212528
+"BIH","Construction","Hydro",4249.48996934717,0.00224600000000002
+"BLR","Construction","Hydro",3982.28992709055,0.003664
+"BLZ","Construction","Hydro",4249.48996934717,0
+"BOL","Construction","Hydro",4249.48996934717,0
+"BRA","Construction","Hydro",4249.48996934717,1.2823364
+"BTN","Construction","Hydro",4249.48996934717,0
+"CAF","Construction","Hydro",3236.45262183046,0
+"CAN","Construction","Hydro",5176.76897207294,0.400492000000002
+"CHE","Construction","Hydro",4095.64722608019,0.0571967999999999
+"CHL","Construction","Hydro",4095.64722608019,0.0779594
+"CHN","Construction","Hydro",4249.48996934717,13.0765376
+"CIV","Construction","Hydro",3236.45262183046,0
+"CMR","Construction","Hydro",3236.45262183046,0.00984
+"COD","Construction","Hydro",3236.45262183046,0.000160000000000004
+"COG","Construction","Hydro",3236.45262183046,0.024
+"COL","Construction","Hydro",4249.48996934717,0.166872
+"COM","Construction","Hydro",3236.45262183046,0
+"CRI","Construction","Hydro",4249.48996934717,0.04202
+"CUB","Construction","Hydro",4249.48996934717,0.000108000000000001
+"CZE","Construction","Hydro",4095.64722608019,0.00462680000000004
+"DEU","Construction","Hydro",4095.64722608019,0.0359103999999999
+"DMA","Construction","Hydro",4249.48996934717,0
+"DNK","Construction","Hydro",4095.64722608019,0
+"DOM","Construction","Hydro",4249.48996934717,0.016
+"DZA","Construction","Hydro",4249.48996934717,0
+"ECU","Construction","Hydro",4249.48996934717,0.023664
+"EGY","Construction","Hydro",4249.48996934717,0
+"ESP","Construction","Hydro",4095.64722608019,0.2128728
+"EST","Construction","Hydro",4095.64722608019,0
+"ETH","Construction","Hydro",2000,0.0194
+"FIN","Construction","Hydro",4095.64722608019,0.000400000000000053
+"FJI","Construction","Hydro",1500,0.008006
+"FRA","Construction","Hydro",4095.64722608019,0.0185237999999997
+"FRO","Construction","Hydro",4249.48996934717,0.0013
+"FSM","Construction","Hydro",1500,0
+"GAB","Construction","Hydro",3236.45262183046,0.03208
+"GBR","Construction","Hydro",4095.64722608019,0.00811179999999998
+"GEO","Construction","Hydro",3982.28992709055,0.029442
+"GHA","Construction","Hydro",3236.45262183046,0.0798
+"GIN","Construction","Hydro",3236.45262183046,0
+"GLP","Construction","Hydro",4249.48996934717,0
+"GNQ","Construction","Hydro",3236.45262183046,0.024
+"GRC","Construction","Hydro",4095.64722608019,0.015614
+"GRL","Construction","Hydro",4249.48996934717,0.0045
+"GTM","Construction","Hydro",4249.48996934717,0.047581
+"GUF","Construction","Hydro",4249.48996934717,0.000897000000000002
+"HND","Construction","Hydro",4249.48996934717,0.000482
+"HRV","Construction","Hydro",4249.48996934717,0
+"HTI","Construction","Hydro",4249.48996934717,0
+"HUN","Construction","Hydro",4095.64722608019,0.000437
+"IDN","Construction","Hydro",4249.48996934717,0.0638224
+"IMN","Construction","Hydro",4249.48996934717,2.78e-05
+"IND","Construction","Hydro",5157.93572563236,0.854833199999999
+"IRL","Construction","Hydro",4095.64722608019,5.66000000000021e-05
+"IRN","Construction","Hydro",4249.48996934717,0.631068
+"IRQ","Construction","Hydro",4249.48996934717,0
+"ISL","Construction","Hydro",4095.64722608019,0.0203894
+"ISR","Construction","Hydro",4095.64722608019,0
+"ITA","Construction","Hydro",4095.64722608019,0.0276791999999998
+"JAM","Construction","Hydro",4249.48996934717,0.00126
+"JOR","Construction","Hydro",4249.48996934717,0
+"JPN","Construction","Hydro",3949.446,0.180548
+"KAZ","Construction","Hydro",3982.28992709055,0.0623
+"KEN","Construction","Hydro",3236.45262183046,0.0107312
+"KGZ","Construction","Hydro",3982.28992709055,6.99999999995843e-06
+"KHM","Construction","Hydro",4249.48996934717,0.1812
+"KOR","Construction","Hydro",3949.446,0.2356218
+"LAO","Construction","Hydro",4249.48996934717,0.273132
+"LBN","Construction","Hydro",4249.48996934717,0
+"LBR","Construction","Hydro",3236.45262183046,0
+"LIE","Construction","Hydro",4249.48996934717,0
+"LKA","Construction","Hydro",4249.48996934717,0.043467
+"LSO","Construction","Hydro",3236.45262183046,0
+"LTU","Construction","Hydro",4249.48996934717,0
+"LUX","Construction","Hydro",4095.64722608019,0.04
+"LVA","Construction","Hydro",4249.48996934717,7.80000000000138e-05
+"MAR","Construction","Hydro",4249.48996934717,0.00140000000000001
+"MDA","Construction","Hydro",3982.28992709055,0
+"MDG","Construction","Hydro",3236.45262183046,0
+"MEX","Construction","Hydro",4095.64722608019,0.1661868
+"MKD","Construction","Hydro",4249.48996934717,0.0092494
+"MLI","Construction","Hydro",3236.45262183046,0.01248
+"MMR","Construction","Hydro",4249.48996934717,0.20725
+"MNE","Construction","Hydro",4249.48996934717,0
+"MNG","Construction","Hydro",3982.28992709055,0
+"MOZ","Construction","Hydro",3236.45262183046,0
+"MUS","Construction","Hydro",3236.45262183046,0.00304
+"MWI","Construction","Hydro",3236.45262183046,0.012815
+"MYS","Construction","Hydro",4249.48996934717,0.453368
+"NAM","Construction","Hydro",3236.45262183046,0.0184
+"NCL","Construction","Hydro",1500,0
+"NGA","Construction","Hydro",3236.45262183046,0.000191999999999987
+"NIC","Construction","Hydro",4249.48996934717,0.0031436
+"NLD","Construction","Hydro",4095.64722608019,0
+"NOR","Construction","Hydro",4095.64722608019,0.1511776
+"NPL","Construction","Hydro",4249.48996934717,0.014554
+"NZL","Construction","Hydro",1500,0.00256000000000006
+"PAK","Construction","Hydro",4249.48996934717,0.0793829999999999
+"PAN","Construction","Hydro",4249.48996934717,0.1053828
+"PER","Construction","Hydro",4249.48996934717,0.0311196
+"PHL","Construction","Hydro",4249.48996934717,0.026197
+"PNG","Construction","Hydro",1500,0.001881
+"POL","Construction","Hydro",4095.64722608019,0.002088
+"PRK","Construction","Hydro",3949.446,0.09
+"PRT","Construction","Hydro",4095.64722608019,0.14178
+"PRY","Construction","Hydro",4249.48996934717,0
+"PYF","Construction","Hydro",1500,0
+"REU","Construction","Hydro",3236.45262183046,0.000399999999999999
+"ROU","Construction","Hydro",4249.48996934717,0.0247836
+"RUS","Construction","Hydro",3982.28992709055,0.8459728
+"RWA","Construction","Hydro",3236.45262183046,0.0095768
+"SDN","Construction","Hydro",3236.45262183046,0
+"SLB","Construction","Hydro",1500,0
+"SLE","Construction","Hydro",3236.45262183046,4e-04
+"SLV","Construction","Hydro",4249.48996934717,0.000733999999999999
+"SRB","Construction","Hydro",4249.48996934717,0.0869946
+"STP","Construction","Hydro",3236.45262183046,0
+"SUR","Construction","Hydro",4249.48996934717,0
+"SVK","Construction","Hydro",4095.64722608019,0.00087799999999999
+"SVN","Construction","Hydro",4095.64722608019,0.00751200000000001
+"SWE","Construction","Hydro",4095.64722608019,0.0338959999999999
+"SWZ","Construction","Hydro",3236.45262183046,0
+"SYR","Construction","Hydro",4249.48996934717,0.000320000000000008
+"TGO","Construction","Hydro",3236.45262183046,0
+"THA","Construction","Hydro",4249.48996934717,0.01001
+"TJK","Construction","Hydro",3982.28992709055,0.0460599999999999
+"TKM","Construction","Hydro",3982.28992709055,0
+"TLS","Construction","Hydro",1500,0
+"TUN","Construction","Hydro",4249.48996934717,0
+"TUR","Construction","Hydro",3982.28992709055,1.1717616
+"TWN","Construction","Hydro",4249.48996934717,0.0208
+"TZA","Construction","Hydro",2380.95238095238,0.000671999999999999
+"UGA","Construction","Hydro",3236.45262183046,0.05852
+"UKR","Construction","Hydro",3982.28992709055,0.135391
+"URY","Construction","Hydro",4249.48996934717,0
+"USA","Construction","Hydro",2908.64658137229,0.195293200000002
+"UZB","Construction","Hydro",3982.28992709055,0
+"VCT","Construction","Hydro",4249.48996934717,0
+"VEN","Construction","Hydro",4249.48996934717,0
+"VNM","Construction","Hydro",4249.48996934717,1.109984
+"VUT","Construction","Hydro",1500,1.5e-05
+"WSM","Construction","Hydro",1500,0
+"ZAF","Construction","Hydro",4249.48996934717,0
+"ZMB","Construction","Hydro",3236.45262183046,0.07346
+"ZWE","Construction","Hydro",3236.45262183046,0.001
+"AFG","Manufacturing","Hydro",2666.5,5.00000000000283e-06
+"AGO","Manufacturing","Hydro",2666.5,0.01796
+"ALB","Manufacturing","Hydro",2666.5,0.0303242
+"AND","Manufacturing","Hydro",2666.5,0
+"ARG","Manufacturing","Hydro",2666.5,0.00322799999999991
+"ARM","Manufacturing","Hydro",2666.5,0.00555999999999998
+"AUS","Manufacturing","Hydro",2678.42855048683,0.000327599999999997
+"AUT","Manufacturing","Hydro",2678.42855048683,0.1356054
+"AZE","Manufacturing","Hydro",2666.5,0.024604
+"BDI","Manufacturing","Hydro",2666.5,0
+"BEL","Manufacturing","Hydro",2678.42855048683,0.00149320000000001
+"BEN","Manufacturing","Hydro",2666.5,0
+"BFA","Manufacturing","Hydro",2666.5,0
+"BGD","Manufacturing","Hydro",2666.5,0.000400000000000004
+"BGR","Manufacturing","Hydro",2666.5,0.0212528
+"BIH","Manufacturing","Hydro",2666.5,0.00224600000000002
+"BLR","Manufacturing","Hydro",2666.5,0.003664
+"BLZ","Manufacturing","Hydro",2666.5,0
+"BOL","Manufacturing","Hydro",2666.5,0
+"BRA","Manufacturing","Hydro",2666.5,1.2823364
+"BTN","Manufacturing","Hydro",2666.5,0
+"CAF","Manufacturing","Hydro",2666.5,0
+"CAN","Manufacturing","Hydro",2678.42855048683,0.400492000000002
+"CHE","Manufacturing","Hydro",2678.42855048683,0.0571967999999999
+"CHL","Manufacturing","Hydro",2678.42855048683,0.0779594
+"CHN","Manufacturing","Hydro",2666.5,13.0765376
+"CIV","Manufacturing","Hydro",2666.5,0
+"CMR","Manufacturing","Hydro",2666.5,0.00984
+"COD","Manufacturing","Hydro",2666.5,0.000160000000000004
+"COG","Manufacturing","Hydro",2666.5,0.024
+"COL","Manufacturing","Hydro",2666.5,0.166872
+"COM","Manufacturing","Hydro",2666.5,0
+"CRI","Manufacturing","Hydro",2666.5,0.04202
+"CUB","Manufacturing","Hydro",2666.5,0.000108000000000001
+"CZE","Manufacturing","Hydro",2678.42855048683,0.00462680000000004
+"DEU","Manufacturing","Hydro",2678.42855048683,0.0359103999999999
+"DMA","Manufacturing","Hydro",2666.5,0
+"DNK","Manufacturing","Hydro",2678.42855048683,0
+"DOM","Manufacturing","Hydro",2666.5,0.016
+"DZA","Manufacturing","Hydro",2666.5,0
+"ECU","Manufacturing","Hydro",2666.5,0.023664
+"EGY","Manufacturing","Hydro",2666.5,0
+"ESP","Manufacturing","Hydro",2678.42855048683,0.2128728
+"EST","Manufacturing","Hydro",2678.42855048683,0
+"ETH","Manufacturing","Hydro",2666.5,0.0194
+"FIN","Manufacturing","Hydro",2678.42855048683,0.000400000000000053
+"FJI","Manufacturing","Hydro",2666.5,0.008006
+"FRA","Manufacturing","Hydro",2678.42855048683,0.0185237999999997
+"FRO","Manufacturing","Hydro",2666.5,0.0013
+"FSM","Manufacturing","Hydro",2666.5,0
+"GAB","Manufacturing","Hydro",2666.5,0.03208
+"GBR","Manufacturing","Hydro",2678.42855048683,0.00811179999999998
+"GEO","Manufacturing","Hydro",2666.5,0.029442
+"GHA","Manufacturing","Hydro",2666.5,0.0798
+"GIN","Manufacturing","Hydro",2666.5,0
+"GLP","Manufacturing","Hydro",2666.5,0
+"GNQ","Manufacturing","Hydro",2666.5,0.024
+"GRC","Manufacturing","Hydro",2678.42855048683,0.015614
+"GRL","Manufacturing","Hydro",2666.5,0.0045
+"GTM","Manufacturing","Hydro",2666.5,0.047581
+"GUF","Manufacturing","Hydro",2666.5,0.000897000000000002
+"HND","Manufacturing","Hydro",2666.5,0.000482
+"HRV","Manufacturing","Hydro",2666.5,0
+"HTI","Manufacturing","Hydro",2666.5,0
+"HUN","Manufacturing","Hydro",2678.42855048683,0.000437
+"IDN","Manufacturing","Hydro",2666.5,0.0638224
+"IMN","Manufacturing","Hydro",2666.5,2.78e-05
+"IND","Manufacturing","Hydro",2666.5,0.854833199999999
+"IRL","Manufacturing","Hydro",2678.42855048683,5.66000000000021e-05
+"IRN","Manufacturing","Hydro",2666.5,0.631068
+"IRQ","Manufacturing","Hydro",2666.5,0
+"ISL","Manufacturing","Hydro",2678.42855048683,0.0203894
+"ISR","Manufacturing","Hydro",2678.42855048683,0
+"ITA","Manufacturing","Hydro",2678.42855048683,0.0276791999999998
+"JAM","Manufacturing","Hydro",2666.5,0.00126
+"JOR","Manufacturing","Hydro",2666.5,0
+"JPN","Manufacturing","Hydro",2678.42855048683,0.180548
+"KAZ","Manufacturing","Hydro",2666.5,0.0623
+"KEN","Manufacturing","Hydro",2666.5,0.0107312
+"KGZ","Manufacturing","Hydro",2666.5,6.99999999995843e-06
+"KHM","Manufacturing","Hydro",2666.5,0.1812
+"KOR","Manufacturing","Hydro",2678.42855048683,0.2356218
+"LAO","Manufacturing","Hydro",2666.5,0.273132
+"LBN","Manufacturing","Hydro",2666.5,0
+"LBR","Manufacturing","Hydro",2666.5,0
+"LIE","Manufacturing","Hydro",2666.5,0
+"LKA","Manufacturing","Hydro",2666.5,0.043467
+"LSO","Manufacturing","Hydro",2666.5,0
+"LTU","Manufacturing","Hydro",2666.5,0
+"LUX","Manufacturing","Hydro",2678.42855048683,0.04
+"LVA","Manufacturing","Hydro",2666.5,7.80000000000138e-05
+"MAR","Manufacturing","Hydro",2666.5,0.00140000000000001
+"MDA","Manufacturing","Hydro",2666.5,0
+"MDG","Manufacturing","Hydro",2666.5,0
+"MEX","Manufacturing","Hydro",2678.42855048683,0.1661868
+"MKD","Manufacturing","Hydro",2666.5,0.0092494
+"MLI","Manufacturing","Hydro",2666.5,0.01248
+"MMR","Manufacturing","Hydro",2666.5,0.20725
+"MNE","Manufacturing","Hydro",2666.5,0
+"MNG","Manufacturing","Hydro",2666.5,0
+"MOZ","Manufacturing","Hydro",2666.5,0
+"MUS","Manufacturing","Hydro",2666.5,0.00304
+"MWI","Manufacturing","Hydro",2666.5,0.012815
+"MYS","Manufacturing","Hydro",2666.5,0.453368
+"NAM","Manufacturing","Hydro",2666.5,0.0184
+"NCL","Manufacturing","Hydro",2666.5,0
+"NGA","Manufacturing","Hydro",2666.5,0.000191999999999987
+"NIC","Manufacturing","Hydro",2666.5,0.0031436
+"NLD","Manufacturing","Hydro",2678.42855048683,0
+"NOR","Manufacturing","Hydro",2678.42855048683,0.1511776
+"NPL","Manufacturing","Hydro",2666.5,0.014554
+"NZL","Manufacturing","Hydro",2678.42855048683,0.00256000000000006
+"PAK","Manufacturing","Hydro",2666.5,0.0793829999999999
+"PAN","Manufacturing","Hydro",2666.5,0.1053828
+"PER","Manufacturing","Hydro",2666.5,0.0311196
+"PHL","Manufacturing","Hydro",2666.5,0.026197
+"PNG","Manufacturing","Hydro",2666.5,0.001881
+"POL","Manufacturing","Hydro",2678.42855048683,0.002088
+"PRK","Manufacturing","Hydro",2666.5,0.09
+"PRT","Manufacturing","Hydro",2678.42855048683,0.14178
+"PRY","Manufacturing","Hydro",2666.5,0
+"PYF","Manufacturing","Hydro",2666.5,0
+"REU","Manufacturing","Hydro",2666.5,0.000399999999999999
+"ROU","Manufacturing","Hydro",2666.5,0.0247836
+"RUS","Manufacturing","Hydro",2666.5,0.8459728
+"RWA","Manufacturing","Hydro",2666.5,0.0095768
+"SDN","Manufacturing","Hydro",2666.5,0
+"SLB","Manufacturing","Hydro",2666.5,0
+"SLE","Manufacturing","Hydro",2666.5,4e-04
+"SLV","Manufacturing","Hydro",2666.5,0.000733999999999999
+"SRB","Manufacturing","Hydro",2666.5,0.0869946
+"STP","Manufacturing","Hydro",2666.5,0
+"SUR","Manufacturing","Hydro",2666.5,0
+"SVK","Manufacturing","Hydro",2678.42855048683,0.00087799999999999
+"SVN","Manufacturing","Hydro",2678.42855048683,0.00751200000000001
+"SWE","Manufacturing","Hydro",2678.42855048683,0.0338959999999999
+"SWZ","Manufacturing","Hydro",2666.5,0
+"SYR","Manufacturing","Hydro",2666.5,0.000320000000000008
+"TGO","Manufacturing","Hydro",2666.5,0
+"THA","Manufacturing","Hydro",2666.5,0.01001
+"TJK","Manufacturing","Hydro",2666.5,0.0460599999999999
+"TKM","Manufacturing","Hydro",2666.5,0
+"TLS","Manufacturing","Hydro",2666.5,0
+"TUN","Manufacturing","Hydro",2666.5,0
+"TUR","Manufacturing","Hydro",2666.5,1.1717616
+"TWN","Manufacturing","Hydro",2666.5,0.0208
+"TZA","Manufacturing","Hydro",2666.5,0.000671999999999999
+"UGA","Manufacturing","Hydro",2666.5,0.05852
+"UKR","Manufacturing","Hydro",2666.5,0.135391
+"URY","Manufacturing","Hydro",2666.5,0
+"USA","Manufacturing","Hydro",2750,0.195293200000002
+"UZB","Manufacturing","Hydro",2666.5,0
+"VCT","Manufacturing","Hydro",2666.5,0
+"VEN","Manufacturing","Hydro",2666.5,0
+"VNM","Manufacturing","Hydro",2666.5,1.109984
+"VUT","Manufacturing","Hydro",2666.5,1.5e-05
+"WSM","Manufacturing","Hydro",2666.5,0
+"ZAF","Manufacturing","Hydro",2666.5,0
+"ZMB","Manufacturing","Hydro",2666.5,0.07346
+"ZWE","Manufacturing","Hydro",2666.5,0.001
+"AFG","O&M","Hydro",1339.04838561628,0.250841
+"AGO","O&M","Hydro",190.47619047619,0.8618
+"ALB","O&M","Hydro",201.120899831116,1.628003
+"AND","O&M","Hydro",201.120899831116,0.0452
+"ARG","O&M","Hydro",1339.04838561628,12.36411
+"ARM","O&M","Hydro",428.247321901348,1.135776
+"AUS","O&M","Hydro",229.806598407281,8.299135
+"AUT","O&M","Hydro",201.120899831116,12.340924
+"AZE","O&M","Hydro",428.247321901348,1.0872
+"BDI","O&M","Hydro",190.47619047619,0.034516
+"BEL","O&M","Hydro",201.120899831116,1.312061
+"BEN","O&M","Hydro",190.47619047619,5e-04
+"BFA","O&M","Hydro",190.47619047619,0.03591
+"BGD","O&M","Hydro",1339.04838561628,0.2325
+"BGR","O&M","Hydro",201.120899831116,2.988998
+"BIH","O&M","Hydro",201.120899831116,2.023445
+"BLR","O&M","Hydro",428.247321901348,0.031424
+"BLZ","O&M","Hydro",1339.04838561628,0.0549
+"BOL","O&M","Hydro",1339.04838561628,0.4795
+"BRA","O&M","Hydro",1339.04838561628,93.570876
+"BTN","O&M","Hydro",1339.04838561628,1.493208
+"CAF","O&M","Hydro",190.47619047619,0.01865
+"CAN","O&M","Hydro",54.5383453019566,69.507884
+"CHE","O&M","Hydro",201.120899831116,13.701191
+"CHL","O&M","Hydro",377.497838509982,6.260462
+"CHN","O&M","Hydro",1953,238.472417
+"CIV","O&M","Hydro",190.47619047619,0.6178
+"CMR","O&M","Hydro",190.47619047619,0.754505
+"COD","O&M","Hydro",190.47619047619,1.362855
+"COG","O&M","Hydro",190.47619047619,0.194
+"COL","O&M","Hydro",1339.04838561628,10.201365
+"COM","O&M","Hydro",190.47619047619,1.4e-05
+"CRI","O&M","Hydro",1339.04838561628,1.795253
+"CUB","O&M","Hydro",1339.04838561628,0.063287
+"CZE","O&M","Hydro",201.120899831116,2.137486
+"DEU","O&M","Hydro",201.120899831116,10.003055
+"DMA","O&M","Hydro",1339.04838561628,0.0067
+"DNK","O&M","Hydro",201.120899831116,0.004223
+"DOM","O&M","Hydro",1339.04838561628,0.62423
+"DZA","O&M","Hydro",1339.04838561628,0.274869
+"ECU","O&M","Hydro",1339.04838561628,2.326904
+"EGY","O&M","Hydro",1339.04838561628,2.84248
+"ESP","O&M","Hydro",201.120899831116,18.831409
+"EST","O&M","Hydro",201.120899831116,0.005692
+"ETH","O&M","Hydro",190.47619047619,1.950719
+"FIN","O&M","Hydro",201.120899831116,2.438688
+"FJI","O&M","Hydro",229.806598407281,0.133725
+"FRA","O&M","Hydro",201.120899831116,23.556347
+"FRO","O&M","Hydro",201.120899831116,0.0381
+"FSM","O&M","Hydro",229.806598407281,0.00206
+"GAB","O&M","Hydro",190.47619047619,0.327424
+"GBR","O&M","Hydro",201.120899831116,4.556399
+"GEO","O&M","Hydro",428.247321901348,2.79546
+"GHA","O&M","Hydro",190.47619047619,1.6018
+"GIN","O&M","Hydro",190.47619047619,0.1312
+"GLP","O&M","Hydro",1339.04838561628,0.00874
+"GNQ","O&M","Hydro",190.47619047619,0.12735
+"GRC","O&M","Hydro",334,3.242815
+"GRL","O&M","Hydro",201.120899831116,0.091383
+"GTM","O&M","Hydro",1339.04838561628,1.092364
+"GUF","O&M","Hydro",1339.04838561628,0.119345
+"HND","O&M","Hydro",1339.04838561628,0.531255
+"HRV","O&M","Hydro",201.120899831116,2.109797
+"HTI","O&M","Hydro",1339.04838561628,0.057407
+"HUN","O&M","Hydro",201.120899831116,0.059285
+"IDN","O&M","Hydro",1339.04838561628,4.197058
+"IMN","O&M","Hydro",201.120899831116,0.001339
+"IND","O&M","Hydro",715.625088121117,44.291961
+"IRL","O&M","Hydro",201.120899831116,0.522866
+"IRN","O&M","Hydro",1339.04838561628,11.479908
+"IRQ","O&M","Hydro",1339.04838561628,2.50934
+"ISL","O&M","Hydro",201.120899831116,1.99719
+"ISR","O&M","Hydro",377.497838509982,6e-05
+"ITA","O&M","Hydro",201.120899831116,21.283252
+"JAM","O&M","Hydro",1339.04838561628,0.02377
+"JOR","O&M","Hydro",1339.04838561628,0.0121
+"JPN","O&M","Hydro",180.3,49.011838
+"KAZ","O&M","Hydro",428.247321901348,2.668287
+"KEN","O&M","Hydro",190.47619047619,0.804828
+"KGZ","O&M","Hydro",428.247321901348,3.102147
+"KHM","O&M","Hydro",1339.04838561628,0.92914
+"KOR","O&M","Hydro",180.3,5.963948
+"LAO","O&M","Hydro",1339.04838561628,3.186475
+"LBN","O&M","Hydro",1339.04838561628,0.2096
+"LBR","O&M","Hydro",190.47619047619,6e-05
+"LIE","O&M","Hydro",201.120899831116,0.01578
+"LKA","O&M","Hydro",1339.04838561628,1.640738
+"LSO","O&M","Hydro",190.47619047619,0.07625
+"LTU","O&M","Hydro",201.120899831116,1.007485
+"LUX","O&M","Hydro",201.120899831116,1.343937
+"LVA","O&M","Hydro",201.120899831116,1.520803
+"MAR","O&M","Hydro",1339.04838561628,1.780472
+"MDA","O&M","Hydro",428.247321901348,0.064
+"MDG","O&M","Hydro",190.47619047619,0.12779
+"MEX","O&M","Hydro",377.497838509982,12.338997
+"MKD","O&M","Hydro",201.120899831116,0.685109
+"MLI","O&M","Hydro",190.47619047619,0.315493
+"MMR","O&M","Hydro",1339.04838561628,2.972585
+"MNE","O&M","Hydro",201.120899831116,0.683199
+"MNG","O&M","Hydro",428.247321901348,0.023943
+"MOZ","O&M","Hydro",190.47619047619,2.18392
+"MUS","O&M","Hydro",190.47619047619,0.074923
+"MWI","O&M","Hydro",190.47619047619,0.349515
+"MYS","O&M","Hydro",1339.04838561628,4.445006
+"NAM","O&M","Hydro",190.47619047619,0.332
+"NCL","O&M","Hydro",229.806598407281,0.0072
+"NGA","O&M","Hydro",190.47619047619,1.959
+"NIC","O&M","Hydro",1339.04838561628,0.121393
+"NLD","O&M","Hydro",201.120899831116,0.038589
+"NOR","O&M","Hydro",186.354838709677,29.181942
+"NPL","O&M","Hydro",1339.04838561628,0.727936
+"NZL","O&M","Hydro",229.806598407281,5.548336
+"PAK","O&M","Hydro",1339.04838561628,7.162747
+"PAN","O&M","Hydro",1339.04838561628,1.419386
+"PER","O&M","Hydro",1339.04838561628,3.103391
+"PHL","O&M","Hydro",1339.04838561628,3.420111
+"PNG","O&M","Hydro",229.806598407281,0.182481
+"POL","O&M","Hydro",201.120899831116,2.25403
+"PRK","O&M","Hydro",180.3,5.317388
+"PRT","O&M","Hydro",201.120899831116,5.648
+"PRY","O&M","Hydro",1339.04838561628,0.2162
+"PYF","O&M","Hydro",229.806598407281,0.001374
+"REU","O&M","Hydro",190.47619047619,0.1244
+"ROU","O&M","Hydro",201.120899831116,6.588632
+"RUS","O&M","Hydro",428.247321901348,49.44341
+"RWA","O&M","Hydro",190.47619047619,0.074806
+"SDN","O&M","Hydro",190.47619047619,1.5916
+"SLB","O&M","Hydro",229.806598407281,0.000392
+"SLE","O&M","Hydro",190.47619047619,0.058
+"SLV","O&M","Hydro",1339.04838561628,0.478546
+"SRB","O&M","Hydro",201.120899831116,2.755222
+"STP","O&M","Hydro",190.47619047619,0.00572
+"SUR","O&M","Hydro",1339.04838561628,0.00031
+"SVK","O&M","Hydro",201.120899831116,2.419268
+"SVN","O&M","Hydro",201.120899831116,1.188934
+"SWE","O&M","Hydro",201.120899831116,17.003402
+"SWZ","O&M","Hydro",190.47619047619,0.063101
+"SYR","O&M","Hydro",1339.04838561628,1.571294
+"TGO","O&M","Hydro",190.47619047619,0.06732
+"THA","O&M","Hydro",1339.04838561628,3.616042
+"TJK","O&M","Hydro",428.247321901348,4.960187
+"TKM","O&M","Hydro",428.247321901348,0.0038
+"TLS","O&M","Hydro",229.806598407281,0.000336
+"TUN","O&M","Hydro",1339.04838561628,0.062325
+"TUR","O&M","Hydro",428.247321901348,22.570087
+"TWN","O&M","Hydro",1953,4.353776
+"TZA","O&M","Hydro",190.47619047619,0.567836
+"UGA","O&M","Hydro",190.47619047619,0.6906
+"UKR","O&M","Hydro",428.247321901348,5.869222
+"URY","O&M","Hydro",1339.04838561628,0.49619
+"USA","O&M","Hydro",1041.74159456661,97.95734
+"UZB","O&M","Hydro",428.247321901348,1.598203
+"VCT","O&M","Hydro",1339.04838561628,0.006458
+"VEN","O&M","Hydro",1339.04838561628,16.142748
+"VNM","O&M","Hydro",1339.04838561628,14.167825
+"VUT","O&M","Hydro",229.806598407281,0.001347
+"WSM","O&M","Hydro",229.806598407281,0.01194
+"ZAF","O&M","Hydro",1339.04838561628,2.244923
+"ZMB","O&M","Hydro",190.47619047619,2.19855
+"ZWE","O&M","Hydro",190.47619047619,0.686911
+"ARG","Construction","Nuclear",1856.96601713261,0.149
+"ARM","Construction","Nuclear",1856.96601713261,0
+"BEL","Construction","Nuclear",1672.47386759582,0
+"BGR","Construction","Nuclear",1672.47386759582,0
+"BRA","Construction","Nuclear",1856.96601713261,0
+"CAN","Construction","Nuclear",1200.0000000126,0
+"CHE","Construction","Nuclear",1672.47386759582,0
+"CHN","Construction","Nuclear",1800,1.8776
+"CZE","Construction","Nuclear",1672.47386759582,0
+"DEU","Construction","Nuclear",1672.47386759582,0
+"DNK","Construction","Nuclear",1672.47386759582,0
+"ESP","Construction","Nuclear",1672.47386759582,0
+"FIN","Construction","Nuclear",1672.47386759582,0
+"FRA","Construction","Nuclear",1672.47386759582,0
+"GBR","Construction","Nuclear",1672.47386759582,0
+"GRC","Construction","Nuclear",1672.47386759582,0
+"HUN","Construction","Nuclear",1672.47386759582,0
+"IND","Construction","Nuclear",2290,0.247
+"IRN","Construction","Nuclear",1856.96601713261,0
+"JPN","Construction","Nuclear",1200,0
+"KOR","Construction","Nuclear",1200,0.62
+"MEX","Construction","Nuclear",1200.0000000126,0
+"NLD","Construction","Nuclear",1672.47386759582,0
+"NOR","Construction","Nuclear",1672.47386759582,0
+"PAK","Construction","Nuclear",1856.96601713261,0.065
+"POL","Construction","Nuclear",1672.47386759582,0
+"ROU","Construction","Nuclear",1672.47386759582,0
+"RUS","Construction","Nuclear",1856.96601713261,0.2
+"SVK","Construction","Nuclear",1672.47386759582,0
+"SVN","Construction","Nuclear",1672.47386759582,0
+"SWE","Construction","Nuclear",1672.47386759582,0
+"TWN","Construction","Nuclear",1800,0
+"UKR","Construction","Nuclear",1856.96601713261,0
+"USA","Construction","Nuclear",982.542524619517,0
+"ZAF","Construction","Nuclear",1856.96601713261,0
+"ARG","Extraction","Nuclear",30.4316793043234,90.3818300000001
+"ARM","Extraction","Nuclear",25.20163569213,25.96364
+"AUS","Extraction","Nuclear",5.48,0
+"BEL","Extraction","Nuclear",4.10013743106424,474.79635
+"BGR","Extraction","Nuclear",30.4316793043234,172.71383
+"BRA","Extraction","Nuclear",30.4316793043234,173.06184
+"CAN","Extraction","Nuclear",1.61,1103.37818
+"CHE","Extraction","Nuclear",4.10013743106424,232.01366
+"CHN","Extraction","Nuclear",36.45,2326.76729
+"CZE","Extraction","Nuclear",4.10013743106424,263.83572
+"DEU","Extraction","Nuclear",4.10013743106424,923.280000000001
+"ESP","Extraction","Nuclear",4.10013743106424,639.632720000002
+"FIN","Extraction","Nuclear",4.10013743106424,253.12363
+"FRA","Extraction","Nuclear",4.10013743106424,4398.49089
+"GBR","Extraction","Nuclear",4.10013743106424,782.46544
+"HUN","Extraction","Nuclear",4.10013743106424,175.98255
+"IND","Extraction","Nuclear",30.4316793043234,413.629089999998
+"IRN","Extraction","Nuclear",30.4316793043234,72.2182
+"JPN","Extraction","Nuclear",4.10013743106424,197.01816
+"KAZ","Extraction","Nuclear",3.17,0
+"KOR","Extraction","Nuclear",4.10013743106424,1767.21818
+"MEX","Extraction","Nuclear",4.10013743106424,115.27638
+"NLD","Extraction","Nuclear",4.10013743106424,43.1999899999999
+"PAK","Extraction","Nuclear",30.4316793043234,53.11638
+"ROU","Extraction","Nuclear",30.4316793043234,123.12001
+"RUS","Extraction","Nuclear",22.97,2159.51698
+"SVK","Extraction","Nuclear",4.10013743106424,163.14691
+"SVN","Extraction","Nuclear",4.10013743106424,62.34547
+"SWE","Extraction","Nuclear",4.10013743106424,688.374560000002
+"TWN","Extraction","Nuclear",36.45,345.39275
+"UKR","Extraction","Nuclear",30.62,889.429889999999
+"USA","Extraction","Nuclear",4.4,9162.74184000001
+"ZAF","Extraction","Nuclear",30.4316793043234,163.92
+"ARG","Manufacturing","Nuclear",130,0.149
+"ARM","Manufacturing","Nuclear",130,0
+"BEL","Manufacturing","Nuclear",130,0
+"BGR","Manufacturing","Nuclear",130,0
+"BRA","Manufacturing","Nuclear",130,0
+"CAN","Manufacturing","Nuclear",130,0
+"CHE","Manufacturing","Nuclear",130,0
+"CHN","Manufacturing","Nuclear",130,1.8776
+"CZE","Manufacturing","Nuclear",130,0
+"DEU","Manufacturing","Nuclear",130,0
+"ESP","Manufacturing","Nuclear",130,0
+"FIN","Manufacturing","Nuclear",130,0
+"FRA","Manufacturing","Nuclear",130,0
+"GBR","Manufacturing","Nuclear",130,0
+"HUN","Manufacturing","Nuclear",130,0
+"IND","Manufacturing","Nuclear",130,0.247
+"IRN","Manufacturing","Nuclear",130,0
+"JPN","Manufacturing","Nuclear",130,0
+"KOR","Manufacturing","Nuclear",130,0.62
+"MEX","Manufacturing","Nuclear",130,0
+"NLD","Manufacturing","Nuclear",130,0
+"PAK","Manufacturing","Nuclear",130,0.065
+"ROU","Manufacturing","Nuclear",130,0
+"RUS","Manufacturing","Nuclear",130,0.2
+"SVK","Manufacturing","Nuclear",130,0
+"SVN","Manufacturing","Nuclear",130,0
+"SWE","Manufacturing","Nuclear",130,0
+"TWN","Manufacturing","Nuclear",130,0
+"UKR","Manufacturing","Nuclear",130,0
+"USA","Manufacturing","Nuclear",130,0
+"ZAF","Manufacturing","Nuclear",130,0
+"ARG","O&M","Nuclear",1337.56729467914,1.763
+"ARM","O&M","Nuclear",2000,0.4075
+"BEL","O&M","Nuclear",837.665826705018,6.082
+"BGR","O&M","Nuclear",837.665826705018,2
+"BRA","O&M","Nuclear",1337.56729467914,2.007
+"CAN","O&M","Nuclear",1050,14.494
+"CHE","O&M","Nuclear",837.665826705018,3.397
+"CHN","O&M","Nuclear",362.5,20.272
+"CZE","O&M","Nuclear",837.665826705018,4.064
+"DEU","O&M","Nuclear",837.665826705018,12.689
+"ESP","O&M","Nuclear",837.665826705018,7.2648
+"FIN","O&M","Nuclear",837.665826705018,2.84
+"FRA","O&M","Nuclear",746.031746031746,65.882
+"GBR","O&M","Nuclear",1400,11.314
+"HUN","O&M","Nuclear",837.665826705018,2
+"IND","O&M","Nuclear",1390,5.73
+"IRN","O&M","Nuclear",1337.56729467914,1
+"JPN","O&M","Nuclear",600,2.36
+"KOR","O&M","Nuclear",600,20.907
+"MEX","O&M","Nuclear",690.1684656347,1.64
+"NLD","O&M","Nuclear",206.185567010309,0.515
+"PAK","O&M","Nuclear",1337.56729467914,0.75
+"ROU","O&M","Nuclear",837.665826705018,1.44
+"RUS","O&M","Nuclear",2000,25.266
+"SVK","O&M","Nuclear",837.665826705018,1.95
+"SVN","O&M","Nuclear",837.665826705018,0.727
+"SWE","O&M","Nuclear",837.665826705018,9.88
+"TWN","O&M","Nuclear",362.5,5.144
+"UKR","O&M","Nuclear",2000,13.88
+"USA","O&M","Nuclear",475.778581883233,103.0194
+"ZAF","O&M","Nuclear",1337.56729467914,1.93
+"ABW","Construction","Oil",NA,0
+"AFG","Construction","Oil",2166.08053451384,0.012
+"AGO","Construction","Oil",2166.08053451384,0.085252
+"AIA","Construction","Oil",NA,0
+"ALB","Construction","Oil",NA,0
+"ARE","Construction","Oil",2361.33333333333,0
+"ARG","Construction","Oil",2166.08053451384,0
+"ARM","Construction","Oil",1490,0
+"ASM","Construction","Oil",NA,0.0018
+"ATG","Construction","Oil",NA,0.006
+"AUS","Construction","Oil",1202.01492991397,0.05516
+"AUT","Construction","Oil",1202.01492991397,0
+"AZE","Construction","Oil",1490,0
+"BDI","Construction","Oil",NA,0
+"BEL","Construction","Oil",1202.01492991397,0
+"BEN","Construction","Oil",2166.08053451384,0
+"BFA","Construction","Oil",NA,0.01224
+"BGD","Construction","Oil",2166.08053451384,0.4817736
+"BGR","Construction","Oil",2166.08053451384,0
+"BHR","Construction","Oil",2361.33333333333,0
+"BHS","Construction","Oil",NA,0.012004
+"BLR","Construction","Oil",1490,0
+"BLZ","Construction","Oil",NA,0
+"BMU","Construction","Oil",NA,0
+"BOL","Construction","Oil",2166.08053451384,0
+"BRA","Construction","Oil",2166.08053451384,0.200614
+"BRB","Construction","Oil",NA,0
+"BRN","Construction","Oil",2166.08053451384,0.0012
+"BTN","Construction","Oil",NA,0
+"BWA","Construction","Oil",NA,0.018
+"CAF","Construction","Oil",NA,0
+"CAN","Construction","Oil",1700,0
+"CHE","Construction","Oil",1202.01492991397,0
+"CHL","Construction","Oil",1202.01492991397,0.026348
+"CHN","Construction","Oil",2166.08053451384,0.0134559999999999
+"CIV","Construction","Oil",2166.08053451384,0.02
+"CMR","Construction","Oil",2166.08053451384,0.02
+"COD","Construction","Oil",NA,0
+"COG","Construction","Oil",2166.08053451384,0
+"COK","Construction","Oil",NA,0
+"COL","Construction","Oil",2166.08053451384,0.008672
+"COM","Construction","Oil",NA,0
+"CPV","Construction","Oil",2166.08053451384,8.00000000000128e-06
+"CRI","Construction","Oil",2166.08053451384,0
+"CUB","Construction","Oil",2166.08053451384,0.0368
+"CYM","Construction","Oil",NA,0.00088
+"CYP","Construction","Oil",2166.08053451384,0.0466
+"CZE","Construction","Oil",1202.01492991397,0.004398
+"DEU","Construction","Oil",1202.01492991397,0.00535580000000004
+"DJI","Construction","Oil",NA,0.0114
+"DMA","Construction","Oil",NA,0
+"DNK","Construction","Oil",1202.01492991397,0
+"DOM","Construction","Oil",2166.08053451384,0.0441
+"DZA","Construction","Oil",2361.33333333333,0
+"ECU","Construction","Oil",2166.08053451384,0.06524
+"EGY","Construction","Oil",2361.33333333333,0.000800000000000019
+"ERI","Construction","Oil",NA,0
+"ESH","Construction","Oil",NA,0
+"ESP","Construction","Oil",1202.01492991397,0.016
+"EST","Construction","Oil",1202.01492991397,0
+"ETH","Construction","Oil",NA,0
+"FIN","Construction","Oil",1202.01492991397,0.0636
+"FJI","Construction","Oil",NA,0
+"FLK","Construction","Oil",NA,0
+"FRA","Construction","Oil",1202.01492991397,0.1222
+"FRO","Construction","Oil",NA,0
+"FSM","Construction","Oil",NA,0.00081
+"GAB","Construction","Oil",2166.08053451384,0
+"GBR","Construction","Oil",1202.01492991397,0
+"GEO","Construction","Oil",1490,0
+"GHA","Construction","Oil",2166.08053451384,0
+"GIB","Construction","Oil",NA,0
+"GIN","Construction","Oil",NA,0.0013
+"GLP","Construction","Oil",NA,0.00312
+"GMB","Construction","Oil",NA,0
+"GNB","Construction","Oil",NA,0.00346
+"GNQ","Construction","Oil",2166.08053451384,0
+"GRC","Construction","Oil",1202.01492991397,0.00957600000000003
+"GRD","Construction","Oil",NA,0
+"GRL","Construction","Oil",NA,0
+"GTM","Construction","Oil",NA,0
+"GUF","Construction","Oil",NA,0
+"GUM","Construction","Oil",2166.08053451384,0
+"GUY","Construction","Oil",NA,0.003396
+"HND","Construction","Oil",2166.08053451384,0
+"HRV","Construction","Oil",2166.08053451384,0
+"HTI","Construction","Oil",NA,0.0094
+"HUN","Construction","Oil",1202.01492991397,0
+"IDN","Construction","Oil",2727.27272727273,0.153813
+"IMN","Construction","Oil",2166.08053451384,0
+"IND","Construction","Oil",2300,0.049126
+"IRL","Construction","Oil",1202.01492991397,0
+"IRN","Construction","Oil",2361.33333333333,0.1988306
+"IRQ","Construction","Oil",2361.33333333333,0.7045
+"ISL","Construction","Oil",1202.01492991397,0
+"ISR","Construction","Oil",2361.33333333333,0.098
+"ITA","Construction","Oil",1202.01492991397,0.000799999999999759
+"JAM","Construction","Oil",NA,0.0132
+"JOR","Construction","Oil",2361.33333333333,0
+"JPN","Construction","Oil",1202.01492991397,0
+"KAZ","Construction","Oil",1490,0
+"KEN","Construction","Oil",2166.08053451384,0.054354
+"KHM","Construction","Oil",2166.08053451384,0
+"KIR","Construction","Oil",NA,0
+"KNA","Construction","Oil",NA,0.0016
+"KOR","Construction","Oil",1202.01492991397,0
+"KWT","Construction","Oil",2361.33333333333,0.15
+"LAO","Construction","Oil",NA,0
+"LBN","Construction","Oil",NA,0.0351560000000001
+"LBR","Construction","Oil",NA,0.0026
+"LBY","Construction","Oil",2361.33333333333,0.0700000000000001
+"LCA","Construction","Oil",NA,0.00278
+"LKA","Construction","Oil",NA,0
+"LSO","Construction","Oil",NA,0
+"LTU","Construction","Oil",2166.08053451384,0
+"LUX","Construction","Oil",1202.01492991397,0
+"LVA","Construction","Oil",2166.08053451384,0
+"MAR","Construction","Oil",2361.33333333333,0.06
+"MDA","Construction","Oil",1490,0
+"MDG","Construction","Oil",NA,0.000800000000000003
+"MDV","Construction","Oil",NA,0
+"MEX","Construction","Oil",1202.01492991397,0.0348600000000001
+"MHL","Construction","Oil",NA,0
+"MKD","Construction","Oil",2166.08053451384,0
+"MLI","Construction","Oil",NA,0
+"MLT","Construction","Oil",2166.08053451384,0.02976
+"MMR","Construction","Oil",2166.08053451384,0.00452
+"MNG","Construction","Oil",NA,0
+"MNP","Construction","Oil",NA,0
+"MOZ","Construction","Oil",2166.08053451384,0
+"MRT","Construction","Oil",NA,0.0096
+"MSR","Construction","Oil",NA,0
+"MTQ","Construction","Oil",2166.08053451384,0.0185
+"MUS","Construction","Oil",NA,0.0125
+"MWI","Construction","Oil",NA,0
+"MYS","Construction","Oil",2166.08053451384,0
+"MYT","Construction","Oil",NA,0
+"NAM","Construction","Oil",NA,0.004662
+"NCL","Construction","Oil",NA,0
+"NER","Construction","Oil",NA,0
+"NGA","Construction","Oil",2166.08053451384,0.034553
+"NIC","Construction","Oil",NA,0
+"NLD","Construction","Oil",1202.01492991397,0
+"NOR","Construction","Oil",1202.01492991397,0
+"NPL","Construction","Oil",NA,0
+"NRU","Construction","Oil",NA,0
+"NZL","Construction","Oil",1202.01492991397,0
+"OMN","Construction","Oil",2361.33333333333,0.008
+"PAK","Construction","Oil",2166.08053451384,0.1914424
+"PAN","Construction","Oil",NA,0.0166
+"PER","Construction","Oil",2166.08053451384,0.1188
+"PHL","Construction","Oil",2166.08053451384,0.0218106
+"PLW","Construction","Oil",NA,0.00294
+"PNG","Construction","Oil",NA,0.006
+"POL","Construction","Oil",1202.01492991397,0
+"PRK","Construction","Oil",NA,0
+"PRT","Construction","Oil",1202.01492991397,0
+"PSE","Construction","Oil",NA,0
+"PYF","Construction","Oil",NA,0.0016
+"QAT","Construction","Oil",2361.33333333333,0
+"REU","Construction","Oil",NA,0.0194
+"ROU","Construction","Oil",2166.08053451384,0
+"RUS","Construction","Oil",1490,0.00657440000000004
+"RWA","Construction","Oil",2166.08053451384,0
+"SAU","Construction","Oil",2361.33333333333,1.40552
+"SDN","Construction","Oil",2166.08053451384,0.115
+"SEN","Construction","Oil",NA,0.00679999999999999
+"SGP","Construction","Oil",2166.08053451384,0
+"SHN","Construction","Oil",NA,0.00116
+"SLB","Construction","Oil",NA,0.000600000000000001
+"SLE","Construction","Oil",NA,0.003
+"SLV","Construction","Oil",NA,0
+"SOM","Construction","Oil",NA,0
+"SPM","Construction","Oil",NA,0
+"SRB","Construction","Oil",2166.08053451384,0
+"SSD","Construction","Oil",NA,0.002736
+"STP","Construction","Oil",NA,0.00282
+"SUR","Construction","Oil",NA,0
+"SVK","Construction","Oil",1202.01492991397,0.012
+"SVN","Construction","Oil",1202.01492991397,0
+"SWE","Construction","Oil",1202.01492991397,0
+"SYC","Construction","Oil",NA,0
+"SYR","Construction","Oil",2361.33333333333,0
+"TCA","Construction","Oil",NA,0.00174
+"TCD","Construction","Oil",NA,0
+"TGO","Construction","Oil",NA,0
+"THA","Construction","Oil",2166.08053451384,0
+"TJK","Construction","Oil",1490,0
+"TKM","Construction","Oil",1490,0
+"TLS","Construction","Oil",NA,0.050625
+"TON","Construction","Oil",NA,0.000576
+"TTO","Construction","Oil",2166.08053451384,0
+"TUN","Construction","Oil",2361.33333333333,0
+"TUR","Construction","Oil",1490,0
+"TUV","Construction","Oil",NA,0
+"TWN","Construction","Oil",2166.08053451384,0
+"TZA","Construction","Oil",2166.08053451384,0.0296684
+"UGA","Construction","Oil",NA,0.01
+"UKR","Construction","Oil",1490,0
+"URY","Construction","Oil",NA,0.08
+"USA","Construction","Oil",1062.85714285714,0
+"UZB","Construction","Oil",1490,0
+"VCT","Construction","Oil",NA,0
+"VEN","Construction","Oil",2166.08053451384,0.260628
+"VGB","Construction","Oil",NA,0
+"VNM","Construction","Oil",2166.08053451384,0
+"VUT","Construction","Oil",NA,0
+"WSM","Construction","Oil",NA,0.00557
+"YEM","Construction","Oil",2361.33333333333,0.0108
+"ZAF","Construction","Oil",2166.08053451384,0
+"ZMB","Construction","Oil",NA,0.00996
+"AGO","Extraction","Oil",8.61314147309506,3639.37284
+"ALB","Extraction","Oil",14.3540669856459,44.2126100000002
+"ARE","Extraction","Oil",2.36003533774369,7833.62526000001
+"ARG","Extraction","Oil",7.3758140321065,1237.03461
+"AUS","Extraction","Oil",11.2958289441872,735.484690000001
+"AUT","Extraction","Oil",14.3540669856459,33.66003
+"AZE","Extraction","Oil",5.32874790925244,1728.34424
+"BGD","Extraction","Oil",7.3758140321065,13.70829
+"BGR","Extraction","Oil",14.3540669856459,0.977320000000001
+"BHR","Extraction","Oil",2.36003533774369,447.5057
+"BLR","Extraction","Oil",5.32874790925244,71.8570000000001
+"BOL","Extraction","Oil",7.3758140321065,137.66894
+"BRA","Extraction","Oil",3.34928229665072,5626.05194000002
+"BRN","Extraction","Oil",2.41626794258373,254.08814
+"CAN","Extraction","Oil",5.74162679425837,9379.24587
+"CHL","Extraction","Oil",11.2958289441872,10.74342
+"CHN","Extraction","Oil",58.3732057416268,8369.08067999999
+"CIV","Extraction","Oil",8.61314147309506,85.79808
+"CMR","Extraction","Oil",8.61314147309506,198.38754
+"COD","Extraction","Oil",8.61314147309506,41.9923500000001
+"COG","Extraction","Oil",8.61314147309506,549.275839999999
+"COL","Extraction","Oil",7.3758140321065,1945.62146
+"CUB","Extraction","Oil",7.3758140321065,112.27251
+"CZE","Extraction","Oil",14.3540669856459,7.92339999999998
+"DEU","Extraction","Oil",14.3540669856459,150.60581
+"DNK","Extraction","Oil",14.3540669856459,297.73201
+"DZA","Extraction","Oil",2.36003533774369,3043.00987
+"ECU","Extraction","Oil",7.3758140321065,1175.67576
+"EGY","Extraction","Oil",2.36003533774369,1453.26826
+"ESP","Extraction","Oil",14.3540669856459,6.01575999999998
+"FIN","Extraction","Oil",14.3540669856459,2.97501
+"FRA","Extraction","Oil",14.3540669856459,39.3129200000002
+"GAB","Extraction","Oil",10.5263157894737,484.44165
+"GBR","Extraction","Oil",14.3540669856459,2063.77969
+"GEO","Extraction","Oil",5.32874790925244,1.64102
+"GHA","Extraction","Oil",8.61314147309506,196.65789
+"GRC","Extraction","Oil",14.3540669856459,6.71578999999999
+"GTM","Extraction","Oil",7.3758140321065,20.80245
+"HRV","Extraction","Oil",14.3540669856459,31.85589
+"HUN","Extraction","Oil",14.3540669856459,41.5268200000001
+"IDN","Extraction","Oil",7.3758140321065,1784.78402
+"IND","Extraction","Oil",11.2200956937799,1725.46548
+"IRN","Extraction","Oil",2.36003533774369,9111.13436999999
+"IRQ","Extraction","Oil",4.78468899521531,9506.25474999998
+"ISR","Extraction","Oil",2.36003533774369,4.89186
+"ITA","Extraction","Oil",14.3540669856459,168.67755
+"JPN","Extraction","Oil",11.2958289441872,18.631
+"KAZ","Extraction","Oil",5.32874790925244,3403.98203
+"KGZ","Extraction","Oil",5.32874790925244,6.10116999999998
+"KOR","Extraction","Oil",11.2958289441872,28.85953
+"KWT","Extraction","Oil",2.36003533774369,6715.17519000001
+"LBY","Extraction","Oil",2.36003533774369,873.590389999999
+"LTU","Extraction","Oil",14.3540669856459,2.70848
+"MAR","Extraction","Oil",2.36003533774369,0.19469
+"MDA","Extraction","Oil",5.32874790925244,0.25246
+"MEX","Extraction","Oil",6.9377990430622,5220.34297999999
+"MMR","Extraction","Oil",2.41626794258373,25.43749
+"MNG","Extraction","Oil",5.32874790925244,47.6419299999998
+"MYS","Extraction","Oil",2.41626794258373,1472.94337
+"NER","Extraction","Oil",8.61314147309506,31.03051
+"NGA","Extraction","Oil",8.37320574162679,3862.78990999999
+"NLD","Extraction","Oil",14.3540669856459,67.8798799999999
+"NOR","Extraction","Oil",14.3540669856459,3821.67528000001
+"NZL","Extraction","Oil",11.2958289441872,76.7828999999999
+"OMN","Extraction","Oil",8.34928229665072,2120.85842
+"PAK","Extraction","Oil",7.3758140321065,195.36107
+"PER","Extraction","Oil",7.3758140321065,269.94732
+"PHL","Extraction","Oil",2.41626794258373,31.51798
+"POL","Extraction","Oil",14.3540669856459,42.9845699999999
+"PRT","Extraction","Oil",14.3540669856459,0.259
+"QAT","Extraction","Oil",2.36003533774369,3268.48529
+"ROU","Extraction","Oil",14.3540669856459,156.34193
+"RUS","Extraction","Oil",5.32874790925244,23042.65833
+"SAU","Extraction","Oil",0.92822966507177,24969.67352
+"SDN","Extraction","Oil",8.61314147309506,217.32959
+"SRB","Extraction","Oil",14.3540669856459,43.1208600000001
+"SSD","Extraction","Oil",8.61314147309506,251.08621
+"SUR","Extraction","Oil",7.3758140321065,31.95805
+"SVK","Extraction","Oil",14.3540669856459,9.46049
+"SYR","Extraction","Oil",2.36003533774369,45.9442599999998
+"THA","Extraction","Oil",2.41626794258373,843.569110000001
+"TJK","Extraction","Oil",5.32874790925244,1.05193
+"TKM","Extraction","Oil",5.32874790925244,505.357099999999
+"TTO","Extraction","Oil",7.3758140321065,192.31111
+"TUN","Extraction","Oil",2.36003533774369,104.96383
+"TUR","Extraction","Oil",5.32874790925244,113.90671
+"TWN","Extraction","Oil",58.3732057416268,0.33896
+"UKR","Extraction","Oil",5.32874790925244,96.45358
+"USA","Extraction","Oil",13.6363636363636,23452.21869
+"UZB","Extraction","Oil",5.32874790925244,106.76633
+"VEN","Extraction","Oil",7.3758140321065,5862.09580999999
+"VNM","Extraction","Oil",2.41626794258373,682.74441
+"YEM","Extraction","Oil",2.36003533774369,40.08677
+"ZAF","Extraction","Oil",7.3758140321065,10.69991
+"ABW","Manufacturing","Oil",1450,0
+"AFG","Manufacturing","Oil",1450,0.012
+"AGO","Manufacturing","Oil",1450,0.085252
+"AIA","Manufacturing","Oil",1450,0
+"ALB","Manufacturing","Oil",1450,0
+"ARE","Manufacturing","Oil",1450,0
+"ARG","Manufacturing","Oil",1450,0
+"ARM","Manufacturing","Oil",1450,0
+"ASM","Manufacturing","Oil",1450,0.0018
+"ATG","Manufacturing","Oil",1450,0.006
+"AUS","Manufacturing","Oil",1450,0.05516
+"AUT","Manufacturing","Oil",1450,0
+"AZE","Manufacturing","Oil",1450,0
+"BDI","Manufacturing","Oil",1450,0
+"BEL","Manufacturing","Oil",1450,0
+"BEN","Manufacturing","Oil",1450,0
+"BFA","Manufacturing","Oil",1450,0.01224
+"BGD","Manufacturing","Oil",1450,0.4817736
+"BGR","Manufacturing","Oil",1450,0
+"BHR","Manufacturing","Oil",1450,0
+"BHS","Manufacturing","Oil",1450,0.012004
+"BLR","Manufacturing","Oil",1450,0
+"BLZ","Manufacturing","Oil",1450,0
+"BMU","Manufacturing","Oil",1450,0
+"BOL","Manufacturing","Oil",1450,0
+"BRA","Manufacturing","Oil",1450,0.200614
+"BRB","Manufacturing","Oil",1450,0
+"BRN","Manufacturing","Oil",1450,0.0012
+"BTN","Manufacturing","Oil",1450,0
+"BWA","Manufacturing","Oil",1450,0.018
+"CAF","Manufacturing","Oil",1450,0
+"CAN","Manufacturing","Oil",1450,0
+"CHE","Manufacturing","Oil",1450,0
+"CHL","Manufacturing","Oil",1450,0.026348
+"CHN","Manufacturing","Oil",1450,0.0134559999999999
+"CIV","Manufacturing","Oil",1450,0.02
+"CMR","Manufacturing","Oil",1450,0.02
+"COD","Manufacturing","Oil",1450,0
+"COG","Manufacturing","Oil",1450,0
+"COK","Manufacturing","Oil",1450,0
+"COL","Manufacturing","Oil",1450,0.008672
+"COM","Manufacturing","Oil",1450,0
+"CPV","Manufacturing","Oil",1450,8.00000000000128e-06
+"CRI","Manufacturing","Oil",1450,0
+"CUB","Manufacturing","Oil",1450,0.0368
+"CYM","Manufacturing","Oil",1450,0.00088
+"CYP","Manufacturing","Oil",1450,0.0466
+"CZE","Manufacturing","Oil",1450,0.004398
+"DEU","Manufacturing","Oil",1450,0.00535580000000004
+"DJI","Manufacturing","Oil",1450,0.0114
+"DMA","Manufacturing","Oil",1450,0
+"DNK","Manufacturing","Oil",1450,0
+"DOM","Manufacturing","Oil",1450,0.0441
+"DZA","Manufacturing","Oil",1450,0
+"ECU","Manufacturing","Oil",1450,0.06524
+"EGY","Manufacturing","Oil",1450,0.000800000000000019
+"ERI","Manufacturing","Oil",1450,0
+"ESH","Manufacturing","Oil",1450,0
+"ESP","Manufacturing","Oil",1450,0.016
+"EST","Manufacturing","Oil",1450,0
+"ETH","Manufacturing","Oil",1450,0
+"FIN","Manufacturing","Oil",1450,0.0636
+"FJI","Manufacturing","Oil",1450,0
+"FLK","Manufacturing","Oil",1450,0
+"FRA","Manufacturing","Oil",1450,0.1222
+"FRO","Manufacturing","Oil",1450,0
+"FSM","Manufacturing","Oil",1450,0.00081
+"GAB","Manufacturing","Oil",1450,0
+"GBR","Manufacturing","Oil",1450,0
+"GEO","Manufacturing","Oil",1450,0
+"GHA","Manufacturing","Oil",1450,0
+"GIB","Manufacturing","Oil",1450,0
+"GIN","Manufacturing","Oil",1450,0.0013
+"GLP","Manufacturing","Oil",1450,0.00312
+"GMB","Manufacturing","Oil",1450,0
+"GNB","Manufacturing","Oil",1450,0.00346
+"GNQ","Manufacturing","Oil",1450,0
+"GRC","Manufacturing","Oil",1450,0.00957600000000003
+"GRD","Manufacturing","Oil",1450,0
+"GRL","Manufacturing","Oil",1450,0
+"GTM","Manufacturing","Oil",1450,0
+"GUF","Manufacturing","Oil",1450,0
+"GUM","Manufacturing","Oil",1450,0
+"GUY","Manufacturing","Oil",1450,0.003396
+"HND","Manufacturing","Oil",1450,0
+"HRV","Manufacturing","Oil",1450,0
+"HTI","Manufacturing","Oil",1450,0.0094
+"HUN","Manufacturing","Oil",1450,0
+"IDN","Manufacturing","Oil",1450,0.153813
+"IMN","Manufacturing","Oil",1450,0
+"IND","Manufacturing","Oil",1450,0.049126
+"IRL","Manufacturing","Oil",1450,0
+"IRN","Manufacturing","Oil",1450,0.1988306
+"IRQ","Manufacturing","Oil",1450,0.7045
+"ISL","Manufacturing","Oil",1450,0
+"ISR","Manufacturing","Oil",1450,0.098
+"ITA","Manufacturing","Oil",1450,0.000799999999999759
+"JAM","Manufacturing","Oil",1450,0.0132
+"JOR","Manufacturing","Oil",1450,0
+"JPN","Manufacturing","Oil",1450,0
+"KAZ","Manufacturing","Oil",1450,0
+"KEN","Manufacturing","Oil",1450,0.054354
+"KHM","Manufacturing","Oil",1450,0
+"KIR","Manufacturing","Oil",1450,0
+"KNA","Manufacturing","Oil",1450,0.0016
+"KOR","Manufacturing","Oil",1450,0
+"KWT","Manufacturing","Oil",1450,0.15
+"LAO","Manufacturing","Oil",1450,0
+"LBN","Manufacturing","Oil",1450,0.0351560000000001
+"LBR","Manufacturing","Oil",1450,0.0026
+"LBY","Manufacturing","Oil",1450,0.0700000000000001
+"LCA","Manufacturing","Oil",1450,0.00278
+"LKA","Manufacturing","Oil",1450,0
+"LSO","Manufacturing","Oil",1450,0
+"LTU","Manufacturing","Oil",1450,0
+"LUX","Manufacturing","Oil",1450,0
+"LVA","Manufacturing","Oil",1450,0
+"MAR","Manufacturing","Oil",1450,0.06
+"MDA","Manufacturing","Oil",1450,0
+"MDG","Manufacturing","Oil",1450,0.000800000000000003
+"MDV","Manufacturing","Oil",1450,0
+"MEX","Manufacturing","Oil",1450,0.0348600000000001
+"MHL","Manufacturing","Oil",1450,0
+"MKD","Manufacturing","Oil",1450,0
+"MLI","Manufacturing","Oil",1450,0
+"MLT","Manufacturing","Oil",1450,0.02976
+"MMR","Manufacturing","Oil",1450,0.00452
+"MNG","Manufacturing","Oil",1450,0
+"MNP","Manufacturing","Oil",1450,0
+"MOZ","Manufacturing","Oil",1450,0
+"MRT","Manufacturing","Oil",1450,0.0096
+"MSR","Manufacturing","Oil",1450,0
+"MTQ","Manufacturing","Oil",1450,0.0185
+"MUS","Manufacturing","Oil",1450,0.0125
+"MWI","Manufacturing","Oil",1450,0
+"MYS","Manufacturing","Oil",1450,0
+"MYT","Manufacturing","Oil",1450,0
+"NAM","Manufacturing","Oil",1450,0.004662
+"NCL","Manufacturing","Oil",1450,0
+"NER","Manufacturing","Oil",1450,0
+"NGA","Manufacturing","Oil",1450,0.034553
+"NIC","Manufacturing","Oil",1450,0
+"NLD","Manufacturing","Oil",1450,0
+"NOR","Manufacturing","Oil",1450,0
+"NPL","Manufacturing","Oil",1450,0
+"NRU","Manufacturing","Oil",1450,0
+"NZL","Manufacturing","Oil",1450,0
+"OMN","Manufacturing","Oil",1450,0.008
+"PAK","Manufacturing","Oil",1450,0.1914424
+"PAN","Manufacturing","Oil",1450,0.0166
+"PER","Manufacturing","Oil",1450,0.1188
+"PHL","Manufacturing","Oil",1450,0.0218106
+"PLW","Manufacturing","Oil",1450,0.00294
+"PNG","Manufacturing","Oil",1450,0.006
+"POL","Manufacturing","Oil",1450,0
+"PRK","Manufacturing","Oil",1450,0
+"PRT","Manufacturing","Oil",1450,0
+"PSE","Manufacturing","Oil",1450,0
+"PYF","Manufacturing","Oil",1450,0.0016
+"QAT","Manufacturing","Oil",1450,0
+"REU","Manufacturing","Oil",1450,0.0194
+"ROU","Manufacturing","Oil",1450,0
+"RUS","Manufacturing","Oil",1450,0.00657440000000004
+"RWA","Manufacturing","Oil",1450,0
+"SAU","Manufacturing","Oil",1450,1.40552
+"SDN","Manufacturing","Oil",1450,0.115
+"SEN","Manufacturing","Oil",1450,0.00679999999999999
+"SGP","Manufacturing","Oil",1450,0
+"SHN","Manufacturing","Oil",1450,0.00116
+"SLB","Manufacturing","Oil",1450,0.000600000000000001
+"SLE","Manufacturing","Oil",1450,0.003
+"SLV","Manufacturing","Oil",1450,0
+"SOM","Manufacturing","Oil",1450,0
+"SPM","Manufacturing","Oil",1450,0
+"SRB","Manufacturing","Oil",1450,0
+"SSD","Manufacturing","Oil",1450,0.002736
+"STP","Manufacturing","Oil",1450,0.00282
+"SUR","Manufacturing","Oil",1450,0
+"SVK","Manufacturing","Oil",1450,0.012
+"SVN","Manufacturing","Oil",1450,0
+"SWE","Manufacturing","Oil",1450,0
+"SYC","Manufacturing","Oil",1450,0
+"SYR","Manufacturing","Oil",1450,0
+"TCA","Manufacturing","Oil",1450,0.00174
+"TCD","Manufacturing","Oil",1450,0
+"TGO","Manufacturing","Oil",1450,0
+"THA","Manufacturing","Oil",1450,0
+"TJK","Manufacturing","Oil",1450,0
+"TKM","Manufacturing","Oil",1450,0
+"TLS","Manufacturing","Oil",1450,0.050625
+"TON","Manufacturing","Oil",1450,0.000576
+"TTO","Manufacturing","Oil",1450,0
+"TUN","Manufacturing","Oil",1450,0
+"TUR","Manufacturing","Oil",1450,0
+"TUV","Manufacturing","Oil",1450,0
+"TWN","Manufacturing","Oil",1450,0
+"TZA","Manufacturing","Oil",1450,0.0296684
+"UGA","Manufacturing","Oil",1450,0.01
+"UKR","Manufacturing","Oil",1450,0
+"URY","Manufacturing","Oil",1450,0.08
+"USA","Manufacturing","Oil",1450,0
+"UZB","Manufacturing","Oil",1450,0
+"VCT","Manufacturing","Oil",1450,0
+"VEN","Manufacturing","Oil",1450,0.260628
+"VGB","Manufacturing","Oil",1450,0
+"VNM","Manufacturing","Oil",1450,0
+"VUT","Manufacturing","Oil",1450,0
+"WSM","Manufacturing","Oil",1450,0.00557
+"YEM","Manufacturing","Oil",1450,0.0108
+"ZAF","Manufacturing","Oil",1450,0
+"ZMB","Manufacturing","Oil",1450,0.00996
+"ABW","O&M","Oil",NA,0.1775
+"AFG","O&M","Oil",487.851267380297,0.251986
+"AGO","O&M","Oil",487.851267380297,0.68742
+"AIA","O&M","Oil",NA,0.026047
+"ALB","O&M","Oil",NA,0.307
+"ARE","O&M","Oil",666.666666666667,1.558502
+"ARG","O&M","Oil",487.851267380297,2.898631
+"ARM","O&M","Oil",140,1.11
+"ASM","O&M","Oil",NA,0.03996
+"ATG","O&M","Oil",NA,0.0889
+"AUS","O&M","Oil",100,1.667514
+"AUT","O&M","Oil",233.025706768383,1.035931
+"AZE","O&M","Oil",140,2.49
+"BDI","O&M","Oil",NA,0.00605
+"BEL","O&M","Oil",233.025706768383,0.420876
+"BEN","O&M","Oil",487.851267380297,0.10618
+"BFA","O&M","Oil",NA,0.289081
+"BGD","O&M","Oil",487.851267380297,3.424968
+"BGR","O&M","Oil",487.851267380297,0.012
+"BHR","O&M","Oil",666.666666666667,0.0333
+"BHS","O&M","Oil",NA,0.675773
+"BLR","O&M","Oil",140,0.94
+"BLZ","O&M","Oil",NA,0.077204
+"BMU","O&M","Oil",NA,0.1898
+"BOL","O&M","Oil",487.851267380297,0.031925
+"BRA","O&M","Oil",487.851267380297,7.673887
+"BRB","O&M","Oil",NA,0.2495
+"BRN","O&M","Oil",487.851267380297,0.012
+"BTN","O&M","Oil",NA,0.007782
+"BWA","O&M","Oil",NA,0.16354
+"CAF","O&M","Oil",NA,0.007133
+"CAN","O&M","Oil",80,4.617014
+"CHE","O&M","Oil",233.025706768383,0.07098
+"CHL","O&M","Oil",233.025706768383,2.648447
+"CHN","O&M","Oil",770,8.93121
+"CIV","O&M","Oil",487.851267380297,0.210075
+"CMR","O&M","Oil",487.851267380297,0.32959
+"COD","O&M","Oil",NA,0.0172
+"COG","O&M","Oil",487.851267380297,0.03436
+"COK","O&M","Oil",NA,0.00862
+"COL","O&M","Oil",487.851267380297,0.28736
+"COM","O&M","Oil",NA,0.0135
+"CPV","O&M","Oil",487.851267380297,0.07422
+"CRI","O&M","Oil",487.851267380297,0.550901
+"CUB","O&M","Oil",487.851267380297,5.06525
+"CYM","O&M","Oil",NA,0.157
+"CYP","O&M","Oil",487.851267380297,2.0676
+"CZE","O&M","Oil",233.025706768383,0.09439
+"DEU","O&M","Oil",233.025706768383,3.101026
+"DJI","O&M","Oil",NA,0.169
+"DMA","O&M","Oil",NA,0.01865
+"DNK","O&M","Oil",233.025706768383,1.044546
+"DOM","O&M","Oil",487.851267380297,2.21258
+"DZA","O&M","Oil",666.666666666667,0.23874
+"ECU","O&M","Oil",487.851267380297,2.140667
+"EGY","O&M","Oil",666.666666666667,1.41927
+"ERI","O&M","Oil",NA,0.14669
+"ESH","O&M","Oil",NA,0.22858
+"ESP","O&M","Oil",233.025706768383,7.079562
+"EST","O&M","Oil",233.025706768383,1.728
+"ETH","O&M","Oil",NA,0.14362
+"FIN","O&M","Oil",233.025706768383,1.27552
+"FJI","O&M","Oil",NA,0.077988
+"FLK","O&M","Oil",NA,0.006476
+"FRA","O&M","Oil",233.025706768383,6.563612
+"FRO","O&M","Oil",NA,0.062418
+"FSM","O&M","Oil",NA,0.033729
+"GAB","O&M","Oil",487.851267380297,0.121897
+"GBR","O&M","Oil",233.025706768383,2.495394
+"GEO","O&M","Oil",140,0.42
+"GHA","O&M","Oil",487.851267380297,0.4686
+"GIB","O&M","Oil",NA,0.042941
+"GIN","O&M","Oil",NA,0.0791
+"GLP","O&M","Oil",NA,0.493638
+"GMB","O&M","Oil",NA,0.06
+"GNB","O&M","Oil",NA,0.027287
+"GNQ","O&M","Oil",487.851267380297,0.03234
+"GRC","O&M","Oil",233.025706768383,2.677847
+"GRD","O&M","Oil",NA,0.04265
+"GRL","O&M","Oil",NA,0.095834
+"GTM","O&M","Oil",NA,0.93795
+"GUF","O&M","Oil",NA,0.113226
+"GUM","O&M","Oil",100,0.535135
+"GUY","O&M","Oil",NA,0.112564
+"HND","O&M","Oil",487.851267380297,0.525215
+"HRV","O&M","Oil",487.851267380297,1.1388
+"HTI","O&M","Oil",NA,0.35882
+"HUN","O&M","Oil",233.025706768383,0.21494
+"IDN","O&M","Oil",71.0227272727273,7.718642
+"IMN","O&M","Oil",487.851267380297,0.11844
+"IND","O&M","Oil",310,3.513294
+"IRL","O&M","Oil",233.025706768383,1.50566
+"IRN","O&M","Oil",666.666666666667,10.992251
+"IRQ","O&M","Oil",666.666666666667,10.113348
+"ISL","O&M","Oil",233.025706768383,0.034
+"ISR","O&M","Oil",666.666666666667,3.62205
+"ITA","O&M","Oil",233.025706768383,13.134835
+"JAM","O&M","Oil",NA,1.0106
+"JOR","O&M","Oil",666.666666666667,0.70666
+"JPN","O&M","Oil",233.025706768383,34.062451
+"KAZ","O&M","Oil",140,0.8765
+"KEN","O&M","Oil",487.851267380297,0.830618
+"KHM","O&M","Oil",487.851267380297,0.28431
+"KIR","O&M","Oil",NA,0.0089
+"KNA","O&M","Oil",NA,0.051873
+"KOR","O&M","Oil",233.025706768383,1.86662
+"KWT","O&M","Oil",666.666666666667,9.95562
+"LAO","O&M","Oil",NA,0.008729
+"LBN","O&M","Oil",NA,2.23636
+"LBR","O&M","Oil",NA,0.0289
+"LBY","O&M","Oil",666.666666666667,5.583023
+"LCA","O&M","Oil",NA,0.0883
+"LKA","O&M","Oil",NA,1.42416
+"LSO","O&M","Oil",NA,0.00132
+"LTU","O&M","Oil",487.851267380297,0.81
+"LUX","O&M","Oil",233.025706768383,8e-04
+"LVA","O&M","Oil",487.851267380297,0.01525
+"MAR","O&M","Oil",666.666666666667,1.605515
+"MDA","O&M","Oil",140,0.42
+"MDG","O&M","Oil",NA,0.216311
+"MDV","O&M","Oil",NA,0.047923
+"MEX","O&M","Oil",233.025706768383,14.655223
+"MHL","O&M","Oil",NA,0.0296
+"MKD","O&M","Oil",487.851267380297,0.21
+"MLI","O&M","Oil",NA,0.2278
+"MLT","O&M","Oil",487.851267380297,0.7275
+"MMR","O&M","Oil",487.851267380297,0.05881
+"MNG","O&M","Oil",NA,0.03755
+"MNP","O&M","Oil",NA,0.0788
+"MOZ","O&M","Oil",487.851267380297,0.033226
+"MRT","O&M","Oil",NA,0.136699
+"MSR","O&M","Oil",NA,0.005607
+"MTQ","O&M","Oil",487.851267380297,0.478269
+"MUS","O&M","Oil",NA,0.474832
+"MWI","O&M","Oil",NA,0.00402
+"MYS","O&M","Oil",487.851267380297,3.796018
+"MYT","O&M","Oil",NA,0.07856
+"NAM","O&M","Oil",NA,0.04891
+"NCL","O&M","Oil",NA,0.109502
+"NER","O&M","Oil",NA,0.05528
+"NGA","O&M","Oil",487.851267380297,0.985935
+"NIC","O&M","Oil",NA,0.776221
+"NLD","O&M","Oil",233.025706768383,0.00648
+"NOR","O&M","Oil",233.025706768383,0.0784
+"NPL","O&M","Oil",NA,0.051798
+"NRU","O&M","Oil",NA,0.004
+"NZL","O&M","Oil",100,0.25278
+"OMN","O&M","Oil",666.666666666667,0.106266
+"PAK","O&M","Oil",487.851267380297,6.734861
+"PAN","O&M","Oil",NA,0.820961
+"PER","O&M","Oil",487.851267380297,1.373842
+"PHL","O&M","Oil",487.851267380297,3.841182
+"PLW","O&M","Oil",NA,0.04468
+"PNG","O&M","Oil",NA,0.15562
+"POL","O&M","Oil",233.025706768383,0.004
+"PRK","O&M","Oil",NA,0.3298
+"PRT","O&M","Oil",233.025706768383,0.990769
+"PSE","O&M","Oil",NA,0.15548
+"PYF","O&M","Oil",NA,0.198065
+"QAT","O&M","Oil",666.666666666667,0.014253
+"REU","O&M","Oil",NA,0.322
+"ROU","O&M","Oil",487.851267380297,1.227
+"RUS","O&M","Oil",140,2.680972
+"RWA","O&M","Oil",487.851267380297,0.0475
+"SAU","O&M","Oil",666.666666666667,39.094477
+"SDN","O&M","Oil",487.851267380297,1.89345
+"SEN","O&M","Oil",NA,0.7208
+"SGP","O&M","Oil",487.851267380297,3.51884
+"SHN","O&M","Oil",NA,0.0078
+"SLB","O&M","Oil",NA,0.039088
+"SLE","O&M","Oil",NA,0.07408
+"SLV","O&M","Oil",NA,0.615148
+"SOM","O&M","Oil",NA,0.0018
+"SPM","O&M","Oil",NA,0.020572
+"SRB","O&M","Oil",487.851267380297,0.277
+"SSD","O&M","Oil",NA,0.03189
+"STP","O&M","Oil",NA,0.02917
+"SUR","O&M","Oil",NA,0.1018
+"SVK","O&M","Oil",233.025706768383,0.092
+"SVN","O&M","Oil",233.025706768383,0.1862
+"SWE","O&M","Oil",233.025706768383,3.147898
+"SYC","O&M","Oil",NA,0.085326
+"SYR","O&M","Oil",666.666666666667,1.16768
+"TCA","O&M","Oil",NA,0.05965
+"TCD","O&M","Oil",NA,0.06045
+"TGO","O&M","Oil",NA,0.221234
+"THA","O&M","Oil",487.851267380297,1.292815
+"TJK","O&M","Oil",140,0.162
+"TKM","O&M","Oil",140,0.01
+"TLS","O&M","Oil",NA,0.273175
+"TON","O&M","Oil",NA,0.019438
+"TTO","O&M","Oil",487.851267380297,0.012875
+"TUN","O&M","Oil",666.666666666667,1.311
+"TUR","O&M","Oil",140,2.161452
+"TUV","O&M","Oil",NA,0.002555
+"TWN","O&M","Oil",770,4.78542
+"TZA","O&M","Oil",487.851267380297,0.368811
+"UGA","O&M","Oil",NA,0.272819
+"UKR","O&M","Oil",140,3.4173
+"URY","O&M","Oil",NA,1.25242
+"USA","O&M","Oil",243.127572016461,59.578325
+"UZB","O&M","Oil",140,0.31
+"VCT","O&M","Oil",NA,0.03852
+"VEN","O&M","Oil",487.851267380297,5.70394
+"VGB","O&M","Oil",NA,0.062928
+"VNM","O&M","Oil",487.851267380297,1.5306
+"VUT","O&M","Oil",NA,0.02457
+"WSM","O&M","Oil",NA,0.044435
+"YEM","O&M","Oil",666.666666666667,1.07381
+"ZAF","O&M","Oil",487.851267380297,2.732
+"ZMB","O&M","Oil",NA,0.185264
+"AGO","Refinery","Oil",5.86283456712298,85.55235
+"ARE","Refinery","Oil",2.49861390182358,1550.91055
+"ARG","Refinery","Oil",5.86283456712298,1383.26084875
+"AUS","Refinery","Oil",2.48514057650522,1478.8447602
+"AZE","Refinery","Oil",7.91555516931741,875.2180897
+"BEL","Refinery","Oil",1.54353014942252,1622.90833665
+"BLR","Refinery","Oil",7.91555516931741,1082.17799895
+"BRA","Refinery","Oil",5.86283456712298,4611.0523
+"CAN","Refinery","Oil",4.36479874379742,4496.30688431745
+"CHN","Refinery","Oil",8.05052549659386,25857.1235
+"COL","Refinery","Oil",5.86283456712298,638.0231025
+"DEU","Refinery","Oil",1.54353014942252,5302.4074213
+"DZA","Refinery","Oil",2.49861390182358,1427.678505
+"ECU","Refinery","Oil",5.86283456712298,418.46725495
+"EGY","Refinery","Oil",2.49861390182358,1593.1383125
+"ESP","Refinery","Oil",1.54353014942252,2833.098975
+"FRA","Refinery","Oil",1.54353014942252,3308.93017745
+"GBR","Refinery","Oil",1.54353014942252,3343.97154255
+"IDN","Refinery","Oil",5.86283456712298,2219.58991125
+"IND","Refinery","Oil",3.89277004079958,9474.3670178
+"IRN","Refinery","Oil",2.49861390182358,3762.10975
+"IRQ","Refinery","Oil",5.62791649184951,1820.7295
+"ITA","Refinery","Oil",1.54353014942252,4641.16892085
+"JPN","Refinery","Oil",2.48514057650522,9519.782905
+"KAZ","Refinery","Oil",7.91555516931741,757.01325945
+"KOR","Refinery","Oil",2.48514057650522,6489.913525
+"KWT","Refinery","Oil",1.92279931527305,2053.2564
+"LBY","Refinery","Oil",2.49861390182358,833.587
+"MEX","Refinery","Oil",13.6828503249765,3707.2685
+"MYS","Refinery","Oil",1.83815014451536,0
+"NGA","Refinery","Oil",5.86283456712298,976.17425
+"NLD","Refinery","Oil",1.54353014942252,2624.85797415
+"NOR","Refinery","Oil",1.54353014942252,0
+"OMN","Refinery","Oil",1.58560429857325,0
+"POL","Refinery","Oil",1.54353014942252,1081.3597675
+"QAT","Refinery","Oil",2.49861390182358,300.53005
+"ROU","Refinery","Oil",1.54353014942252,1013.00343985
+"RUS","Refinery","Oil",7.91555516931741,12622.2621
+"SAU","Refinery","Oil",1.6775693478905,5499.48055
+"SGP","Refinery","Oil",1.83815014451536,2949.362425
+"TTO","Refinery","Oil",5.86283456712298,368.5332
+"TUR","Refinery","Oil",2.50723679711896,0
+"TWN","Refinery","Oil",8.05052549659386,2873.6815
+"UKR","Refinery","Oil",7.91555516931741,1929.88333035
+"USA","Refinery","Oil",1.80318444398858,39080.7887708333
+"VEN","Refinery","Oil",5.86283456712298,4069.21416905
+"ZAF","Refinery","Oil",5.86283456712298,1062.92652655
+"ARE","Construction","Solar (CSP)",5100,0
+"AUS","Construction","Solar (CSP)",7655.16666666238,0
+"BHR","Construction","Solar (CSP)",5100,0
+"CHN","Construction","Solar (CSP)",7866.66666664726,0
+"DEU","Construction","Solar (CSP)",6000,0
+"DZA","Construction","Solar (CSP)",5999.99999997429,0
+"EGY","Construction","Solar (CSP)",5100,0
+"ESP","Construction","Solar (CSP)",13186,0
+"IND","Construction","Solar (CSP)",7866.66666664726,0
+"IRN","Construction","Solar (CSP)",5100,0
+"IRQ","Construction","Solar (CSP)",5100,0
+"ISR","Construction","Solar (CSP)",5999.99999997429,0
+"ITA","Construction","Solar (CSP)",9593,0
+"KWT","Construction","Solar (CSP)",5100,0
+"LBY","Construction","Solar (CSP)",5100,0
+"MAR","Construction","Solar (CSP)",6000,0.35
+"MEX","Construction","Solar (CSP)",7655.16666666238,0
+"OMN","Construction","Solar (CSP)",5100,0
+"QAT","Construction","Solar (CSP)",5100,0
+"SAU","Construction","Solar (CSP)",5100,0
+"THA","Construction","Solar (CSP)",24000,0
+"TUR","Construction","Solar (CSP)",6000,0
+"USA","Construction","Solar (CSP)",5152,0
+"ZAF","Construction","Solar (CSP)",14400,0.1
+"ARE","Manufacturing","Solar (CSP)",5100,0
+"AUS","Manufacturing","Solar (CSP)",4220,0
+"BHR","Manufacturing","Solar (CSP)",5100,0
+"CHN","Manufacturing","Solar (CSP)",8766.66666659741,0
+"DEU","Manufacturing","Solar (CSP)",4000,0
+"DZA","Manufacturing","Solar (CSP)",5100,0
+"EGY","Manufacturing","Solar (CSP)",5100,0
+"ESP","Manufacturing","Solar (CSP)",4000,0
+"IND","Manufacturing","Solar (CSP)",8766.66666659741,0
+"IRN","Manufacturing","Solar (CSP)",5100,0
+"IRQ","Manufacturing","Solar (CSP)",5100,0
+"ISR","Manufacturing","Solar (CSP)",5100,0
+"ITA","Manufacturing","Solar (CSP)",4000,0
+"KWT","Manufacturing","Solar (CSP)",5100,0
+"LBY","Manufacturing","Solar (CSP)",5100,0
+"MAR","Manufacturing","Solar (CSP)",5100,0.35
+"MEX","Manufacturing","Solar (CSP)",4220,0
+"OMN","Manufacturing","Solar (CSP)",5100,0
+"QAT","Manufacturing","Solar (CSP)",5100,0
+"SAU","Manufacturing","Solar (CSP)",5100,0
+"THA","Manufacturing","Solar (CSP)",8766.66666659741,0
+"TUR","Manufacturing","Solar (CSP)",4000,0
+"USA","Manufacturing","Solar (CSP)",4220,0
+"ZAF","Manufacturing","Solar (CSP)",21600,0.1
+"ARE","O&M","Solar (CSP)",500,0.1
+"AUS","O&M","Solar (CSP)",687.109205530934,0.006
+"BHR","O&M","Solar (CSP)",500,0
+"CHN","O&M","Solar (CSP)",700.534134006953,0.014
+"DEU","O&M","Solar (CSP)",100,0.002
+"DZA","O&M","Solar (CSP)",780.142857138983,0.025
+"EGY","O&M","Solar (CSP)",500,0.02
+"ESP","O&M","Solar (CSP)",989,2.304
+"IND","O&M","Solar (CSP)",700.534134006953,0.229
+"IRN","O&M","Solar (CSP)",500,0
+"IRQ","O&M","Solar (CSP)",500,0
+"ISR","O&M","Solar (CSP)",780.142857138983,0.006
+"ITA","O&M","Solar (CSP)",988.228967909416,0.006
+"KWT","O&M","Solar (CSP)",500,0
+"LBY","O&M","Solar (CSP)",500,0
+"MAR","O&M","Solar (CSP)",870,0.53
+"MEX","O&M","Solar (CSP)",687.109205530934,0.014
+"OMN","O&M","Solar (CSP)",500,0
+"QAT","O&M","Solar (CSP)",500,0
+"SAU","O&M","Solar (CSP)",500,0.05
+"THA","O&M","Solar (CSP)",2000,0.005
+"TUR","O&M","Solar (CSP)",300,0.001
+"USA","O&M","Solar (CSP)",291,1.758
+"ZAF","O&M","Solar (CSP)",540,0.4
+"ABW","Construction","Solar (PV)",13541.5676341954,0
+"AFG","Construction","Solar (PV)",13541.5676341954,0
+"AGO","Construction","Solar (PV)",6153,0
+"AIA","Construction","Solar (PV)",13541.5676341954,0
+"ALB","Construction","Solar (PV)",9697.53846150562,0
+"ARE","Construction","Solar (PV)",15400,0.239
+"ARG","Construction","Solar (PV)",13541.5676341954,0.182
+"ARM","Construction","Solar (PV)",3460,0.015
+"ATG","Construction","Solar (PV)",13541.5676341954,0.004
+"AUS","Construction","Solar (PV)",8700,3.775
+"AUT","Construction","Solar (PV)",9697.53846150562,0.162
+"AZE","Construction","Solar (PV)",3460,0.008
+"BDI","Construction","Solar (PV)",6153,0
+"BEL","Construction","Solar (PV)",9697.53846150562,0.416
+"BEN","Construction","Solar (PV)",6153,0
+"BES","Construction","Solar (PV)",13541.5676341954,0
+"BFA","Construction","Solar (PV)",6153,0.015
+"BGD","Construction","Solar (PV)",13541.5676341954,0.000999999999999997
+"BGR","Construction","Solar (PV)",9697.53846150562,0
+"BHR","Construction","Solar (PV)",15400,0
+"BHS","Construction","Solar (PV)",13541.5676341954,0
+"BIH","Construction","Solar (PV)",9697.53846150562,0.002
+"BLR","Construction","Solar (PV)",3460,0.000999999999999997
+"BLZ","Construction","Solar (PV)",13541.5676341954,0
+"BOL","Construction","Solar (PV)",13541.5676341954,0.063
+"BRA","Construction","Solar (PV)",13541.5676341954,1.199
+"BRB","Construction","Solar (PV)",13541.5676341954,0.005
+"BRN","Construction","Solar (PV)",13541.5676341954,0
+"BTN","Construction","Solar (PV)",13541.5676341954,0
+"BWA","Construction","Solar (PV)",6153,0
+"CAN","Construction","Solar (PV)",12500,0.24
+"CHE","Construction","Solar (PV)",9697.53846150562,0.34
+"CHL","Construction","Solar (PV)",10995.520824408,0.328
+"CHN","Construction","Solar (PV)",14939.4499566152,44.216
+"CIV","Construction","Solar (PV)",6153,0
+"CMR","Construction","Solar (PV)",6153,0.002
+"COD","Construction","Solar (PV)",6153,0.002
+"COG","Construction","Solar (PV)",6153,0
+"COK","Construction","Solar (PV)",8700,0.002
+"COL","Construction","Solar (PV)",13541.5676341954,0.075
+"CPV","Construction","Solar (PV)",6153,0.002
+"CRI","Construction","Solar (PV)",13541.5676341954,0
+"CUB","Construction","Solar (PV)",13541.5676341954,0.03
+"CUW","Construction","Solar (PV)",13541.5676341954,0
+"CYM","Construction","Solar (PV)",13541.5676341954,0.000999999999999999
+"CYP","Construction","Solar (PV)",9697.53846150562,0.00300000000000001
+"CZE","Construction","Solar (PV)",9697.53846150562,0.00800000000000019
+"DEU","Construction","Solar (PV)",9697.53846150562,3.593
+"DMA","Construction","Solar (PV)",13541.5676341954,0
+"DNK","Construction","Solar (PV)",9697.53846150562,0.092
+"DOM","Construction","Solar (PV)",13541.5676341954,0.063
+"DZA","Construction","Solar (PV)",15400,0.01
+"ECU","Construction","Solar (PV)",13541.5676341954,0
+"EGY","Construction","Solar (PV)",15400,0.581
+"ERI","Construction","Solar (PV)",6153,0
+"ESP","Construction","Solar (PV)",6060,0.0189999999999999
+"EST","Construction","Solar (PV)",9697.53846150562,0
+"ETH","Construction","Solar (PV)",6153,0
+"FIN","Construction","Solar (PV)",9697.53846150562,0.051
+"FJI","Construction","Solar (PV)",8700,0.003
+"FRA","Construction","Solar (PV)",9697.53846150562,0.873000000000001
+"FSM","Construction","Solar (PV)",8700,0.001
+"GAB","Construction","Solar (PV)",6153,0
+"GBR","Construction","Solar (PV)",9697.53846150562,0.332000000000001
+"GHA","Construction","Solar (PV)",6153,0.025
+"GIN","Construction","Solar (PV)",6153,0
+"GLP","Construction","Solar (PV)",13541.5676341954,0
+"GMB","Construction","Solar (PV)",6153,0
+"GNB","Construction","Solar (PV)",6153,0
+"GRC","Construction","Solar (PV)",11200,0.046
+"GRD","Construction","Solar (PV)",13541.5676341954,0
+"GTM","Construction","Solar (PV)",13541.5676341954,0.015
+"GUF","Construction","Solar (PV)",13541.5676341954,0.002
+"GUM","Construction","Solar (PV)",8700,0
+"GUY","Construction","Solar (PV)",13541.5676341954,0
+"HND","Construction","Solar (PV)",13541.5676341954,0.065
+"HRV","Construction","Solar (PV)",9697.53846150562,0.001
+"HTI","Construction","Solar (PV)",13541.5676341954,0.001
+"HUN","Construction","Solar (PV)",9697.53846150562,0.321
+"IDN","Construction","Solar (PV)",13541.5676341954,0.000999999999999997
+"IND","Construction","Solar (PV)",8270,9.225
+"IRL","Construction","Solar (PV)",9697.53846150562,0.013
+"IRN","Construction","Solar (PV)",15400,0.175
+"IRQ","Construction","Solar (PV)",15400,0
+"ISR","Construction","Solar (PV)",15400,0.101
+"ITA","Construction","Solar (PV)",9697.53846150562,0.438000000000001
+"JAM","Construction","Solar (PV)",13541.5676341954,0
+"JOR","Construction","Solar (PV)",15400,0.376
+"JPN","Construction","Solar (PV)",10600,6.46
+"KAZ","Construction","Solar (PV)",3460,0.15
+"KEN","Construction","Solar (PV)",6153,0.055
+"KHM","Construction","Solar (PV)",13541.5676341954,0
+"KIR","Construction","Solar (PV)",8700,0
+"KNA","Construction","Solar (PV)",13541.5676341954,0
+"KOR","Construction","Solar (PV)",10600,2.027
+"KWT","Construction","Solar (PV)",15400,0
+"LAO","Construction","Solar (PV)",13541.5676341954,0
+"LBN","Construction","Solar (PV)",15400,0.006
+"LBR","Construction","Solar (PV)",6153,0.001
+"LBY","Construction","Solar (PV)",15400,0
+"LCA","Construction","Solar (PV)",13541.5676341954,0.003
+"LKA","Construction","Solar (PV)",13541.5676341954,0.029
+"LTU","Construction","Solar (PV)",9697.53846150562,0.01
+"LUX","Construction","Solar (PV)",9697.53846150562,0.00600000000000001
+"LVA","Construction","Solar (PV)",9697.53846150562,0
+"MAR","Construction","Solar (PV)",15400,0.18
+"MDA","Construction","Solar (PV)",3460,0
+"MDG","Construction","Solar (PV)",6153,0.02
+"MDV","Construction","Solar (PV)",13541.5676341954,0
+"MEX","Construction","Solar (PV)",10995.520824408,1.867
+"MHL","Construction","Solar (PV)",8700,0
+"MKD","Construction","Solar (PV)",9697.53846150562,0.004
+"MLI","Construction","Solar (PV)",6153,0
+"MLT","Construction","Solar (PV)",9697.53846150562,0.015
+"MMR","Construction","Solar (PV)",13541.5676341954,0
+"MNE","Construction","Solar (PV)",9697.53846150562,0
+"MNG","Construction","Solar (PV)",3460,0.015
+"MOZ","Construction","Solar (PV)",6153,0.002
+"MRT","Construction","Solar (PV)",6153,0.000999999999999997
+"MTQ","Construction","Solar (PV)",13541.5676341954,0
+"MUS","Construction","Solar (PV)",6153,0.000999999999999997
+"MWI","Construction","Solar (PV)",6153,0.004
+"MYS","Construction","Solar (PV)",13541.5676341954,0.121
+"MYT","Construction","Solar (PV)",6153,0
+"NAM","Construction","Solar (PV)",6153,0.033
+"NCL","Construction","Solar (PV)",8700,0.005
+"NER","Construction","Solar (PV)",6153,0.011
+"NGA","Construction","Solar (PV)",6153,0
+"NIC","Construction","Solar (PV)",13541.5676341954,0
+"NLD","Construction","Solar (PV)",9697.53846150562,1.247
+"NOR","Construction","Solar (PV)",9697.53846150562,0.023
+"NPL","Construction","Solar (PV)",13541.5676341954,0
+"NRU","Construction","Solar (PV)",8700,0
+"NZL","Construction","Solar (PV)",8700,0.02
+"OMN","Construction","Solar (PV)",15400,0
+"PAK","Construction","Solar (PV)",13541.5676341954,0.826
+"PAN","Construction","Solar (PV)",13541.5676341954,0
+"PER","Construction","Solar (PV)",13541.5676341954,0.192
+"PHL","Construction","Solar (PV)",13541.5676341954,0
+"PLW","Construction","Solar (PV)",8700,0
+"PNG","Construction","Solar (PV)",8700,0.001
+"POL","Construction","Solar (PV)",9697.53846150562,0.2
+"PRI","Construction","Solar (PV)",13541.5676341954,0
+"PRK","Construction","Solar (PV)",10600,0
+"PRT","Construction","Solar (PV)",9697.53846150562,0.091
+"PSE","Construction","Solar (PV)",15400,0.001
+"PYF","Construction","Solar (PV)",8700,0
+"QAT","Construction","Solar (PV)",15400,0
+"REU","Construction","Solar (PV)",6153,0.00199999999999999
+"ROU","Construction","Solar (PV)",9697.53846150562,0.00299999999999996
+"RUS","Construction","Solar (PV)",3460,0.31
+"RWA","Construction","Solar (PV)",6153,0.003
+"SAU","Construction","Solar (PV)",15400,0
+"SDN","Construction","Solar (PV)",6153,0.005
+"SEN","Construction","Solar (PV)",6153,0.021
+"SGP","Construction","Solar (PV)",13541.5676341954,0.034
+"SLB","Construction","Solar (PV)",8700,0
+"SLE","Construction","Solar (PV)",6153,0
+"SLV","Construction","Solar (PV)",13541.5676341954,0.065
+"SOM","Construction","Solar (PV)",6153,0
+"SRB","Construction","Solar (PV)",9697.53846150562,0
+"SSD","Construction","Solar (PV)",6153,0
+"SUR","Construction","Solar (PV)",13541.5676341954,0.001
+"SVK","Construction","Solar (PV)",9697.53846150562,0.00300000000000007
+"SVN","Construction","Solar (PV)",9697.53846150562,0.009
+"SWE","Construction","Solar (PV)",9697.53846150562,0.13
+"SWZ","Construction","Solar (PV)",6153,0
+"SYC","Construction","Solar (PV)",6153,0.001
+"SYR","Construction","Solar (PV)",15400,0
+"TGO","Construction","Solar (PV)",6153,0
+"THA","Construction","Solar (PV)",13541.5676341954,0.023
+"TKL","Construction","Solar (PV)",8700,0
+"TLS","Construction","Solar (PV)",8700,0
+"TON","Construction","Solar (PV)",8700,0
+"TTO","Construction","Solar (PV)",13541.5676341954,0
+"TUN","Construction","Solar (PV)",15400,0
+"TUR","Construction","Solar (PV)",3460,1.642
+"TUV","Construction","Solar (PV)",8700,0
+"TWN","Construction","Solar (PV)",14939.4499566152,0.85
+"TZA","Construction","Solar (PV)",6153,0.003
+"UGA","Construction","Solar (PV)",6153,0.002
+"UKR","Construction","Solar (PV)",3460,0.803
+"URY","Construction","Solar (PV)",13541.5676341954,0.00900000000000003
+"USA","Construction","Solar (PV)",15100,8.419
+"UZB","Construction","Solar (PV)",3460,0
+"VCT","Construction","Solar (PV)",13541.5676341954,0
+"VEN","Construction","Solar (PV)",13541.5676341954,0
+"VIR","Construction","Solar (PV)",13541.5676341954,0
+"VNM","Construction","Solar (PV)",13541.5676341954,0.098
+"VUT","Construction","Solar (PV)",8700,0
+"WSM","Construction","Solar (PV)",8700,0
+"YEM","Construction","Solar (PV)",15400,0.05
+"ZAF","Construction","Solar (PV)",7000,0.373
+"ZMB","Construction","Solar (PV)",6153,0.001
+"ZWE","Construction","Solar (PV)",6153,0.005
+"ABW","Manufacturing","Solar (PV)",16266.0650851676,0
+"AFG","Manufacturing","Solar (PV)",16266.0650851676,0
+"AGO","Manufacturing","Solar (PV)",8440,0
+"AIA","Manufacturing","Solar (PV)",16266.0650851676,0
+"ALB","Manufacturing","Solar (PV)",10501.5384616369,0
+"ARE","Manufacturing","Solar (PV)",12600,0.239
+"ARG","Manufacturing","Solar (PV)",16266.0650851676,0.182
+"ARM","Manufacturing","Solar (PV)",10000,0.015
+"ATG","Manufacturing","Solar (PV)",16266.0650851676,0.004
+"AUS","Manufacturing","Solar (PV)",14067.8035304263,3.775
+"AUT","Manufacturing","Solar (PV)",10501.5384616369,0.162
+"AZE","Manufacturing","Solar (PV)",10000,0.008
+"BDI","Manufacturing","Solar (PV)",8440,0
+"BEL","Manufacturing","Solar (PV)",10501.5384616369,0.416
+"BEN","Manufacturing","Solar (PV)",8440,0
+"BES","Manufacturing","Solar (PV)",16266.0650851676,0
+"BFA","Manufacturing","Solar (PV)",8440,0.015
+"BGD","Manufacturing","Solar (PV)",16266.0650851676,0.000999999999999997
+"BGR","Manufacturing","Solar (PV)",10501.5384616369,0
+"BHR","Manufacturing","Solar (PV)",12600,0
+"BHS","Manufacturing","Solar (PV)",16266.0650851676,0
+"BIH","Manufacturing","Solar (PV)",10501.5384616369,0.002
+"BLR","Manufacturing","Solar (PV)",10000,0.000999999999999997
+"BLZ","Manufacturing","Solar (PV)",16266.0650851676,0
+"BOL","Manufacturing","Solar (PV)",16266.0650851676,0.063
+"BRA","Manufacturing","Solar (PV)",16266.0650851676,1.199
+"BRB","Manufacturing","Solar (PV)",16266.0650851676,0.005
+"BRN","Manufacturing","Solar (PV)",16266.0650851676,0
+"BTN","Manufacturing","Solar (PV)",16266.0650851676,0
+"BWA","Manufacturing","Solar (PV)",8440,0
+"CAN","Manufacturing","Solar (PV)",14067.8035304263,0.24
+"CHE","Manufacturing","Solar (PV)",10501.5384616369,0.34
+"CHL","Manufacturing","Solar (PV)",14067.8035304263,0.328
+"CHN","Manufacturing","Solar (PV)",19414.2857142857,44.216
+"CIV","Manufacturing","Solar (PV)",8440,0
+"CMR","Manufacturing","Solar (PV)",8440,0.002
+"COD","Manufacturing","Solar (PV)",8440,0.002
+"COG","Manufacturing","Solar (PV)",8440,0
+"COK","Manufacturing","Solar (PV)",16266.0650851676,0.002
+"COL","Manufacturing","Solar (PV)",16266.0650851676,0.075
+"CPV","Manufacturing","Solar (PV)",8440,0.002
+"CRI","Manufacturing","Solar (PV)",16266.0650851676,0
+"CUB","Manufacturing","Solar (PV)",16266.0650851676,0.03
+"CUW","Manufacturing","Solar (PV)",16266.0650851676,0
+"CYM","Manufacturing","Solar (PV)",16266.0650851676,0.000999999999999999
+"CYP","Manufacturing","Solar (PV)",10501.5384616369,0.00300000000000001
+"CZE","Manufacturing","Solar (PV)",10501.5384616369,0.00800000000000019
+"DEU","Manufacturing","Solar (PV)",10501.5384616369,3.593
+"DMA","Manufacturing","Solar (PV)",16266.0650851676,0
+"DNK","Manufacturing","Solar (PV)",10501.5384616369,0.092
+"DOM","Manufacturing","Solar (PV)",16266.0650851676,0.063
+"DZA","Manufacturing","Solar (PV)",12600,0.01
+"ECU","Manufacturing","Solar (PV)",16266.0650851676,0
+"EGY","Manufacturing","Solar (PV)",12600,0.581
+"ERI","Manufacturing","Solar (PV)",8440,0
+"ESP","Manufacturing","Solar (PV)",21400,0.0189999999999999
+"EST","Manufacturing","Solar (PV)",10501.5384616369,0
+"ETH","Manufacturing","Solar (PV)",8440,0
+"FIN","Manufacturing","Solar (PV)",10501.5384616369,0.051
+"FJI","Manufacturing","Solar (PV)",16266.0650851676,0.003
+"FRA","Manufacturing","Solar (PV)",10501.5384616369,0.873000000000001
+"FSM","Manufacturing","Solar (PV)",16266.0650851676,0.001
+"GAB","Manufacturing","Solar (PV)",8440,0
+"GBR","Manufacturing","Solar (PV)",10501.5384616369,0.332000000000001
+"GHA","Manufacturing","Solar (PV)",8440,0.025
+"GIN","Manufacturing","Solar (PV)",8440,0
+"GLP","Manufacturing","Solar (PV)",16266.0650851676,0
+"GMB","Manufacturing","Solar (PV)",8440,0
+"GNB","Manufacturing","Solar (PV)",8440,0
+"GRC","Manufacturing","Solar (PV)",6000,0.046
+"GRD","Manufacturing","Solar (PV)",16266.0650851676,0
+"GTM","Manufacturing","Solar (PV)",16266.0650851676,0.015
+"GUF","Manufacturing","Solar (PV)",16266.0650851676,0.002
+"GUM","Manufacturing","Solar (PV)",16266.0650851676,0
+"GUY","Manufacturing","Solar (PV)",16266.0650851676,0
+"HND","Manufacturing","Solar (PV)",16266.0650851676,0.065
+"HRV","Manufacturing","Solar (PV)",10501.5384616369,0.001
+"HTI","Manufacturing","Solar (PV)",16266.0650851676,0.001
+"HUN","Manufacturing","Solar (PV)",10501.5384616369,0.321
+"IDN","Manufacturing","Solar (PV)",16266.0650851676,0.000999999999999997
+"IND","Manufacturing","Solar (PV)",2600,9.225
+"IRL","Manufacturing","Solar (PV)",10501.5384616369,0.013
+"IRN","Manufacturing","Solar (PV)",12600,0.175
+"IRQ","Manufacturing","Solar (PV)",12600,0
+"ISR","Manufacturing","Solar (PV)",12600,0.101
+"ITA","Manufacturing","Solar (PV)",10501.5384616369,0.438000000000001
+"JAM","Manufacturing","Solar (PV)",16266.0650851676,0
+"JOR","Manufacturing","Solar (PV)",12600,0.376
+"JPN","Manufacturing","Solar (PV)",14067.8035304263,6.46
+"KAZ","Manufacturing","Solar (PV)",10000,0.15
+"KEN","Manufacturing","Solar (PV)",8440,0.055
+"KHM","Manufacturing","Solar (PV)",16266.0650851676,0
+"KIR","Manufacturing","Solar (PV)",16266.0650851676,0
+"KNA","Manufacturing","Solar (PV)",16266.0650851676,0
+"KOR","Manufacturing","Solar (PV)",14067.8035304263,2.027
+"KWT","Manufacturing","Solar (PV)",12600,0
+"LAO","Manufacturing","Solar (PV)",16266.0650851676,0
+"LBN","Manufacturing","Solar (PV)",12600,0.006
+"LBR","Manufacturing","Solar (PV)",8440,0.001
+"LBY","Manufacturing","Solar (PV)",12600,0
+"LCA","Manufacturing","Solar (PV)",16266.0650851676,0.003
+"LKA","Manufacturing","Solar (PV)",16266.0650851676,0.029
+"LTU","Manufacturing","Solar (PV)",10501.5384616369,0.01
+"LUX","Manufacturing","Solar (PV)",10501.5384616369,0.00600000000000001
+"LVA","Manufacturing","Solar (PV)",10501.5384616369,0
+"MAR","Manufacturing","Solar (PV)",12600,0.18
+"MDA","Manufacturing","Solar (PV)",10000,0
+"MDG","Manufacturing","Solar (PV)",8440,0.02
+"MDV","Manufacturing","Solar (PV)",16266.0650851676,0
+"MEX","Manufacturing","Solar (PV)",14067.8035304263,1.867
+"MHL","Manufacturing","Solar (PV)",16266.0650851676,0
+"MKD","Manufacturing","Solar (PV)",10501.5384616369,0.004
+"MLI","Manufacturing","Solar (PV)",8440,0
+"MLT","Manufacturing","Solar (PV)",10501.5384616369,0.015
+"MMR","Manufacturing","Solar (PV)",16266.0650851676,0
+"MNE","Manufacturing","Solar (PV)",10501.5384616369,0
+"MNG","Manufacturing","Solar (PV)",10000,0.015
+"MOZ","Manufacturing","Solar (PV)",8440,0.002
+"MRT","Manufacturing","Solar (PV)",8440,0.000999999999999997
+"MTQ","Manufacturing","Solar (PV)",16266.0650851676,0
+"MUS","Manufacturing","Solar (PV)",8440,0.000999999999999997
+"MWI","Manufacturing","Solar (PV)",8440,0.004
+"MYS","Manufacturing","Solar (PV)",16266.0650851676,0.121
+"MYT","Manufacturing","Solar (PV)",8440,0
+"NAM","Manufacturing","Solar (PV)",8440,0.033
+"NCL","Manufacturing","Solar (PV)",16266.0650851676,0.005
+"NER","Manufacturing","Solar (PV)",8440,0.011
+"NGA","Manufacturing","Solar (PV)",8440,0
+"NIC","Manufacturing","Solar (PV)",16266.0650851676,0
+"NLD","Manufacturing","Solar (PV)",10501.5384616369,1.247
+"NOR","Manufacturing","Solar (PV)",10501.5384616369,0.023
+"NPL","Manufacturing","Solar (PV)",16266.0650851676,0
+"NRU","Manufacturing","Solar (PV)",16266.0650851676,0
+"NZL","Manufacturing","Solar (PV)",14067.8035304263,0.02
+"OMN","Manufacturing","Solar (PV)",12600,0
+"PAK","Manufacturing","Solar (PV)",16266.0650851676,0.826
+"PAN","Manufacturing","Solar (PV)",16266.0650851676,0
+"PER","Manufacturing","Solar (PV)",16266.0650851676,0.192
+"PHL","Manufacturing","Solar (PV)",16266.0650851676,0
+"PLW","Manufacturing","Solar (PV)",16266.0650851676,0
+"PNG","Manufacturing","Solar (PV)",16266.0650851676,0.001
+"POL","Manufacturing","Solar (PV)",10501.5384616369,0.2
+"PRI","Manufacturing","Solar (PV)",16266.0650851676,0
+"PRK","Manufacturing","Solar (PV)",16266.0650851676,0
+"PRT","Manufacturing","Solar (PV)",10501.5384616369,0.091
+"PSE","Manufacturing","Solar (PV)",12600,0.001
+"PYF","Manufacturing","Solar (PV)",16266.0650851676,0
+"QAT","Manufacturing","Solar (PV)",12600,0
+"REU","Manufacturing","Solar (PV)",8440,0.00199999999999999
+"ROU","Manufacturing","Solar (PV)",10501.5384616369,0.00299999999999996
+"RUS","Manufacturing","Solar (PV)",10000,0.31
+"RWA","Manufacturing","Solar (PV)",8440,0.003
+"SAU","Manufacturing","Solar (PV)",12600,0
+"SDN","Manufacturing","Solar (PV)",8440,0.005
+"SEN","Manufacturing","Solar (PV)",8440,0.021
+"SGP","Manufacturing","Solar (PV)",16266.0650851676,0.034
+"SLB","Manufacturing","Solar (PV)",16266.0650851676,0
+"SLE","Manufacturing","Solar (PV)",8440,0
+"SLV","Manufacturing","Solar (PV)",16266.0650851676,0.065
+"SOM","Manufacturing","Solar (PV)",8440,0
+"SRB","Manufacturing","Solar (PV)",10501.5384616369,0
+"SSD","Manufacturing","Solar (PV)",8440,0
+"SUR","Manufacturing","Solar (PV)",16266.0650851676,0.001
+"SVK","Manufacturing","Solar (PV)",10501.5384616369,0.00300000000000007
+"SVN","Manufacturing","Solar (PV)",10501.5384616369,0.009
+"SWE","Manufacturing","Solar (PV)",10501.5384616369,0.13
+"SWZ","Manufacturing","Solar (PV)",8440,0
+"SYC","Manufacturing","Solar (PV)",8440,0.001
+"SYR","Manufacturing","Solar (PV)",12600,0
+"TGO","Manufacturing","Solar (PV)",8440,0
+"THA","Manufacturing","Solar (PV)",16266.0650851676,0.023
+"TKL","Manufacturing","Solar (PV)",16266.0650851676,0
+"TLS","Manufacturing","Solar (PV)",16266.0650851676,0
+"TON","Manufacturing","Solar (PV)",16266.0650851676,0
+"TTO","Manufacturing","Solar (PV)",16266.0650851676,0
+"TUN","Manufacturing","Solar (PV)",12600,0
+"TUR","Manufacturing","Solar (PV)",10000,1.642
+"TUV","Manufacturing","Solar (PV)",16266.0650851676,0
+"TWN","Manufacturing","Solar (PV)",19414.2857142857,0.85
+"TZA","Manufacturing","Solar (PV)",8440,0.003
+"UGA","Manufacturing","Solar (PV)",8440,0.002
+"UKR","Manufacturing","Solar (PV)",10000,0.803
+"URY","Manufacturing","Solar (PV)",16266.0650851676,0.00900000000000003
+"USA","Manufacturing","Solar (PV)",18442.5,8.419
+"UZB","Manufacturing","Solar (PV)",10000,0
+"VCT","Manufacturing","Solar (PV)",16266.0650851676,0
+"VEN","Manufacturing","Solar (PV)",16266.0650851676,0
+"VIR","Manufacturing","Solar (PV)",16266.0650851676,0
+"VNM","Manufacturing","Solar (PV)",16266.0650851676,0.098
+"VUT","Manufacturing","Solar (PV)",16266.0650851676,0
+"WSM","Manufacturing","Solar (PV)",16266.0650851676,0
+"YEM","Manufacturing","Solar (PV)",12600,0.05
+"ZAF","Manufacturing","Solar (PV)",16800,0.373
+"ZMB","Manufacturing","Solar (PV)",8440,0.001
+"ZWE","Manufacturing","Solar (PV)",8440,0.005
+"ABW","O&M","Solar (PV)",540.835103973477,0.006
+"AFG","O&M","Solar (PV)",540.835103973477,0.022
+"AGO","O&M","Solar (PV)",2780,0.013
+"AIA","O&M","Solar (PV)",540.835103973477,0.001
+"ALB","O&M","Solar (PV)",627.19962500128,0.001
+"ARE","O&M","Solar (PV)",300,0.494
+"ARG","O&M","Solar (PV)",540.835103973477,0.191
+"ARM","O&M","Solar (PV)",2700,0.017
+"ATG","O&M","Solar (PV)",540.835103973477,0.008
+"AUS","O&M","Solar (PV)",130,9.763
+"AUT","O&M","Solar (PV)",627.19962500128,1.431
+"AZE","O&M","Solar (PV)",2700,0.036
+"BDI","O&M","Solar (PV)",2780,0.005
+"BEL","O&M","Solar (PV)",627.19962500128,4.026
+"BEN","O&M","Solar (PV)",2780,0.008
+"BES","O&M","Solar (PV)",540.835103973477,0.005
+"BFA","O&M","Solar (PV)",2780,0.062
+"BGD","O&M","Solar (PV)",540.835103973477,0.201
+"BGR","O&M","Solar (PV)",627.19962500128,1.036
+"BHR","O&M","Solar (PV)",300,0.005
+"BHS","O&M","Solar (PV)",540.835103973477,0.001
+"BIH","O&M","Solar (PV)",627.19962500128,0.019
+"BLR","O&M","Solar (PV)",2700,0.154
+"BLZ","O&M","Solar (PV)",540.835103973477,0.004
+"BOL","O&M","Solar (PV)",540.835103973477,0.071
+"BRA","O&M","Solar (PV)",540.835103973477,2.296
+"BRB","O&M","Solar (PV)",540.835103973477,0.024
+"BRN","O&M","Solar (PV)",540.835103973477,0.001
+"BTN","O&M","Solar (PV)",540.835103973477,0.001
+"BWA","O&M","Solar (PV)",2780,0.003
+"CAN","O&M","Solar (PV)",250,3.113
+"CHE","O&M","Solar (PV)",627.19962500128,2.246
+"CHL","O&M","Solar (PV)",625.086258426307,2.137
+"CHN","O&M","Solar (PV)",496.941896024465,175.018
+"CIV","O&M","Solar (PV)",2780,0.008
+"CMR","O&M","Solar (PV)",2780,0.014
+"COD","O&M","Solar (PV)",2780,0.007
+"COG","O&M","Solar (PV)",2780,0.001
+"COK","O&M","Solar (PV)",130,0.005
+"COL","O&M","Solar (PV)",540.835103973477,0.087
+"CPV","O&M","Solar (PV)",2780,0.008
+"CRI","O&M","Solar (PV)",540.835103973477,0.028
+"CUB","O&M","Solar (PV)",540.835103973477,0.096
+"CUW","O&M","Solar (PV)",540.835103973477,0.018
+"CYM","O&M","Solar (PV)",540.835103973477,0.01
+"CYP","O&M","Solar (PV)",627.19962500128,0.113
+"CZE","O&M","Solar (PV)",627.19962500128,2.078
+"DEU","O&M","Solar (PV)",545.934840035222,45.93
+"DMA","O&M","Solar (PV)",540.835103973477,0.001
+"DNK","O&M","Solar (PV)",627.19962500128,0.998
+"DOM","O&M","Solar (PV)",540.835103973477,0.166
+"DZA","O&M","Solar (PV)",300,0.41
+"ECU","O&M","Solar (PV)",540.835103973477,0.026
+"EGY","O&M","Solar (PV)",300,0.75
+"ERI","O&M","Solar (PV)",2780,0.003
+"ESP","O&M","Solar (PV)",1650,4.744
+"EST","O&M","Solar (PV)",627.19962500128,0.011
+"ETH","O&M","Solar (PV)",2780,0.011
+"FIN","O&M","Solar (PV)",627.19962500128,0.125
+"FJI","O&M","Solar (PV)",130,0.01
+"FRA","O&M","Solar (PV)",627.19962500128,9.483
+"FSM","O&M","Solar (PV)",130,0.002
+"GAB","O&M","Solar (PV)",2780,0.001
+"GBR","O&M","Solar (PV)",627.19962500128,13.108
+"GHA","O&M","Solar (PV)",2780,0.064
+"GIN","O&M","Solar (PV)",2780,0.013
+"GLP","O&M","Solar (PV)",540.835103973477,0.07
+"GMB","O&M","Solar (PV)",2780,0.002
+"GNB","O&M","Solar (PV)",2780,0.001
+"GRC","O&M","Solar (PV)",205,2.652
+"GRD","O&M","Solar (PV)",540.835103973477,0.002
+"GTM","O&M","Solar (PV)",540.835103973477,0.114
+"GUF","O&M","Solar (PV)",540.835103973477,0.047
+"GUM","O&M","Solar (PV)",130,0.035
+"GUY","O&M","Solar (PV)",540.835103973477,0.01
+"HND","O&M","Solar (PV)",540.835103973477,0.516
+"HRV","O&M","Solar (PV)",627.19962500128,0.061
+"HTI","O&M","Solar (PV)",540.835103973477,0.003
+"HUN","O&M","Solar (PV)",627.19962500128,0.665
+"IDN","O&M","Solar (PV)",540.835103973477,0.06
+"IND","O&M","Solar (PV)",500,26.869
+"IRL","O&M","Solar (PV)",627.19962500128,0.029
+"IRN","O&M","Solar (PV)",300,0.286
+"IRQ","O&M","Solar (PV)",300,0.037
+"ISR","O&M","Solar (PV)",300,1.07
+"ITA","O&M","Solar (PV)",627.19962500128,20.12
+"JAM","O&M","Solar (PV)",540.835103973477,0.056
+"JOR","O&M","Solar (PV)",300,0.772
+"JPN","O&M","Solar (PV)",870,55.5
+"KAZ","O&M","Solar (PV)",2700,0.209
+"KEN","O&M","Solar (PV)",2780,0.093
+"KHM","O&M","Solar (PV)",540.835103973477,0.028
+"KIR","O&M","Solar (PV)",130,0.003
+"KNA","O&M","Solar (PV)",540.835103973477,0.002
+"KOR","O&M","Solar (PV)",870,7.862
+"KWT","O&M","Solar (PV)",300,0.031
+"LAO","O&M","Solar (PV)",540.835103973477,0.007
+"LBN","O&M","Solar (PV)",300,0.042
+"LBR","O&M","Solar (PV)",2780,0.003
+"LBY","O&M","Solar (PV)",300,0.005
+"LCA","O&M","Solar (PV)",540.835103973477,0.004
+"LKA","O&M","Solar (PV)",540.835103973477,0.159
+"LTU","O&M","Solar (PV)",627.19962500128,0.084
+"LUX","O&M","Solar (PV)",627.19962500128,0.134
+"LVA","O&M","Solar (PV)",627.19962500128,0.001
+"MAR","O&M","Solar (PV)",300,0.206
+"MDA","O&M","Solar (PV)",2700,0.002
+"MDG","O&M","Solar (PV)",2780,0.033
+"MDV","O&M","Solar (PV)",540.835103973477,0.009
+"MEX","O&M","Solar (PV)",625.086258426307,2.541
+"MHL","O&M","Solar (PV)",130,0.002
+"MKD","O&M","Solar (PV)",627.19962500128,0.021
+"MLI","O&M","Solar (PV)",2780,0.02
+"MLT","O&M","Solar (PV)",627.19962500128,0.127
+"MMR","O&M","Solar (PV)",540.835103973477,0.055
+"MNE","O&M","Solar (PV)",627.19962500128,0.003
+"MNG","O&M","Solar (PV)",2700,0.063
+"MOZ","O&M","Solar (PV)",2780,0.017
+"MRT","O&M","Solar (PV)",2780,0.086
+"MTQ","O&M","Solar (PV)",540.835103973477,0.067
+"MUS","O&M","Solar (PV)",2780,0.03
+"MWI","O&M","Solar (PV)",2780,0.023
+"MYS","O&M","Solar (PV)",540.835103973477,0.438
+"MYT","O&M","Solar (PV)",2780,0.015
+"NAM","O&M","Solar (PV)",2780,0.079
+"NCL","O&M","Solar (PV)",130,0.033
+"NER","O&M","Solar (PV)",2780,0.02
+"NGA","O&M","Solar (PV)",2780,0.019
+"NIC","O&M","Solar (PV)",540.835103973477,0.03
+"NLD","O&M","Solar (PV)",627.19962500128,4.15
+"NOR","O&M","Solar (PV)",627.19962500128,0.068
+"NPL","O&M","Solar (PV)",540.835103973477,0.053
+"NRU","O&M","Solar (PV)",130,0.001
+"NZL","O&M","Solar (PV)",130,0.079
+"OMN","O&M","Solar (PV)",300,0.008
+"PAK","O&M","Solar (PV)",540.835103973477,1.568
+"PAN","O&M","Solar (PV)",540.835103973477,0.147
+"PER","O&M","Solar (PV)",540.835103973477,0.345
+"PHL","O&M","Solar (PV)",540.835103973477,0.886
+"PLW","O&M","Solar (PV)",130,0.001
+"PNG","O&M","Solar (PV)",130,0.002
+"POL","O&M","Solar (PV)",627.19962500128,0.487
+"PRI","O&M","Solar (PV)",540.835103973477,0.165
+"PRK","O&M","Solar (PV)",870,0.011
+"PRT","O&M","Solar (PV)",627.19962500128,0.67
+"PSE","O&M","Solar (PV)",300,0.036
+"PYF","O&M","Solar (PV)",130,0.034
+"QAT","O&M","Solar (PV)",300,0.005
+"REU","O&M","Solar (PV)",2780,0.19
+"ROU","O&M","Solar (PV)",627.19962500128,1.377
+"RUS","O&M","Solar (PV)",2700,0.546
+"RWA","O&M","Solar (PV)",2780,0.03
+"SAU","O&M","Solar (PV)",300,0.089
+"SDN","O&M","Solar (PV)",2780,0.018
+"SEN","O&M","Solar (PV)",2780,0.134
+"SGP","O&M","Solar (PV)",540.835103973477,0.15
+"SLB","O&M","Solar (PV)",130,0.003
+"SLE","O&M","Solar (PV)",2780,0.004
+"SLV","O&M","Solar (PV)",540.835103973477,0.184
+"SOM","O&M","Solar (PV)",2780,0.007
+"SRB","O&M","Solar (PV)",627.19962500128,0.01
+"SSD","O&M","Solar (PV)",2780,0.001
+"SUR","O&M","Solar (PV)",540.835103973477,0.007
+"SVK","O&M","Solar (PV)",627.19962500128,0.531
+"SVN","O&M","Solar (PV)",627.19962500128,0.256
+"SWE","O&M","Solar (PV)",627.19962500128,0.421
+"SWZ","O&M","Solar (PV)",2780,0.001
+"SYC","O&M","Solar (PV)",2780,0.004
+"SYR","O&M","Solar (PV)",300,0.001
+"TGO","O&M","Solar (PV)",2780,0.003
+"THA","O&M","Solar (PV)",540.835103973477,2.72
+"TKL","O&M","Solar (PV)",130,0.001
+"TLS","O&M","Solar (PV)",130,0.001
+"TON","O&M","Solar (PV)",130,0.006
+"TTO","O&M","Solar (PV)",540.835103973477,0.003
+"TUN","O&M","Solar (PV)",300,0.047
+"TUR","O&M","Solar (PV)",2700,5.063
+"TUV","O&M","Solar (PV)",130,0.002
+"TWN","O&M","Solar (PV)",496.941896024465,2.618
+"TZA","O&M","Solar (PV)",2780,0.025
+"UGA","O&M","Solar (PV)",2780,0.048
+"UKR","O&M","Solar (PV)",2700,2.003
+"URY","O&M","Solar (PV)",540.835103973477,0.248
+"USA","O&M","Solar (PV)",225.08064516129,49.692
+"UZB","O&M","Solar (PV)",2700,0.004
+"VCT","O&M","Solar (PV)",540.835103973477,0.001
+"VEN","O&M","Solar (PV)",540.835103973477,0.004
+"VIR","O&M","Solar (PV)",540.835103973477,0.005
+"VNM","O&M","Solar (PV)",540.835103973477,0.106
+"VUT","O&M","Solar (PV)",130,0.003
+"WSM","O&M","Solar (PV)",130,0.004
+"YEM","O&M","Solar (PV)",300,0.15
+"ZAF","O&M","Solar (PV)",700,2.559
+"ZMB","O&M","Solar (PV)",2780,0.005
+"ZWE","O&M","Solar (PV)",2780,0.011
+"AUT","Construction","Trbiofuel",0,0
+"BEL","Construction","Trbiofuel",0,0
+"BRA","Construction","Trbiofuel",0,0
+"DEU","Construction","Trbiofuel",0,0
+"DNK","Construction","Trbiofuel",0,0
+"FRA","Construction","Trbiofuel",0,0
+"ITA","Construction","Trbiofuel",0,0
+"KOR","Construction","Trbiofuel",0,0
+"SVN","Construction","Trbiofuel",0,0
+"SWE","Construction","Trbiofuel",0,0
+"TUR","Construction","Trbiofuel",0,0
+"USA","Construction","Trbiofuel",0,0
+"VUT","Construction","Trbiofuel",0,0
+"AUT","Manufacturing","Trbiofuel",0,0
+"BEL","Manufacturing","Trbiofuel",0,0
+"BRA","Manufacturing","Trbiofuel",0,0
+"DEU","Manufacturing","Trbiofuel",0,0
+"DNK","Manufacturing","Trbiofuel",0,0
+"FRA","Manufacturing","Trbiofuel",0,0
+"ITA","Manufacturing","Trbiofuel",0,0
+"KOR","Manufacturing","Trbiofuel",0,0
+"SVN","Manufacturing","Trbiofuel",0,0
+"SWE","Manufacturing","Trbiofuel",0,0
+"TUR","Manufacturing","Trbiofuel",0,0
+"USA","Manufacturing","Trbiofuel",0,0
+"VUT","Manufacturing","Trbiofuel",0,0
+"AUT","O&M","Trbiofuel",0,0.001
+"BEL","O&M","Trbiofuel",0,0.046
+"BRA","O&M","Trbiofuel",0,0.005
+"DEU","O&M","Trbiofuel",0,0.23
+"DNK","O&M","Trbiofuel",0,0.001
+"FRA","O&M","Trbiofuel",0,0.004
+"ITA","O&M","Trbiofuel",0,0.987
+"KOR","O&M","Trbiofuel",0,0.359
+"SVN","O&M","Trbiofuel",0,0.001
+"SWE","O&M","Trbiofuel",0,0.547
+"TUR","O&M","Trbiofuel",0,0.012
+"USA","O&M","Trbiofuel",0,0.155
+"VUT","O&M","Trbiofuel",0,0.003
+"ALB","Refinery","Trbiofuel",7.31618733159969,3.38561
+"ARG","Refinery","Trbiofuel",6.82640143728097,52.2412099999999
+"AUS","Refinery","Trbiofuel",9.71965976062207,6.75758000000002
+"AUT","Refinery","Trbiofuel",7.31618733159969,23.94
+"BEL","Refinery","Trbiofuel",7.31618733159969,18.81707
+"BGR","Refinery","Trbiofuel",7.31618733159969,6.66596999999999
+"BLR","Refinery","Trbiofuel",5.99409273688057,0.735999999999998
+"BRA","Refinery","Trbiofuel",7.63531368296012,693.594249999998
+"CAN","Refinery","Trbiofuel",6.07846985752607,71.6663800000001
+"CHE","Refinery","Trbiofuel",7.31618733159969,3.07056
+"CHN","Refinery","Trbiofuel",6.07373497597089,99.1199800000001
+"COL","Refinery","Trbiofuel",7.6345168136032,1.37562
+"CUB","Refinery","Trbiofuel",6.84713484643584,9.26224999999999
+"CYP","Refinery","Trbiofuel",7.31618733159969,0.368020000000001
+"CZE","Refinery","Trbiofuel",7.31618733161626,12.634
+"DEU","Refinery","Trbiofuel",7.31618733161626,117.56714
+"DNK","Refinery","Trbiofuel",7.31618733161626,10.2729
+"ECU","Refinery","Trbiofuel",6.84713484643584,0.7772
+"ESP","Refinery","Trbiofuel",7.31618733161626,46.70086
+"EST","Refinery","Trbiofuel",7.31618733159969,0.10718
+"ETH","Refinery","Trbiofuel",7.58930360908484,0.268
+"FIN","Refinery","Trbiofuel",7.31618733159969,9.74275999999999
+"FRA","Refinery","Trbiofuel",7.31618733161626,129.46569
+"GBR","Refinery","Trbiofuel",7.31618733161626,39.5692400000002
+"GRC","Refinery","Trbiofuel",7.31618733161626,7.10228000000002
+"HKG","Refinery","Trbiofuel",6.07373497597089,0.22081
+"HUN","Refinery","Trbiofuel",7.31618733159969,7.83542999999999
+"IDN","Refinery","Trbiofuel",7.64369695202759,98.5136
+"IND","Refinery","Trbiofuel",7.64371022296652,26.87599
+"IRL","Refinery","Trbiofuel",7.31618733159969,4.78060999999999
+"ISL","Refinery","Trbiofuel",7.31618733159969,0.631370000000002
+"ITA","Refinery","Trbiofuel",7.31618733159969,81.51629
+"JAM","Refinery","Trbiofuel",6.84713484643584,1.39362
+"JPN","Refinery","Trbiofuel",4.60612883900681,16.2468
+"KAZ","Refinery","Trbiofuel",5.99409273688057,0.14721
+"KOR","Refinery","Trbiofuel",4.60612883900681,35.2647
+"LTU","Refinery","Trbiofuel",7.31618733159969,2.40603
+"LUX","Refinery","Trbiofuel",7.31618733159969,3.76908000000001
+"LVA","Refinery","Trbiofuel",7.31618733159969,0.534399999999998
+"MEX","Refinery","Trbiofuel",4.62984067649807,0
+"MLT","Refinery","Trbiofuel",7.31618733159969,0.29442
+"MYS","Refinery","Trbiofuel",7.60933434251206,16.26559
+"NLD","Refinery","Trbiofuel",7.31618733161626,12.13101
+"NOR","Refinery","Trbiofuel",7.31618733161626,14.70835
+"NZL","Refinery","Trbiofuel",9.71965976062207,0.11861
+"PER","Refinery","Trbiofuel",6.84713484643584,15.94279
+"PHL","Refinery","Trbiofuel",6.37355571189337,19.94688
+"POL","Refinery","Trbiofuel",7.31618733161626,19.22804
+"PRT","Refinery","Trbiofuel",7.31618733159969,11.67196
+"PRY","Refinery","Trbiofuel",6.84713484643584,6.11038000000001
+"ROU","Refinery","Trbiofuel",7.31618733097132,10.79043
+"SVK","Refinery","Trbiofuel",7.31618733159969,6.06061000000001
+"SVN","Refinery","Trbiofuel",7.31618733159969,0.809269999999999
+"SWE","Refinery","Trbiofuel",7.31618733159969,49.0322400000001
+"THA","Refinery","Trbiofuel",6.07520403470201,67.3724000000002
+"TUR","Refinery","Trbiofuel",5.99409273688057,4.45759999999999
+"TZA","Refinery","Trbiofuel",7.58930360908484,0
+"UKR","Refinery","Trbiofuel",5.99409273688057,1.55439
+"URY","Refinery","Trbiofuel",6.84713484643584,3.62414000000002
+"USA","Refinery","Trbiofuel",5.58390686646062,1679.17136
+"VNM","Refinery","Trbiofuel",7.50955409173448,0
+"ZAF","Refinery","Trbiofuel",7.0082104507388,0
+"ZWE","Refinery","Trbiofuel",7.58930360908484,1.17921
+"AGO","Construction","Wind (OFF)",1540,0
+"ARE","Construction","Wind (OFF)",375,0
+"AUS","Construction","Wind (OFF)",1100,0
+"BEL","Construction","Wind (OFF)",1905.10729916361,0.301
+"BHR","Construction","Wind (OFF)",375,0
+"CHN","Construction","Wind (OFF)",803.306451612903,1.8
+"COG","Construction","Wind (OFF)",1540,0
+"CZE","Construction","Wind (OFF)",300,0
+"DEU","Construction","Wind (OFF)",1775,0.983
+"DNK","Construction","Wind (OFF)",300,0.0609999999999999
+"EGY","Construction","Wind (OFF)",375,0
+"ESP","Construction","Wind (OFF)",300,0.005
+"ETH","Construction","Wind (OFF)",1540,0
+"FIN","Construction","Wind (OFF)",1905.10729916361,0
+"FRA","Construction","Wind (OFF)",3836,0
+"GAB","Construction","Wind (OFF)",1540,0
+"GBR","Construction","Wind (OFF)",2083.33333333333,1.312
+"GRC","Construction","Wind (OFF)",1525,0
+"IND","Construction","Wind (OFF)",385,0
+"IRL","Construction","Wind (OFF)",1905.10729916361,0
+"IRN","Construction","Wind (OFF)",375,0
+"IRQ","Construction","Wind (OFF)",375,0
+"JPN","Construction","Wind (OFF)",1400,0
+"KEN","Construction","Wind (OFF)",2016.12903225806,0
+"KOR","Construction","Wind (OFF)",1400,0
+"KWT","Construction","Wind (OFF)",375,0
+"LBY","Construction","Wind (OFF)",375,0
+"MEX","Construction","Wind (OFF)",378.787878787879,0
+"NGA","Construction","Wind (OFF)",1540,0
+"NLD","Construction","Wind (OFF)",300,0
+"NOR","Construction","Wind (OFF)",1875,0
+"OMN","Construction","Wind (OFF)",375,0
+"POL","Construction","Wind (OFF)",300,0
+"QAT","Construction","Wind (OFF)",375,0
+"ROU","Construction","Wind (OFF)",300,0
+"SAU","Construction","Wind (OFF)",375,0
+"SWE","Construction","Wind (OFF)",1905.10729916361,0.00299999999999999
+"TUR","Construction","Wind (OFF)",1095,0
+"TWN","Construction","Wind (OFF)",803.306451612903,0
+"TZA","Construction","Wind (OFF)",1540,0
+"USA","Construction","Wind (OFF)",2225,0
+"VNM","Construction","Wind (OFF)",803.306451612903,0
+"ZAF","Construction","Wind (OFF)",375,0
+"ARE","Manufacturing","Wind (OFF)",1650,0
+"BEL","Manufacturing","Wind (OFF)",2208.07920372551,0.301
+"BHR","Manufacturing","Wind (OFF)",1650,0
+"BRA","Manufacturing","Wind (OFF)",2100,0
+"CHN","Manufacturing","Wind (OFF)",2273.52941176471,1.8
+"COG","Manufacturing","Wind (OFF)",3740,0
+"CZE","Manufacturing","Wind (OFF)",1875,0
+"DEU","Manufacturing","Wind (OFF)",2675,0.983
+"DNK","Manufacturing","Wind (OFF)",1875,0.0609999999999999
+"ESP","Manufacturing","Wind (OFF)",1875,0.005
+"ETH","Manufacturing","Wind (OFF)",3740,0
+"FIN","Manufacturing","Wind (OFF)",2208.07920372551,0
+"FRA","Manufacturing","Wind (OFF)",1875,0
+"GBR","Manufacturing","Wind (OFF)",1875,1.312
+"GRC","Manufacturing","Wind (OFF)",675,0
+"IRL","Manufacturing","Wind (OFF)",2208.07920372551,0
+"IRN","Manufacturing","Wind (OFF)",1650,0
+"IRQ","Manufacturing","Wind (OFF)",1650,0
+"JPN","Manufacturing","Wind (OFF)",2208.07920372709,0
+"KEN","Manufacturing","Wind (OFF)",3740,0
+"KOR","Manufacturing","Wind (OFF)",2208.07920372709,0
+"KWT","Manufacturing","Wind (OFF)",1650,0
+"LBY","Manufacturing","Wind (OFF)",1650,0
+"NGA","Manufacturing","Wind (OFF)",3740,0
+"NLD","Manufacturing","Wind (OFF)",1875,0
+"NOR","Manufacturing","Wind (OFF)",1875,0
+"OMN","Manufacturing","Wind (OFF)",1650,0
+"POL","Manufacturing","Wind (OFF)",1875,0
+"QAT","Manufacturing","Wind (OFF)",1650,0
+"ROU","Manufacturing","Wind (OFF)",1875,0
+"SAU","Manufacturing","Wind (OFF)",1650,0
+"SWE","Manufacturing","Wind (OFF)",2208.07920372551,0.00299999999999999
+"TUR","Manufacturing","Wind (OFF)",3157.5,0
+"TWN","Manufacturing","Wind (OFF)",2273.52941176471,0
+"TZA","Manufacturing","Wind (OFF)",3740,0
+"USA","Manufacturing","Wind (OFF)",5125,0
+"VNM","Manufacturing","Wind (OFF)",2273.52941176471,0
+"ZAF","Manufacturing","Wind (OFF)",1125,0
+"ARE","O&M","Wind (OFF)",200,0
+"AUS","O&M","Wind (OFF)",100,0
+"BEL","O&M","Wind (OFF)",250.831873097898,1.178
+"BHR","O&M","Wind (OFF)",200,0
+"BRA","O&M","Wind (OFF)",509,0
+"CHN","O&M","Wind (OFF)",378,4.588
+"CZE","O&M","Wind (OFF)",330,0
+"DEU","O&M","Wind (OFF)",200,6.41
+"DNK","O&M","Wind (OFF)",330,1.358
+"EGY","O&M","Wind (OFF)",200,0
+"ESP","O&M","Wind (OFF)",330,0.01
+"FIN","O&M","Wind (OFF)",250.831873097898,0.073
+"FRA","O&M","Wind (OFF)",400,0.002
+"GBR","O&M","Wind (OFF)",267.857142857143,8.3
+"GRC","O&M","Wind (OFF)",375,0
+"IND","O&M","Wind (OFF)",500,0
+"IRL","O&M","Wind (OFF)",250.831873097898,0.025
+"IRN","O&M","Wind (OFF)",200,0
+"IRQ","O&M","Wind (OFF)",200,0
+"JPN","O&M","Wind (OFF)",510,0.065
+"KEN","O&M","Wind (OFF)",645.161290322581,0
+"KOR","O&M","Wind (OFF)",510,0.046
+"KWT","O&M","Wind (OFF)",200,0
+"LBY","O&M","Wind (OFF)",200,0
+"MEX","O&M","Wind (OFF)",75.7575757575758,0
+"NLD","O&M","Wind (OFF)",330,0.957
+"NOR","O&M","Wind (OFF)",330,0.002
+"OMN","O&M","Wind (OFF)",200,0
+"POL","O&M","Wind (OFF)",330,0
+"QAT","O&M","Wind (OFF)",200,0
+"ROU","O&M","Wind (OFF)",330,0
+"SAU","O&M","Wind (OFF)",200,0
+"SWE","O&M","Wind (OFF)",250.831873097898,0.206
+"THA","O&M","Wind (OFF)",400,0
+"TUR","O&M","Wind (OFF)",360,0
+"TWN","O&M","Wind (OFF)",378,0.008
+"USA","O&M","Wind (OFF)",90,0.029
+"VNM","O&M","Wind (OFF)",400,0.099
+"ZAF","O&M","Wind (OFF)",500,0
+"ABW","Construction","Wind (ON)",1113.58075171486,0
+"AGO","Construction","Wind (ON)",3080,0
+"ARE","Construction","Wind (ON)",750,0
+"ARG","Construction","Wind (ON)",1113.58075171486,0.493
+"ARM","Construction","Wind (ON)",2190,0
+"AUS","Construction","Wind (ON)",2200,0.942
+"AUT","Construction","Wind (ON)",925.972914072543,0.191
+"AZE","Construction","Wind (ON)",2190,0.05
+"BEL","Construction","Wind (ON)",925.972914072543,0.051
+"BES","Construction","Wind (ON)",1113.58075171486,0
+"BGD","Construction","Wind (ON)",1113.58075171486,0
+"BGR","Construction","Wind (ON)",925.972914072543,0
+"BHR","Construction","Wind (ON)",750,0
+"BIH","Construction","Wind (ON)",925.972914072543,0
+"BLR","Construction","Wind (ON)",2190,0.018
+"BOL","Construction","Wind (ON)",1113.58075171486,0
+"BRA","Construction","Wind (ON)",1113.58075171486,2.107
+"BTN","Construction","Wind (ON)",1113.58075171486,0
+"CAN","Construction","Wind (ON)",1507,0.413
+"CHE","Construction","Wind (ON)",925.972914072543,0
+"CHL","Construction","Wind (ON)",994.116215600279,0.219
+"CHN","Construction","Wind (ON)",1113.58075171486,18.504
+"COG","Construction","Wind (ON)",3080,0
+"COL","Construction","Wind (ON)",1113.58075171486,0
+"CPV","Construction","Wind (ON)",4032.2580644977,0.001
+"CRI","Construction","Wind (ON)",1113.58075171486,0.03
+"CUB","Construction","Wind (ON)",1113.58075171486,0
+"CUW","Construction","Wind (ON)",1113.58075171486,0
+"CYP","Construction","Wind (ON)",925.972914072543,0
+"CZE","Construction","Wind (ON)",600,0.00799999999999998
+"DEU","Construction","Wind (ON)",600,2.719
+"DNK","Construction","Wind (ON)",600,0.175
+"DOM","Construction","Wind (ON)",1113.58075171486,0.048
+"DZA","Construction","Wind (ON)",750,0
+"ECU","Construction","Wind (ON)",1113.58075171486,0
+"EGY","Construction","Wind (ON)",750,0.375
+"ERI","Construction","Wind (ON)",4032.2580644977,0
+"ESP","Construction","Wind (ON)",600,0.331000000000001
+"EST","Construction","Wind (ON)",925.972914072543,0
+"ETH","Construction","Wind (ON)",3080,0
+"FIN","Construction","Wind (ON)",925.972914072543,0
+"FJI","Construction","Wind (ON)",2200,0
+"FLK","Construction","Wind (ON)",1113.58075171486,0
+"FRA","Construction","Wind (ON)",600,1.596
+"FRO","Construction","Wind (ON)",925.972914072543,0
+"FSM","Construction","Wind (ON)",2200,0
+"GAB","Construction","Wind (ON)",3080,0
+"GBR","Construction","Wind (ON)",600,0.589000000000001
+"GEO","Construction","Wind (ON)",2190,0
+"GLP","Construction","Wind (ON)",1113.58075171486,0
+"GMB","Construction","Wind (ON)",4032.2580644977,0
+"GRC","Construction","Wind (ON)",3050,0.253
+"GTM","Construction","Wind (ON)",1113.58075171486,0.031
+"HND","Construction","Wind (ON)",1113.58075171486,0
+"HRV","Construction","Wind (ON)",925.972914072543,0.00599999999999993
+"HUN","Construction","Wind (ON)",925.972914072543,0
+"IDN","Construction","Wind (ON)",1113.58075171486,0.075
+"IND","Construction","Wind (ON)",770,2.439
+"IRL","Construction","Wind (ON)",925.972914072543,0.2
+"IRN","Construction","Wind (ON)",750,0.091
+"IRQ","Construction","Wind (ON)",750,0
+"ISL","Construction","Wind (ON)",925.972914072543,0
+"ISR","Construction","Wind (ON)",750,0
+"ITA","Construction","Wind (ON)",925.972914072543,0.573000000000001
+"JAM","Construction","Wind (ON)",1113.58075171486,0
+"JOR","Construction","Wind (ON)",750,0.087
+"JPN","Construction","Wind (ON)",2800,0.261
+"KAZ","Construction","Wind (ON)",2190,0.01
+"KEN","Construction","Wind (ON)",4032.25806451613,0.31
+"KNA","Construction","Wind (ON)",1113.58075171486,0
+"KOR","Construction","Wind (ON)",2800,0.168
+"KWT","Construction","Wind (ON)",750,0
+"LBN","Construction","Wind (ON)",750,0
+"LBY","Construction","Wind (ON)",750,0
+"LKA","Construction","Wind (ON)",1113.58075171486,0
+"LTU","Construction","Wind (ON)",925.972914072543,0.00299999999999996
+"LUX","Construction","Wind (ON)",925.972914072543,0.03
+"LVA","Construction","Wind (ON)",925.972914072543,0
+"MAR","Construction","Wind (ON)",750,0.203
+"MDA","Construction","Wind (ON)",2190,0
+"MDV","Construction","Wind (ON)",1113.58075171486,0
+"MEX","Construction","Wind (ON)",757.575757575758,0.676
+"MKD","Construction","Wind (ON)",925.972914072543,0
+"MNE","Construction","Wind (ON)",925.972914072543,0.046
+"MNG","Construction","Wind (ON)",2190,0.055
+"MRT","Construction","Wind (ON)",4032.2580644977,0
+"MTQ","Construction","Wind (ON)",1113.58075171486,0
+"MUS","Construction","Wind (ON)",4032.2580644977,0
+"NAM","Construction","Wind (ON)",4032.2580644977,0
+"NCL","Construction","Wind (ON)",2200,0
+"NGA","Construction","Wind (ON)",3080,0
+"NIC","Construction","Wind (ON)",1113.58075171486,0
+"NLD","Construction","Wind (ON)",600,0.269
+"NOR","Construction","Wind (ON)",3750,0.468
+"NZL","Construction","Wind (ON)",2200,0
+"OMN","Construction","Wind (ON)",750,0
+"PAK","Construction","Wind (ON)",1113.58075171486,0.397
+"PAN","Construction","Wind (ON)",1113.58075171486,0
+"PER","Construction","Wind (ON)",1113.58075171486,0.132
+"PHL","Construction","Wind (ON)",1113.58075171486,0
+"POL","Construction","Wind (ON)",600,0.0160000000000004
+"PRI","Construction","Wind (ON)",1113.58075171486,0
+"PRK","Construction","Wind (ON)",2800,0
+"PRT","Construction","Wind (ON)",925.972914072543,0.0669999999999994
+"QAT","Construction","Wind (ON)",750,0
+"REU","Construction","Wind (ON)",4032.2580644977,0
+"ROU","Construction","Wind (ON)",600,0
+"RUS","Construction","Wind (ON)",2190,0.06
+"SAU","Construction","Wind (ON)",750,0
+"SOM","Construction","Wind (ON)",4032.2580644977,0
+"SRB","Construction","Wind (ON)",925.972914072543,0.349
+"SVK","Construction","Wind (ON)",925.972914072543,0
+"SVN","Construction","Wind (ON)",925.972914072543,0
+"SWE","Construction","Wind (ON)",925.972914072543,0.704
+"SYC","Construction","Wind (ON)",4032.2580644977,0
+"SYR","Construction","Wind (ON)",750,0
+"TCD","Construction","Wind (ON)",4032.2580644977,0
+"THA","Construction","Wind (ON)",1113.58075171486,0.39
+"TUN","Construction","Wind (ON)",750,0
+"TUR","Construction","Wind (ON)",2190,0.489
+"TWN","Construction","Wind (ON)",1113.58075171486,0.0120000000000001
+"TZA","Construction","Wind (ON)",3080,0
+"UKR","Construction","Wind (ON)",2190,0.068
+"URY","Construction","Wind (ON)",1113.58075171486,0
+"USA","Construction","Wind (ON)",700,6.75200000000001
+"UZB","Construction","Wind (ON)",2190,0
+"VEN","Construction","Wind (ON)",1113.58075171486,0
+"VGB","Construction","Wind (ON)",1113.58075171486,0
+"VNM","Construction","Wind (ON)",1113.58075171486,0.032
+"VUT","Construction","Wind (ON)",2200,0
+"WSM","Construction","Wind (ON)",2200,0
+"ZAF","Construction","Wind (ON)",750,0
+"ABW","Manufacturing","Wind (ON)",4374.96970530733,0
+"AGO","Manufacturing","Wind (ON)",7480,0
+"ARE","Manufacturing","Wind (ON)",3300,0
+"ARG","Manufacturing","Wind (ON)",4374.96970530733,0.493
+"ARM","Manufacturing","Wind (ON)",6315,0
+"AUS","Manufacturing","Wind (ON)",3827.67915319157,0.942
+"AUT","Manufacturing","Wind (ON)",3655.47945205458,0.191
+"AZE","Manufacturing","Wind (ON)",6315,0.05
+"BEL","Manufacturing","Wind (ON)",3655.47945205458,0.051
+"BES","Manufacturing","Wind (ON)",4374.96970530733,0
+"BGD","Manufacturing","Wind (ON)",4374.96970530733,0
+"BGR","Manufacturing","Wind (ON)",3655.47945205458,0
+"BHR","Manufacturing","Wind (ON)",3300,0
+"BIH","Manufacturing","Wind (ON)",3655.47945205458,0
+"BLR","Manufacturing","Wind (ON)",6315,0.018
+"BOL","Manufacturing","Wind (ON)",4374.96970530733,0
+"BRA","Manufacturing","Wind (ON)",4200,2.107
+"BTN","Manufacturing","Wind (ON)",4374.96970530733,0
+"CAN","Manufacturing","Wind (ON)",3827.67915319157,0.413
+"CHE","Manufacturing","Wind (ON)",3655.47945205458,0
+"CHL","Manufacturing","Wind (ON)",3827.67915319157,0.219
+"CHN","Manufacturing","Wind (ON)",4374.96970530733,18.504
+"COG","Manufacturing","Wind (ON)",7480,0
+"COL","Manufacturing","Wind (ON)",4374.96970530733,0
+"CPV","Manufacturing","Wind (ON)",7480,0.001
+"CRI","Manufacturing","Wind (ON)",4374.96970530733,0.03
+"CUB","Manufacturing","Wind (ON)",4374.96970530733,0
+"CUW","Manufacturing","Wind (ON)",4374.96970530733,0
+"CYP","Manufacturing","Wind (ON)",3655.47945205458,0
+"CZE","Manufacturing","Wind (ON)",3750,0.00799999999999998
+"DEU","Manufacturing","Wind (ON)",3750,2.719
+"DNK","Manufacturing","Wind (ON)",3750,0.175
+"DOM","Manufacturing","Wind (ON)",4374.96970530733,0.048
+"DZA","Manufacturing","Wind (ON)",3300,0
+"ECU","Manufacturing","Wind (ON)",4374.96970530733,0
+"EGY","Manufacturing","Wind (ON)",3300,0.375
+"ERI","Manufacturing","Wind (ON)",7480,0
+"ESP","Manufacturing","Wind (ON)",3750,0.331000000000001
+"EST","Manufacturing","Wind (ON)",3655.47945205458,0
+"ETH","Manufacturing","Wind (ON)",7480,0
+"FIN","Manufacturing","Wind (ON)",3655.47945205458,0
+"FJI","Manufacturing","Wind (ON)",4374.96970530733,0
+"FLK","Manufacturing","Wind (ON)",4374.96970530733,0
+"FRA","Manufacturing","Wind (ON)",3750,1.596
+"FRO","Manufacturing","Wind (ON)",3655.47945205458,0
+"FSM","Manufacturing","Wind (ON)",4374.96970530733,0
+"GAB","Manufacturing","Wind (ON)",7480,0
+"GBR","Manufacturing","Wind (ON)",3750,0.589000000000001
+"GEO","Manufacturing","Wind (ON)",6315,0
+"GLP","Manufacturing","Wind (ON)",4374.96970530733,0
+"GMB","Manufacturing","Wind (ON)",7480,0
+"GRC","Manufacturing","Wind (ON)",1350,0.253
+"GTM","Manufacturing","Wind (ON)",4374.96970530733,0.031
+"HND","Manufacturing","Wind (ON)",4374.96970530733,0
+"HRV","Manufacturing","Wind (ON)",3655.47945205458,0.00599999999999993
+"HUN","Manufacturing","Wind (ON)",3655.47945205458,0
+"IDN","Manufacturing","Wind (ON)",4374.96970530733,0.075
+"IND","Manufacturing","Wind (ON)",4374.96970530733,2.439
+"IRL","Manufacturing","Wind (ON)",3655.47945205458,0.2
+"IRN","Manufacturing","Wind (ON)",3300,0.091
+"IRQ","Manufacturing","Wind (ON)",3300,0
+"ISL","Manufacturing","Wind (ON)",3655.47945205458,0
+"ISR","Manufacturing","Wind (ON)",3300,0
+"ITA","Manufacturing","Wind (ON)",3655.47945205458,0.573000000000001
+"JAM","Manufacturing","Wind (ON)",4374.96970530733,0
+"JOR","Manufacturing","Wind (ON)",3300,0.087
+"JPN","Manufacturing","Wind (ON)",4300,0.261
+"KAZ","Manufacturing","Wind (ON)",6315,0.01
+"KEN","Manufacturing","Wind (ON)",7480,0.31
+"KNA","Manufacturing","Wind (ON)",4374.96970530733,0
+"KOR","Manufacturing","Wind (ON)",4300,0.168
+"KWT","Manufacturing","Wind (ON)",3300,0
+"LBN","Manufacturing","Wind (ON)",3300,0
+"LBY","Manufacturing","Wind (ON)",3300,0
+"LKA","Manufacturing","Wind (ON)",4374.96970530733,0
+"LTU","Manufacturing","Wind (ON)",3655.47945205458,0.00299999999999996
+"LUX","Manufacturing","Wind (ON)",3655.47945205458,0.03
+"LVA","Manufacturing","Wind (ON)",3655.47945205458,0
+"MAR","Manufacturing","Wind (ON)",3300,0.203
+"MDA","Manufacturing","Wind (ON)",6315,0
+"MDV","Manufacturing","Wind (ON)",4374.96970530733,0
+"MEX","Manufacturing","Wind (ON)",3827.67915319157,0.676
+"MKD","Manufacturing","Wind (ON)",3655.47945205458,0
+"MNE","Manufacturing","Wind (ON)",3655.47945205458,0.046
+"MNG","Manufacturing","Wind (ON)",6315,0.055
+"MRT","Manufacturing","Wind (ON)",7480,0
+"MTQ","Manufacturing","Wind (ON)",4374.96970530733,0
+"MUS","Manufacturing","Wind (ON)",7480,0
+"NAM","Manufacturing","Wind (ON)",7480,0
+"NCL","Manufacturing","Wind (ON)",4374.96970530733,0
+"NGA","Manufacturing","Wind (ON)",7480,0
+"NIC","Manufacturing","Wind (ON)",4374.96970530733,0
+"NLD","Manufacturing","Wind (ON)",3750,0.269
+"NOR","Manufacturing","Wind (ON)",3750,0.468
+"NZL","Manufacturing","Wind (ON)",3827.67915319157,0
+"OMN","Manufacturing","Wind (ON)",3300,0
+"PAK","Manufacturing","Wind (ON)",4374.96970530733,0.397
+"PAN","Manufacturing","Wind (ON)",4374.96970530733,0
+"PER","Manufacturing","Wind (ON)",4374.96970530733,0.132
+"PHL","Manufacturing","Wind (ON)",4374.96970530733,0
+"POL","Manufacturing","Wind (ON)",3750,0.0160000000000004
+"PRI","Manufacturing","Wind (ON)",4374.96970530733,0
+"PRK","Manufacturing","Wind (ON)",4300,0
+"PRT","Manufacturing","Wind (ON)",3655.47945205458,0.0669999999999994
+"QAT","Manufacturing","Wind (ON)",3300,0
+"REU","Manufacturing","Wind (ON)",7480,0
+"ROU","Manufacturing","Wind (ON)",3750,0
+"RUS","Manufacturing","Wind (ON)",6315,0.06
+"SAU","Manufacturing","Wind (ON)",3300,0
+"SOM","Manufacturing","Wind (ON)",7480,0
+"SRB","Manufacturing","Wind (ON)",3655.47945205458,0.349
+"SVK","Manufacturing","Wind (ON)",3655.47945205458,0
+"SVN","Manufacturing","Wind (ON)",3655.47945205458,0
+"SWE","Manufacturing","Wind (ON)",3655.47945205458,0.704
+"SYC","Manufacturing","Wind (ON)",7480,0
+"SYR","Manufacturing","Wind (ON)",3300,0
+"TCD","Manufacturing","Wind (ON)",7480,0
+"THA","Manufacturing","Wind (ON)",4374.96970530733,0.39
+"TUN","Manufacturing","Wind (ON)",3300,0
+"TUR","Manufacturing","Wind (ON)",6315,0.489
+"TWN","Manufacturing","Wind (ON)",4374.96970530733,0.0120000000000001
+"TZA","Manufacturing","Wind (ON)",7480,0
+"UKR","Manufacturing","Wind (ON)",6315,0.068
+"URY","Manufacturing","Wind (ON)",4374.96970530733,0
+"USA","Manufacturing","Wind (ON)",3827.67915319157,6.75200000000001
+"UZB","Manufacturing","Wind (ON)",6315,0
+"VEN","Manufacturing","Wind (ON)",4374.96970530733,0
+"VGB","Manufacturing","Wind (ON)",4374.96970530733,0
+"VNM","Manufacturing","Wind (ON)",4374.96970530733,0.032
+"VUT","Manufacturing","Wind (ON)",4374.96970530733,0
+"WSM","Manufacturing","Wind (ON)",4374.96970530733,0
+"ZAF","Manufacturing","Wind (ON)",2250,0
+"ABW","O&M","Wind (ON)",401.729559404581,0.03
+"ARE","O&M","Wind (ON)",200,0.001
+"ARG","O&M","Wind (ON)",401.729559404581,0.75
+"ARM","O&M","Wind (ON)",360,0.003
+"AUS","O&M","Wind (ON)",100,5.816
+"AUT","O&M","Wind (ON)",331.022921209823,3.078
+"AZE","O&M","Wind (ON)",360,0.066
+"BEL","O&M","Wind (ON)",331.022921209823,1.979
+"BES","O&M","Wind (ON)",401.729559404581,0.011
+"BGD","O&M","Wind (ON)",401.729559404581,0.003
+"BGR","O&M","Wind (ON)",331.022921209823,0.698
+"BHR","O&M","Wind (ON)",200,0.001
+"BIH","O&M","Wind (ON)",331.022921209823,0.051
+"BLR","O&M","Wind (ON)",360,0.101
+"BOL","O&M","Wind (ON)",401.729559404581,0.027
+"BRA","O&M","Wind (ON)",509,14.401
+"BTN","O&M","Wind (ON)",401.729559404581,0.001
+"CAN","O&M","Wind (ON)",100,12.816
+"CHE","O&M","Wind (ON)",331.022921209823,0.075
+"CHL","O&M","Wind (ON)",375.518190247463,1.524
+"CHN","O&M","Wind (ON)",378,180.108
+"COL","O&M","Wind (ON)",401.729559404581,0.018
+"CPV","O&M","Wind (ON)",645.161290322581,0.027
+"CRI","O&M","Wind (ON)",401.729559404581,0.408
+"CUB","O&M","Wind (ON)",401.729559404581,0.012
+"CUW","O&M","Wind (ON)",401.729559404581,0.047
+"CYP","O&M","Wind (ON)",331.022921209823,0.158
+"CZE","O&M","Wind (ON)",330,0.316
+"DEU","O&M","Wind (ON)",330,53.01
+"DNK","O&M","Wind (ON)",330,4.401
+"DOM","O&M","Wind (ON)",401.729559404581,0.183
+"DZA","O&M","Wind (ON)",200,0.01
+"ECU","O&M","Wind (ON)",401.729559404581,0.021
+"EGY","O&M","Wind (ON)",200,1.125
+"ERI","O&M","Wind (ON)",645.161290322581,0.001
+"ESP","O&M","Wind (ON)",330,23.426
+"EST","O&M","Wind (ON)",331.022921209823,0.312
+"ETH","O&M","Wind (ON)",645.161290322581,0.324
+"FIN","O&M","Wind (ON)",331.022921209823,1.968
+"FJI","O&M","Wind (ON)",100,0.01
+"FLK","O&M","Wind (ON)",401.729559404581,0.003
+"FRA","O&M","Wind (ON)",330,15.106
+"FRO","O&M","Wind (ON)",331.022921209823,0.02
+"FSM","O&M","Wind (ON)",100,0.001
+"GBR","O&M","Wind (ON)",330,13.436
+"GEO","O&M","Wind (ON)",360,0.021
+"GLP","O&M","Wind (ON)",401.729559404581,0.026
+"GMB","O&M","Wind (ON)",645.161290322581,0.001
+"GRC","O&M","Wind (ON)",375,2.877
+"GTM","O&M","Wind (ON)",401.729559404581,0.107
+"HND","O&M","Wind (ON)",401.729559404581,0.225
+"HRV","O&M","Wind (ON)",331.022921209823,0.582
+"HUN","O&M","Wind (ON)",331.022921209823,0.329
+"IDN","O&M","Wind (ON)",401.729559404581,0.076
+"IND","O&M","Wind (ON)",500,35.288
+"IRL","O&M","Wind (ON)",331.022921209823,3.493
+"IRN","O&M","Wind (ON)",200,0.282
+"IRQ","O&M","Wind (ON)",200,0
+"ISL","O&M","Wind (ON)",331.022921209823,0.003
+"ISR","O&M","Wind (ON)",200,0.027
+"ITA","O&M","Wind (ON)",331.022921209823,10.31
+"JAM","O&M","Wind (ON)",401.729559404581,0.099
+"JOR","O&M","Wind (ON)",200,0.285
+"JPN","O&M","Wind (ON)",510,3.588
+"KAZ","O&M","Wind (ON)",360,0.122
+"KEN","O&M","Wind (ON)",645.161290322581,0.336
+"KNA","O&M","Wind (ON)",401.729559404581,0.002
+"KOR","O&M","Wind (ON)",510,1.266
+"KWT","O&M","Wind (ON)",200,0.01
+"LBN","O&M","Wind (ON)",200,0.003
+"LBY","O&M","Wind (ON)",200,0
+"LKA","O&M","Wind (ON)",401.729559404581,0.146
+"LTU","O&M","Wind (ON)",331.022921209823,0.521
+"LUX","O&M","Wind (ON)",331.022921209823,0.15
+"LVA","O&M","Wind (ON)",331.022921209823,0.077
+"MAR","O&M","Wind (ON)",200,1.22
+"MDA","O&M","Wind (ON)",360,0.002
+"MDV","O&M","Wind (ON)",401.729559404581,0.001
+"MEX","O&M","Wind (ON)",75.7575757575758,4.875
+"MKD","O&M","Wind (ON)",331.022921209823,0.037
+"MNE","O&M","Wind (ON)",331.022921209823,0.118
+"MNG","O&M","Wind (ON)",360,0.156
+"MRT","O&M","Wind (ON)",645.161290322581,0.034
+"MTQ","O&M","Wind (ON)",401.729559404581,0.001
+"MUS","O&M","Wind (ON)",645.161290322581,0.011
+"NAM","O&M","Wind (ON)",645.161290322581,0.005
+"NCL","O&M","Wind (ON)",100,0.038
+"NGA","O&M","Wind (ON)",645.161290322581,0.003
+"NIC","O&M","Wind (ON)",401.729559404581,0.186
+"NLD","O&M","Wind (ON)",330,3.514
+"NOR","O&M","Wind (ON)",330,1.673
+"NZL","O&M","Wind (ON)",100,0.688
+"OMN","O&M","Wind (ON)",200,0
+"PAK","O&M","Wind (ON)",401.729559404581,1.186
+"PAN","O&M","Wind (ON)",401.729559404581,0.27
+"PER","O&M","Wind (ON)",401.729559404581,0.372
+"PHL","O&M","Wind (ON)",400,0.427
+"POL","O&M","Wind (ON)",330,5.775
+"PRI","O&M","Wind (ON)",401.729559404581,0.101
+"PRK","O&M","Wind (ON)",510,0.001
+"PRT","O&M","Wind (ON)",331.022921209823,5.191
+"QAT","O&M","Wind (ON)",200,0
+"REU","O&M","Wind (ON)",645.161290322581,0.017
+"ROU","O&M","Wind (ON)",330,3.03
+"RUS","O&M","Wind (ON)",360,0.106
+"SAU","O&M","Wind (ON)",200,0.003
+"SOM","O&M","Wind (ON)",645.161290322581,0.004
+"SRB","O&M","Wind (ON)",331.022921209823,0.374
+"SVK","O&M","Wind (ON)",331.022921209823,0.004
+"SVN","O&M","Wind (ON)",331.022921209823,0.005
+"SWE","O&M","Wind (ON)",331.022921209823,7.112
+"SYC","O&M","Wind (ON)",645.161290322581,0.006
+"SYR","O&M","Wind (ON)",200,0.001
+"TCD","O&M","Wind (ON)",645.161290322581,0.001
+"THA","O&M","Wind (ON)",400,1.018
+"TUN","O&M","Wind (ON)",200,0.245
+"TUR","O&M","Wind (ON)",360,7.005
+"TWN","O&M","Wind (ON)",378,0.696
+"UKR","O&M","Wind (ON)",360,0.621
+"URY","O&M","Wind (ON)",401.729559404581,1.511
+"USA","O&M","Wind (ON)",516.097321209142,94.266
+"UZB","O&M","Wind (ON)",360,0.001
+"VEN","O&M","Wind (ON)",401.729559404581,0.05
+"VGB","O&M","Wind (ON)",401.729559404581,0.001
+"VNM","O&M","Wind (ON)",400,0.138
+"VUT","O&M","Wind (ON)",100,0.004
+"WSM","O&M","Wind (ON)",100,0.001
+"ZAF","O&M","Wind (ON)",500,2.094
