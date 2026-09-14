@@ -1,0 +1,430 @@
+# Run the standalone energy jobs workflow on an OPEN-PROM run folder.
+#
+# Usage:
+#   Rscript run_openprom_jobs.R "C:/path/to/OPEN-PROM/run" [output_csv] [--visualize=none|total|breakdown|all]
+#   Rscript run_openprom_jobs.R
+
+required_packages <- c(
+  "dplyr",
+  "tidyr",
+  "readr",
+  "stringr",
+  "ggplot2",
+  "RColorBrewer",
+  "readxl",
+  "zoo"
+)
+
+initialize_required_packages <- function(packages) {
+  repos <- getOption("repos")
+  if (is.null(repos) || identical(unname(repos["CRAN"]), "@CRAN@")) {
+    options(repos = c(CRAN = "https://cloud.r-project.org"))
+  }
+
+  user_lib <- Sys.getenv("R_LIBS_USER")
+  if (nzchar(user_lib)) {
+    user_lib <- normalizePath(path.expand(user_lib), winslash = "/", mustWork = FALSE)
+    if (!dir.exists(user_lib)) {
+      dir.create(user_lib, recursive = TRUE, showWarnings = FALSE)
+    }
+    if (dir.exists(user_lib)) {
+      .libPaths(unique(c(user_lib, .libPaths())))
+    }
+  }
+
+  missing_packages <- setdiff(packages, rownames(installed.packages()))
+  if (length(missing_packages) > 0) {
+    message("Installing missing R packages: ", paste(missing_packages, collapse = ", "))
+    install.packages(missing_packages, dependencies = TRUE)
+  }
+
+  still_missing <- setdiff(packages, rownames(installed.packages()))
+  if (length(still_missing) > 0) {
+    stop(
+      "Could not install/load required R packages: ",
+      paste(still_missing, collapse = ", "),
+      "\nCheck your internet connection or install them manually with install.packages().",
+      call. = FALSE
+    )
+  }
+
+  invisible(lapply(packages, function(package) {
+    suppressPackageStartupMessages(library(package, character.only = TRUE))
+  }))
+}
+
+initialize_required_packages(required_packages)
+
+`%||%` <- function(x, y) {
+  if (is.null(x)) y else x
+}
+
+read_interactive_path <- function(prompt) {
+  value <- readline(prompt)
+  value <- trimws(value)
+  sub('^"(.*)"$', "\\1", value)
+}
+
+read_interactive_visualization_mode <- function() {
+  value <- tolower(trimws(readline("Visualization mode [none/total/breakdown/all]: ")))
+  if (!nzchar(value)) {
+    return("none")
+  }
+  value
+}
+
+parse_arguments <- function(args) {
+  options <- list(
+    run_dir = NULL,
+    output_csv = NULL,
+    visualize = NULL,
+    plots_dir = NULL,
+    prompted = FALSE
+  )
+  positional <- character()
+
+  for (arg in args) {
+    if (startsWith(arg, "--visualize=")) {
+      options$visualize <- sub("^--visualize=", "", arg)
+    } else if (startsWith(arg, "--plots-dir=")) {
+      options$plots_dir <- sub("^--plots-dir=", "", arg)
+    } else {
+      positional <- c(positional, arg)
+    }
+  }
+
+  if (length(positional) >= 1) {
+    options$run_dir <- positional[[1]]
+  }
+  if (length(positional) >= 2) {
+    options$output_csv <- positional[[2]]
+  }
+
+  options
+}
+
+args <- commandArgs(trailingOnly = TRUE)
+parsed <- parse_arguments(args)
+if (length(args) < 1) {
+  message("Usage: Rscript run_openprom_jobs.R <run_dir> [output_csv] [--visualize=none|total|breakdown|all]")
+  parsed$run_dir <- read_interactive_path("OPEN-PROM run folder path: ")
+  if (!nzchar(parsed$run_dir)) {
+    stop("No run folder path provided.", call. = FALSE)
+  }
+  parsed$visualize <- read_interactive_visualization_mode()
+  parsed$prompted <- TRUE
+}
+
+visualize_mode <- tolower(parsed$visualize %||% "none")
+valid_visualize_modes <- c("none", "total", "breakdown", "all")
+if (!visualize_mode %in% valid_visualize_modes) {
+  stop(
+    "Invalid visualization mode: ", visualize_mode,
+    ". Use one of: ", paste(valid_visualize_modes, collapse = ", "),
+    call. = FALSE
+  )
+}
+
+file_arg <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+script_path <- if (length(file_arg) == 0) NULL else sub("^--file=", "", file_arg[[1]])
+repo_dir <- if (is.null(script_path)) {
+  normalizePath(getwd(), winslash = "/", mustWork = TRUE)
+} else {
+  dirname(normalizePath(script_path, winslash = "/", mustWork = TRUE))
+}
+setwd(repo_dir)
+
+run_dir <- normalizePath(parsed$run_dir, winslash = "/", mustWork = TRUE)
+input_mif <- file.path(run_dir, "reporting.mif")
+if (!file.exists(input_mif)) {
+  stop("Could not find reporting.mif in: ", run_dir, call. = FALSE)
+}
+
+results_dir <- file.path(repo_dir, "energy_jobs_results")
+dir.create(results_dir, recursive = TRUE, showWarnings = FALSE)
+
+run_name <- basename(run_dir)
+default_output <- file.path(results_dir, paste0(run_name, "_energy_jobs_iamc.csv"))
+output_csv <- parsed$output_csv %||% default_output
+plots_dir <- parsed$plots_dir %||% file.path(results_dir, paste0(run_name, "_plots"))
+
+source_definitions <- function(path) {
+  lines <- readLines(path, warn = FALSE)
+  lines <- sub("^require\\(tidyverse\\)", "# Loaded explicitly by run_openprom_jobs.R", lines)
+  marker <- grep("^######### Run processing", lines)[1]
+  if (is.na(marker)) {
+    stop("Could not find run-processing marker in ", path, call. = FALSE)
+  }
+  eval(parse(text = paste(lines[seq_len(marker - 1)], collapse = "\n")), envir = .GlobalEnv)
+}
+
+year_columns <- function(data) {
+  grep("^[0-9]{4}$", names(data), value = TRUE)
+}
+
+scale_rows <- function(data, rows, factor, unit) {
+  years <- year_columns(data)
+  data[rows, years] <- lapply(data[rows, years, drop = FALSE], function(x) as.numeric(x) * factor)
+  data$Unit[rows] <- unit
+  data
+}
+
+prepare_extraction_fallback <- function(data) {
+  primary_rows <- data$Variable %in% c("Primary Energy|Coal", "Primary Energy|Gas", "Primary Energy|Oil")
+  if (!any(primary_rows)) {
+    return(data)
+  }
+
+  data <- scale_rows(data, primary_rows, 0.041868, "EJ/yr")
+
+  primary <- data[primary_rows, , drop = FALSE]
+  trade <- primary
+  trade$Variable <- sub(
+    "^Primary Energy\\|(Coal|Gas|Oil)$",
+    "Trade|Primary Energy|\\1|Volume",
+    trade$Variable
+  )
+  years <- year_columns(trade)
+  trade[years] <- 0
+  rbind(data, trade)
+}
+
+append_oil_refinery_proxy <- function(data) {
+  liquids <- data[data$Variable == "Secondary Energy|Liquids", , drop = FALSE]
+  if (nrow(liquids) == 0) {
+    return(data)
+  }
+
+  liquids$Variable <- "Secondary Energy|Liquids|Oil"
+  liquids <- scale_rows(liquids, seq_len(nrow(liquids)), 0.0036, "EJ/yr")
+  rbind(data, liquids)
+}
+
+rename_openprom_variables <- function(data) {
+  data$Variable[data$Variable == "Capacity|Electricity|Biofuels"] <- "Capacity|Electricity|Biomass"
+  data$Variable[data$Variable == "Capacity Additions|Electricity|Biofuels"] <- "Capacity Additions|Electricity|Biomass"
+  data
+}
+
+split_aggregate_additions <- function(data, aggregate_variable, component_variables) {
+  years <- year_columns(data)
+  aggregate <- data[data$Variable == aggregate_variable, , drop = FALSE]
+  components <- data[data$Variable %in% component_variables, , drop = FALSE]
+
+  if (nrow(aggregate) == 0 || nrow(components) == 0) {
+    return(data)
+  }
+
+  split_rows <- list()
+  key_cols <- c("Model", "Scenario", "Region")
+  keys <- unique(aggregate[key_cols])
+
+  for (i in seq_len(nrow(keys))) {
+    key <- keys[i, , drop = FALSE]
+    agg_idx <- which(aggregate$Model == key$Model & aggregate$Scenario == key$Scenario & aggregate$Region == key$Region)
+    comp_idx <- which(components$Model == key$Model & components$Scenario == key$Scenario & components$Region == key$Region)
+    if (length(agg_idx) != 1 || length(comp_idx) == 0) {
+      next
+    }
+
+    comp_values <- as.matrix(sapply(components[comp_idx, years, drop = FALSE], as.numeric))
+    totals <- colSums(comp_values, na.rm = TRUE)
+
+    for (j in seq_along(comp_idx)) {
+      row <- aggregate[agg_idx, , drop = FALSE]
+      row$Variable <- sub("^Capacity\\|", "Capacity Additions|", components$Variable[comp_idx[j]])
+      shares <- ifelse(totals > 0, comp_values[j, ] / totals, 0)
+      row[years] <- as.list(as.numeric(unlist(aggregate[agg_idx, years, drop = FALSE])) * shares)
+      split_rows[[length(split_rows) + 1]] <- row
+    }
+  }
+
+  if (length(split_rows) == 0) {
+    return(data)
+  }
+
+  rbind(data, do.call(rbind, split_rows))
+}
+
+add_openprom_region_mapping <- function(run_dir) {
+  mapping_file <- file.path(run_dir, "data", "regionmappingOPDEV5.csv")
+  if (!file.exists(mapping_file)) {
+    warning("OPEN-PROM region mapping not found: ", mapping_file)
+    return(invisible(FALSE))
+  }
+
+  openprom_mapping <- read.csv(mapping_file, sep = ";", check.names = FALSE)
+  openprom_mapping <- openprom_mapping[, c("Region.Code", "ISO3.Code")]
+  names(openprom_mapping) <- c("Region", "iso3")
+
+  assign(
+    "region_mappings",
+    unique(rbind(region_mappings, openprom_mapping)),
+    envir = .GlobalEnv
+  )
+  invisible(TRUE)
+}
+
+prepare_openprom_iamc <- function(input_mif) {
+  data <- read.csv(input_mif, sep = ";", check.names = FALSE)
+  data <- data[, names(data) != "", drop = FALSE]
+  years <- year_columns(data)
+  data[years] <- lapply(data[years], function(values) {
+    values <- trimws(as.character(values))
+    values[values %in% c("", "N/A")] <- NA_character_
+    as.numeric(values)
+  })
+  data$scenario_model <- paste(data$Scenario, data$Model, sep = "-")
+
+  data <- rename_openprom_variables(data)
+  data <- split_aggregate_additions(
+    data,
+    "Capacity Additions|Electricity|Solar",
+    c("Capacity|Electricity|Solar|PV", "Capacity|Electricity|Solar|CSP")
+  )
+  data <- split_aggregate_additions(
+    data,
+    "Capacity Additions|Electricity|Wind",
+    c("Capacity|Electricity|Wind|Onshore", "Capacity|Electricity|Wind|Offshore")
+  )
+  data <- prepare_extraction_fallback(data)
+  data <- append_oil_refinery_proxy(data)
+
+  data
+}
+
+save_total_jobs_plot <- function(total_jobs, plots_dir) {
+  total_plot_data <- total_jobs %>%
+    filter(!is.na(jobs)) %>%
+    mutate(year = as.integer(year), jobs_million = jobs / 1e6)
+
+  if (nrow(total_plot_data) == 0) {
+    warning("No total jobs data available for visualization.")
+    return(character())
+  }
+
+  latest_year <- max(total_plot_data$year, na.rm = TRUE)
+  plot_regions <- total_plot_data %>%
+    filter(year == latest_year, Region != "World") %>%
+    arrange(desc(jobs)) %>%
+    slice_head(n = 12) %>%
+    pull(Region)
+
+  plot_data <- total_plot_data %>% filter(Region %in% plot_regions)
+  output_file <- file.path(plots_dir, "energy_jobs_total_top_regions.png")
+
+  plot <- ggplot(plot_data, aes(x = year, y = jobs_million, color = Region)) +
+    geom_line(linewidth = 0.9) +
+    labs(
+      title = "Total energy jobs by region",
+      x = "Year",
+      y = "Jobs (million)",
+      color = "Region"
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom")
+
+  ggsave(output_file, plot = plot, width = 11, height = 7, dpi = 160)
+  output_file
+}
+
+save_breakdown_plots <- function(energy_jobs, plots_dir) {
+  breakdown_data <- energy_jobs %>%
+    filter(!is.na(jobs)) %>%
+    mutate(year = as.integer(year), jobs_million = jobs / 1e6)
+
+  if (nrow(breakdown_data) == 0) {
+    warning("No category/fuel jobs data available for visualization.")
+    return(character())
+  }
+
+  category_file <- file.path(plots_dir, "energy_jobs_by_category_world.png")
+  category_plot <- breakdown_data %>%
+    filter(Region == "World") %>%
+    group_by(year, category) %>%
+    summarise(jobs_million = sum(jobs_million, na.rm = TRUE), .groups = "drop") %>%
+    ggplot(aes(x = year, y = jobs_million, fill = category)) +
+    geom_area(alpha = 0.85) +
+    labs(
+      title = "Energy jobs by category",
+      x = "Year",
+      y = "Jobs (million)",
+      fill = "Category"
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom")
+
+  ggsave(category_file, plot = category_plot, width = 11, height = 7, dpi = 160)
+
+  fuel_file <- file.path(plots_dir, "energy_jobs_by_fuel_world.png")
+  fuel_plot <- breakdown_data %>%
+    filter(Region == "World") %>%
+    group_by(year, fuel) %>%
+    summarise(jobs_million = sum(jobs_million, na.rm = TRUE), .groups = "drop") %>%
+    ggplot(aes(x = year, y = jobs_million, fill = fuel)) +
+    geom_area(alpha = 0.85) +
+    labs(
+      title = "Energy jobs by fuel",
+      x = "Year",
+      y = "Jobs (million)",
+      fill = "Fuel"
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom")
+
+  ggsave(fuel_file, plot = fuel_plot, width = 11, height = 7, dpi = 160)
+
+  c(category_file, fuel_file)
+}
+
+save_energy_jobs_visualizations <- function(total_jobs, energy_jobs, plots_dir, mode) {
+  if (mode == "none") {
+    return(character())
+  }
+
+  dir.create(plots_dir, recursive = TRUE, showWarnings = FALSE)
+
+  output_files <- character()
+  if (mode %in% c("total", "all")) {
+    output_files <- c(output_files, save_total_jobs_plot(total_jobs, plots_dir))
+  }
+  if (mode %in% c("breakdown", "all")) {
+    output_files <- c(output_files, save_breakdown_plots(energy_jobs, plots_dir))
+  }
+
+  output_files
+}
+
+source_definitions(file.path(repo_dir, "energy_jobs_iiasadb_clean.R"))
+add_openprom_region_mapping(run_dir)
+energy_jobs_iiasadb_regions <- create_iiasadb_job_intensity(
+  region_mappings = region_mappings,
+  energy_jobs_iso3 = energy_jobs_iso3
+)
+
+iamc_input_data <- prepare_openprom_iamc(input_mif)
+energy_jobs_iamc <- compute_energy_jobs_iiasadb(
+  iamc_input_data = iamc_input_data,
+  na_threshold = 0.60,
+  technical_progress = TRUE,
+  regional_convergence = TRUE,
+  manufacturing = "current_shares"
+)
+
+write.csv(energy_jobs_iamc, output_csv, row.names = FALSE)
+message("Wrote ", normalizePath(output_csv, winslash = "/", mustWork = FALSE))
+
+visualization_files <- save_energy_jobs_visualizations(
+  total_jobs = total_jobs,
+  energy_jobs = energy_jobs,
+  plots_dir = plots_dir,
+  mode = visualize_mode
+)
+if (length(visualization_files) > 0) {
+  message("Wrote visualizations:")
+  for (file in visualization_files) {
+    message(" - ", normalizePath(file, winslash = "/", mustWork = FALSE))
+  }
+}
+
+message("Note: Resource|Extraction|Coal/Gas/Oil is proxied from Primary Energy in Mtoe; Secondary Energy|Liquids|Oil is proxied from total Secondary Energy|Liquids in TWh and converted to EJ.")
