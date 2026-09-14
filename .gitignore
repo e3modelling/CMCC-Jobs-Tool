@@ -1,0 +1,18 @@
+# Blacklist files/folders in same directory as the .gitignore file
+/results
+/witch/data_historical_values.gdx
+/dataviz
+/openprom_energy_jobs_plots/
+/energy_jobs_results/
+.Rhistory
+*.Rproj
+.DS_Store
+
+# Whitelist some files
+!.gitignore
+!README.md
+!CONTRIBUTING.md
+!energy_jobs_intensity.csv
+
+.Rproj.user
+

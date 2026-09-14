@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run OPEN-PROM Energy Jobs",
+      "type": "process",
+      "command": "Rscript",
+      "args": [
+        "${workspaceFolder}/run_openprom_jobs.R",
+        "${input:openpromRunFolder}",
+        "--visualize=${input:visualizationMode}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "openpromRunFolder",
+      "type": "promptString",
+      "description": "OPEN-PROM run folder path",
+      "default": "C:\\Users\\Plessias\\Downloads\\OneDrive_1_7-24-2026\\DAILY_NPi_2026-07-24_15-06-03"
+    },
+    {
+      "id": "visualizationMode",
+      "type": "pickString",
+      "description": "Visualization mode",
+      "options": [
+        "none",
+        "total",
+        "breakdown",
+        "all"
+      ],
+      "default": "all"
+    }
+  ]
+}
