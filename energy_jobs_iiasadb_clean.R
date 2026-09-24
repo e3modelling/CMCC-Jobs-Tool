@@ -43,7 +43,7 @@ compute_energy_jobs_iiasadb <- function(iamc_input_data, na_threshold = 0.60, te
 #na_treshold: threshold above which number of rows per model/scenario are included default: 0.6 or 60% of all entries
 #manufacturing: "current_shares" or "domestic", manufacturing redistribution of job counts based on current production shares or where deployed
 #technical_progress: progress in renewables based on van der Zwaan et al., 2013
-#regional_convergence: convergence of non-OECD productivity to the OECD level by 2100
+#regional_convergence: convergence of productivity to the minimum level by 2100
 
   
 # Technology
@@ -159,20 +159,25 @@ techprogress <- read_csv(c(
 energy_jobs <- energy_jobs %>% left_join(techprogress) %>% mutate(jobs_per_unit = ifelse(year>2020, jobs_per_unit*(1+progress)^(-(pmin(year,2050)-2020)), jobs_per_unit)) %>% select(-progress)
 }
 
-#OPTION 3: Convergence of non-OECD jobs intensity to the OECD level by 2100
+#OPTION 3: Convergence of jobs intensity to the minimum level by 2100
 if(regional_convergence){
   year_start <- 2020
   year_convergence <- 2100
-  oecd_region <- "R5OECD90+EU"
 
-  oecd_targets <- energy_jobs %>%
-    filter(Region == oecd_region, year == year_convergence) %>%
-    select(category, fuel, Model, Scenario,
-           oecd_jobs_per_unit = jobs_per_unit) %>%
-    distinct()
+  convergence_targets <- energy_jobs %>%
+    filter(year == year_convergence) %>%
+    group_by(category, fuel, Model, Scenario) %>%
+    summarise(
+      minimum_jobs_per_unit = if (all(is.na(jobs_per_unit))) {
+        NA_real_
+      } else {
+        min(jobs_per_unit, na.rm = TRUE)
+      },
+      .groups = "drop"
+    )
 
   energy_jobs <- energy_jobs %>%
-    left_join(oecd_targets,
+    left_join(convergence_targets,
               by = c("category", "fuel", "Model", "Scenario")) %>%
     group_by(category, fuel, Model, Scenario, Region) %>%
     mutate(
@@ -181,18 +186,17 @@ if(regional_convergence){
         default = NA_real_
       ),
       jobs_per_unit = case_when(
-        Region == oecd_region ~ jobs_per_unit,
         is.na(jobs_per_unit) ~ jobs_per_unit,
-        is.na(baseline_jobs_per_unit) | is.na(oecd_jobs_per_unit) ~ jobs_per_unit,
-        year >= year_convergence ~ oecd_jobs_per_unit,
+        is.na(baseline_jobs_per_unit) | is.na(minimum_jobs_per_unit) ~ jobs_per_unit,
+        year >= year_convergence ~ minimum_jobs_per_unit,
         year >= year_start ~ baseline_jobs_per_unit *
-          (oecd_jobs_per_unit / baseline_jobs_per_unit) ^
+          (minimum_jobs_per_unit / baseline_jobs_per_unit) ^
           ((year - year_start) / (year_convergence - year_start)),
         TRUE ~ jobs_per_unit
       )
     ) %>%
     ungroup() %>%
-    select(-oecd_jobs_per_unit, -baseline_jobs_per_unit)
+    select(-minimum_jobs_per_unit, -baseline_jobs_per_unit)
 }
 
 # Calculating jobs
