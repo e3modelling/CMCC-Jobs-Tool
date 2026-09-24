@@ -106,7 +106,6 @@ energy_jobs <- iamc_input_data %>%
 energy_jobs <- merge(energy_jobs, energy_jobs_iiasadb_regions, by = c("category", "fuel", "Region"), all = T)
 
 #check which scenarios and models have too many NAs
-print(energy_jobs %>% filter(year==2050) %>% group_by(Model, Scenario) %>% summarize(share_na = sum(!is.na(energyquantity)) / n()))
 energy_jobs <- energy_jobs %>% left_join(energy_jobs %>% filter(year==2050) %>% group_by(Model, Scenario) %>% summarize(share_na = sum(!is.na(energyquantity)) / n())) %>% filter(share_na>=na_threshold) %>% select(-share_na)
 
 #OPTION 1: Redistribute manufacturing renewable equipment shares according to today's values
