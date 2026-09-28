@@ -1,7 +1,7 @@
 # Run the standalone energy jobs workflow on an OPEN-PROM run folder.
 #
 # Usage:
-#   Rscript run_openprom_jobs.R "C:/path/to/OPEN-PROM/run" [output_csv] [--visualize=none|total|breakdown|all]
+#   Rscript run_openprom_jobs.R "C:/path/to/OPEN-PROM/run" [output_csv] [--visualize=none|total|breakdown|all] [--daccs-case=low|reference|high]
 #   Rscript run_openprom_jobs.R
 
 required_packages <- c(
@@ -79,6 +79,7 @@ parse_arguments <- function(args) {
     output_csv = NULL,
     visualize = NULL,
     plots_dir = NULL,
+    daccs_case = "reference",
     prompted = FALSE
   )
   positional <- character()
@@ -88,6 +89,8 @@ parse_arguments <- function(args) {
       options$visualize <- sub("^--visualize=", "", arg)
     } else if (startsWith(arg, "--plots-dir=")) {
       options$plots_dir <- sub("^--plots-dir=", "", arg)
+    } else if (startsWith(arg, "--daccs-case=")) {
+      options$daccs_case <- sub("^--daccs-case=", "", arg)
     } else {
       positional <- c(positional, arg)
     }
@@ -106,7 +109,7 @@ parse_arguments <- function(args) {
 args <- commandArgs(trailingOnly = TRUE)
 parsed <- parse_arguments(args)
 if (length(args) < 1) {
-  message("Usage: Rscript run_openprom_jobs.R <run_dir> [output_csv] [--visualize=none|total|breakdown|all]")
+  message("Usage: Rscript run_openprom_jobs.R <run_dir> [output_csv] [--visualize=none|total|breakdown|all] [--daccs-case=low|reference|high]")
   parsed$run_dir <- read_interactive_path("OPEN-PROM run folder path: ")
   if (!nzchar(parsed$run_dir)) {
     stop("No run folder path provided.", call. = FALSE)
@@ -377,6 +380,43 @@ save_breakdown_plots <- function(energy_jobs, plots_dir) {
   c(category_file, fuel_file)
 }
 
+save_cdr_jobs_plot <- function(energy_jobs, plots_dir) {
+  selected_years <- c(2030L, 2050L, 2070L, 2100L)
+  cdr_fuels <- c("DACCS", "BECCS")
+
+  cdr_plot_data <- energy_jobs %>%
+    filter(
+      Region == "World",
+      fuel %in% cdr_fuels,
+      year %in% selected_years,
+      !is.na(jobs)
+    ) %>%
+    group_by(year, fuel, category) %>%
+    summarise(jobs_million = sum(jobs, na.rm = TRUE) / 1e6, .groups = "drop") %>%
+    mutate(year = factor(year, levels = selected_years))
+
+  if (nrow(cdr_plot_data) == 0) {
+    warning("No DACCS or BECCS jobs data are available for the selected-year CDR plot.")
+    return(character())
+  }
+
+  output_file <- file.path(plots_dir, "energy_jobs_cdr_selected_years.png")
+  plot <- ggplot(cdr_plot_data, aes(x = year, y = jobs_million, fill = category)) +
+    geom_col(width = 0.72) +
+    facet_wrap(~fuel, scales = "free_y") +
+    labs(
+      title = "Carbon dioxide removal jobs in selected years",
+      x = "Year",
+      y = "Jobs (million)",
+      fill = "Category"
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom")
+
+  ggsave(output_file, plot = plot, width = 9, height = 6, dpi = 160)
+  output_file
+}
+
 save_energy_jobs_visualizations <- function(total_jobs, energy_jobs, plots_dir, mode) {
   if (mode == "none") {
     return(character())
@@ -390,6 +430,7 @@ save_energy_jobs_visualizations <- function(total_jobs, energy_jobs, plots_dir, 
   }
   if (mode %in% c("breakdown", "all")) {
     output_files <- c(output_files, save_breakdown_plots(energy_jobs, plots_dir))
+    output_files <- c(output_files, save_cdr_jobs_plot(energy_jobs, plots_dir))
   }
 
   output_files
@@ -403,12 +444,30 @@ energy_jobs_iiasadb_regions <- create_iiasadb_job_intensity(
 )
 
 iamc_input_data <- prepare_openprom_iamc(input_mif)
+daccs_assumptions <- load_daccs_jobs_assumptions(
+  path = file.path(repo_dir, "daccs_jobs_assumptions.csv"),
+  case = parsed$daccs_case
+)
+daccs_job_activity <- prepare_daccs_job_activity(
+  iamc_input_data = iamc_input_data,
+  assumptions = daccs_assumptions
+)
+daccs_job_intensity <- create_daccs_regional_job_intensity(
+  base_job_intensity = energy_jobs_iiasadb_regions,
+  assumptions = daccs_assumptions
+)
+energy_jobs_iiasadb_regions <- bind_rows(
+  energy_jobs_iiasadb_regions,
+  daccs_job_intensity
+)
+
 energy_jobs_iamc <- compute_energy_jobs_iiasadb(
   iamc_input_data = iamc_input_data,
   na_threshold = 0.60,
   technical_progress = TRUE,
   regional_convergence = TRUE,
-  manufacturing = "current_shares"
+  manufacturing = "current_shares",
+  additional_job_activity = daccs_job_activity
 )
 
 write.csv(energy_jobs_iamc, output_csv, row.names = FALSE)
@@ -428,3 +487,4 @@ if (length(visualization_files) > 0) {
 }
 
 message("Note: Resource|Extraction|Coal/Gas/Oil is proxied from Primary Energy in Mtoe; Secondary Energy|Liquids|Oil is proxied from total Secondary Energy|Liquids in TWh and converted to EJ.")
+message("DACCS jobs case: ", parsed$daccs_case, ". Assumptions are documented in daccs_jobs_assumptions.csv.")
