@@ -37,9 +37,255 @@ return(as.data.frame(energy_jobs_iso3))
 }
 
 
+# Load one documented DACCS assumption case together with physical assumptions shared by all cases.
+load_daccs_jobs_assumptions <- function(path = "daccs_jobs_assumptions.csv", case = "reference") {
+  assumptions <- read_csv(path, show_col_types = FALSE)
+  valid_cases <- assumptions %>%
+    filter(case != "all") %>%
+    pull(case) %>%
+    unique()
+
+  if (!case %in% valid_cases) {
+    stop(
+      "Invalid DACCS assumptions case: ", case,
+      ". Use one of: ", paste(valid_cases, collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  assumptions %>% filter(.data$case %in% c("all", .env$case))
+}
+
+
+# Return one scalar assumption and fail early if the assumptions file is incomplete or ambiguous.
+get_daccs_assumption <- function(assumptions, parameter, category = NULL) {
+  rows <- assumptions %>% filter(.data$parameter == .env$parameter)
+  if (is.null(category)) {
+    rows <- rows %>% filter(is.na(.data$category) | .data$category == "")
+  } else {
+    rows <- rows %>% filter(.data$category == .env$category)
+  }
+
+  if (nrow(rows) != 1 || is.na(rows$value[[1]])) {
+    stop(
+      "Expected exactly one DACCS assumption for parameter '", parameter,
+      if (is.null(category)) "'." else paste0("' and category '", category, "'."),
+      call. = FALSE
+    )
+  }
+
+  as.numeric(rows$value[[1]])
+}
+
+
+# Reconstruct additions that can supply the required operating capacity after cohort retirements.
+compute_daccs_cohort_additions <- function(capacity, lifetime) {
+  additions <- rep(NA_real_, length(capacity))
+
+  for (index in seq_along(capacity)) {
+    if (is.na(capacity[[index]])) {
+      next
+    }
+
+    surviving_indices <- which(
+      seq_along(additions) < index &
+        seq_along(additions) >= index - lifetime + 1
+    )
+
+    # Equation: surviving_capacity[t] = sum(additions from the previous L-1 years).
+    surviving_capacity <- sum(additions[surviving_indices], na.rm = TRUE)
+
+    # Equation: additions[t] = max(required_capacity[t] - surviving_capacity[t], 0).
+    # The max prevents a temporary decline in modeled activity from creating negative construction jobs.
+    additions[[index]] <- max(capacity[[index]] - surviving_capacity, 0)
+  }
+
+  additions
+}
+
+
+# Convert commissioning additions into capacity simultaneously under construction.
+compute_daccs_capacity_under_construction <- function(additions, construction_period) {
+  under_construction <- rep(NA_real_, length(additions))
+
+  for (index in seq_along(additions)) {
+    commissioning_window <- index:min(length(additions), index + construction_period - 1)
+
+    # Equation: capacity_under_construction[t] = sum(additions commissioned from t to t + T - 1).
+    # Rhodium reports average annual employment over a five-year build, so each future commissioning
+    # cohort contributes to employment in every construction year preceding operation.
+    under_construction[[index]] <- if (all(is.na(additions[commissioning_window]))) {
+      NA_real_
+    } else {
+      sum(additions[commissioning_window], na.rm = TRUE)
+    }
+  }
+
+  under_construction
+}
+
+
+# Translate OPEN-PROM DACCS removal into the activity quantities consumed by the common jobs engine.
+prepare_daccs_job_activity <- function(iamc_input_data, assumptions) {
+  variable_priority <- c(
+    "Carbon Removal|Geological Storage|Direct Air Capture",
+    "Carbon Capture|Geological Storage|Direct Air Capture",
+    "Carbon Capture|Direct Air Capture"
+  )
+  available_variables <- variable_priority[variable_priority %in% unique(iamc_input_data$Variable)]
+
+  if (length(available_variables) == 0) {
+    warning("No OPEN-PROM DACCS removal variable was found; DACCS jobs will not be calculated.")
+    return(NULL)
+  }
+
+  selected_variable <- available_variables[[1]]
+  daccs_rows <- iamc_input_data %>% filter(.data$Variable == selected_variable)
+
+  if (any(daccs_rows$Unit != "Mt CO2/yr", na.rm = TRUE)) {
+    stop(
+      "DACCS activity must use 'Mt CO2/yr'. Found: ",
+      paste(unique(daccs_rows$Unit), collapse = ", "),
+      call. = FALSE
+    )
+  }
+
+  if (length(available_variables) > 1) {
+    comparison <- iamc_input_data %>%
+      filter(.data$Variable %in% available_variables) %>%
+      select(-scenario_model, -Unit) %>%
+      pivot_longer(
+        cols = matches("^[0-9]{4}$"),
+        names_to = "year",
+        values_to = "removal"
+      ) %>%
+      group_by(Model, Scenario, Region, year) %>%
+      summarise(
+        spread = max(removal, na.rm = TRUE) - min(removal, na.rm = TRUE),
+        .groups = "drop"
+      )
+
+    if (any(is.finite(comparison$spread) & comparison$spread > 1e-9)) {
+      warning(
+        "OPEN-PROM DACCS capture/removal variables differ. Using the highest-priority variable: ",
+        selected_variable
+      )
+    }
+  }
+
+  capacity_factor <- get_daccs_assumption(assumptions, "capacity_factor")
+  # The 20-year lifetime is the documented reference reported by WRI from Fasihi et al. (2019).
+  lifetime <- as.integer(get_daccs_assumption(assumptions, "lifetime"))
+  # The five-year construction period follows Rhodium's DAC workforce assessment.
+  construction_period <- as.integer(get_daccs_assumption(assumptions, "construction_period"))
+
+  if (capacity_factor <= 0 || capacity_factor > 1 || lifetime < 1 || construction_period < 1) {
+    stop("DACCS capacity factor, lifetime, and construction period are outside valid ranges.", call. = FALSE)
+  }
+
+  daccs_capacity <- daccs_rows %>%
+    select(-scenario_model, -Unit) %>%
+    pivot_longer(
+      cols = matches("^[0-9]{4}$"),
+      names_to = "year",
+      values_to = "removal"
+    ) %>%
+    mutate(
+      year = as.integer(year),
+      removal = pmax(as.numeric(removal), 0)
+    ) %>%
+    arrange(Model, Scenario, Region, year) %>%
+    group_by(Model, Scenario, Region) %>%
+    mutate(
+      # Equation: operating_capacity[t] = annual_removal[t] / capacity_factor.
+      # NETL (2022) uses an 85% reference capacity factor for a sorbent DAC plant.
+      operating_capacity = removal / capacity_factor,
+      additions = compute_daccs_cohort_additions(operating_capacity, lifetime),
+      capacity_under_construction = compute_daccs_capacity_under_construction(
+        additions,
+        construction_period
+      )
+    ) %>%
+    ungroup()
+
+  # Equation mapping: O&M uses operating capacity; Construction and Manufacturing use capacity
+  # simultaneously under construction. This preserves Rhodium's average annual five-year job estimates.
+  bind_rows(
+    daccs_capacity %>%
+      transmute(Model, Scenario, Region, year, fuel = "DACCS", category = "O&M", energyquantity = operating_capacity),
+    daccs_capacity %>%
+      transmute(Model, Scenario, Region, year, fuel = "DACCS", category = "Construction", energyquantity = capacity_under_construction),
+    daccs_capacity %>%
+      transmute(Model, Scenario, Region, year, fuel = "DACCS", category = "Manufacturing", energyquantity = capacity_under_construction)
+  )
+}
+
+
+# Transfer the tool's existing regional labor-intensity pattern to DACCS.
+create_daccs_regional_job_intensity <- function(base_job_intensity, assumptions) {
+  categories <- c("Construction", "Manufacturing", "O&M")
+
+  regional_multipliers <- base_job_intensity %>%
+    filter(
+      .data$category %in% categories,
+      .data$fuel != "DACCS",
+      is.finite(.data$jobs_per_unit),
+      .data$jobs_per_unit > 0
+    ) %>%
+    group_by(category, fuel) %>%
+    mutate(
+      # Equation: relative_intensity[r,f,c] = intensity[r,f,c] / median_region(intensity[f,c]).
+      # Taking ratios removes technology-specific units while retaining the tool's regional productivity pattern.
+      technology_median = median(jobs_per_unit, na.rm = TRUE),
+      relative_intensity = jobs_per_unit / technology_median
+    ) %>%
+    ungroup() %>%
+    group_by(category, Region) %>%
+    summarise(
+      # Equation: regional_multiplier[r,c] = median_fuel(relative_intensity[r,f,c]).
+      # The median limits the influence of technology-specific outliers in the existing database.
+      regional_multiplier = median(relative_intensity, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    group_by(category) %>%
+    mutate(
+      usa_multiplier = case_when(
+        any(Region == "USA") ~ regional_multiplier[match("USA", Region)],
+        any(Region == "United States of America") ~ regional_multiplier[match("United States of America", Region)],
+        TRUE ~ 1
+      ),
+      # Equation: normalized_multiplier[r,c] = regional_multiplier[r,c] / regional_multiplier[USA,c].
+      # Rhodium's employment factors are US-based, so the US is the reference productivity level.
+      regional_multiplier = regional_multiplier / usa_multiplier
+    ) %>%
+    ungroup() %>%
+    select(category, Region, regional_multiplier)
+
+  # The source factors are US-based Rhodium estimates; their URLs and scopes are stored with each
+  # numeric value in daccs_jobs_assumptions.csv rather than being duplicated across regions.
+  source_intensities <- assumptions %>%
+    filter(.data$parameter == "jobs_intensity") %>%
+    transmute(category, source_jobs_per_unit = as.numeric(value))
+
+  tidyr::crossing(
+    Region = unique(base_job_intensity$Region),
+    category = categories
+  ) %>%
+    left_join(source_intensities, by = "category") %>%
+    left_join(regional_multipliers, by = c("category", "Region")) %>%
+    mutate(
+      regional_multiplier = coalesce(regional_multiplier, 1),
+      # Equation: DACCS intensity[r,c] = US source intensity[c] * regional productivity multiplier[r,c].
+      jobs_per_unit = source_jobs_per_unit * regional_multiplier,
+      fuel = "DACCS"
+    ) %>%
+    select(category, fuel, jobs_per_unit, Region)
+}
+
+
 
 #main function to compute energy jobs for iiasadb template
-compute_energy_jobs_iiasadb <- function(iamc_input_data, na_threshold = 0.60, technical_progress=T, regional_convergence=T, manufacturing="current_shares"){
+compute_energy_jobs_iiasadb <- function(iamc_input_data, na_threshold = 0.60, technical_progress=T, regional_convergence=T, manufacturing="current_shares", additional_job_activity=NULL){
 #na_treshold: threshold above which number of rows per model/scenario are included default: 0.6 or 60% of all entries
 #manufacturing: "current_shares" or "domestic", manufacturing redistribution of job counts based on current production shares or where deployed
 #technical_progress: progress in renewables based on van der Zwaan et al., 2013
@@ -99,8 +345,14 @@ energy_jobs <- iamc_input_data %>%
   pivot_wider(id_cols=c(Model, Scenario, Region, fuel, year), names_from = category, values_from = energyquantity) %>% 
   mutate(Manufacturing = Construction_Manufacturing) %>% 
   rename(Construction = Construction_Manufacturing) %>% 
-  pivot_longer(-c(Model, Scenario, Region, fuel, year), names_to = "category", values_to = "energyquantity") %>% 
+  pivot_longer(-c(Model, Scenario, Region, fuel, year), names_to = "category", values_to = "energyquantity") %>%
   mutate(year = as.integer(year))
+
+# Non-power technologies can provide standardized activity rows and then use the same downstream
+# intensity, technical-progress, regional-convergence, and jobs equations as the power technologies.
+if(!is.null(additional_job_activity)){
+energy_jobs <- bind_rows(energy_jobs, additional_job_activity)
+}
 
 ########## STEP 3: compute total energy jobs and store data in iamc format
 energy_jobs <- merge(energy_jobs, energy_jobs_iiasadb_regions, by = c("category", "fuel", "Region"), all = T)
@@ -141,7 +393,7 @@ energy_jobs <- right_join(redistribute, energy_jobs) %>%
 
 #OPTION 2: adding technical progress in reducing enegry jobs intensity anually by 0.75% (van der Zwaan et al., 2013) for renewables and 0 for other technologies
 if(technical_progress){
-techprogress <- read_csv(c(
+techprogress <- read_csv(I(
  "fuel, progress
   Wind (OFF), 0.0075
   Wind (ON), 0.0075
@@ -152,8 +404,12 @@ techprogress <- read_csv(c(
   Gas, 0.00
   Biomass, 0.00
   Solar (CSP), 0.0075
-  Solar (PV), 0.0075"
-))
+  Solar (PV), 0.0075
+  DACCS, 0.00"
+ ), show_col_types = FALSE)
+# DACCS defaults to 0% annual labor-productivity progress because OPEN-PROM's 25% cost reduction
+# per cumulative-capacity doubling is not evidence of the same reduction in labor requirements.
+# Set DACCS to 0.0075 above to run the same annual sensitivity currently used for solar and wind.
 #apply learning per technology until 2050, then constant for now
 energy_jobs <- energy_jobs %>% left_join(techprogress) %>% mutate(jobs_per_unit = ifelse(year>2020, jobs_per_unit*(1+progress)^(-(pmin(year,2050)-2020)), jobs_per_unit)) %>% select(-progress)
 }

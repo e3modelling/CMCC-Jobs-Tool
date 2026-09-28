@@ -29,6 +29,7 @@ The repository must contain:
 run_openprom_jobs.R
 energy_jobs_iiasadb_clean.R
 energy_jobs_intensity.csv
+daccs_jobs_assumptions.csv
 global_production_shares.csv
 regmap_r5.csv
 regmap_r10.csv
@@ -93,6 +94,16 @@ Run with all visualizations:
 Rscript run_openprom_jobs.R "C:\path\to\OPEN-PROM-run-folder" --visualize=all
 ```
 
+Select a DACCS employment case:
+
+```powershell
+Rscript run_openprom_jobs.R "C:\path\to\OPEN-PROM-run-folder" --visualize=all --daccs-case=low
+Rscript run_openprom_jobs.R "C:\path\to\OPEN-PROM-run-folder" --visualize=all --daccs-case=reference
+Rscript run_openprom_jobs.R "C:\path\to\OPEN-PROM-run-folder" --visualize=all --daccs-case=high
+```
+
+The default is `reference`.
+
 Run only the total jobs plot:
 
 ```powershell
@@ -136,7 +147,7 @@ Creates a line plot of total energy jobs for the largest regions.
 
 `breakdown`
 
-Creates World-level stacked area plots by job category and by fuel.
+Creates World-level stacked area plots by job category and by fuel. It also creates a stacked bar chart for carbon dioxide removal jobs in 2030, 2050, 2070, and 2100.
 
 `all`
 
@@ -486,6 +497,145 @@ If these rows are missing, check:
 2. Whether `reporting.mif` contains matching `Capacity` and `Capacity Additions` rows.
 3. Whether `energy_jobs_intensity.csv` contains matching `fuel` and `category` rows.
 4. Whether the technology name needs an OPEN-PROM mapping rule.
+
+## DACCS Jobs Methodology
+
+DACCS is not added to the electricity `tech` vector since the technology is not part of the power sector. OPEN-PROM reports DACCS as a carbon-removal flow so the runner first converts the reported flow into standardized internal activity rows. Those rows then use the same job-intensity merge, technical-progress adjustment, regional convergence, jobs equation, and IAMC output
+
+### OPEN-PROM Activity Variable
+
+The preferred input is:
+
+```text
+Carbon Removal|Geological Storage|Direct Air Capture   Mt CO2/yr
+```
+
+The runner uses these fallbacks, in order, if the preferred variable is absent:
+
+```text
+Carbon Capture|Geological Storage|Direct Air Capture
+Carbon Capture|Direct Air Capture
+```
+
+The unit must be exactly `Mt CO2/yr`. When multiple variables are available, the runner warns if their values differ and uses the highest-priority variable.
+
+### Operating Capacity
+
+OPEN-PROM reports annual removal rather than nameplate DACCS capacity. The runner estimates operating capacity as:
+
+```text
+operating_capacity[t] = annual_removal[t] / capacity_factor
+```
+
+The reference capacity factor is `0.85`, based on the NETL sorbent DAC reference case:
+
+```text
+https://www.netl.doe.gov/projects/files/DirectAirCaptureCaseStudiesorbentSystem_080122.pdf
+```
+
+The value is stored in `daccs_jobs_assumptions.csv` and can be changed for sensitivity analysis.
+
+### Capacity Additions and Plant Replacement
+
+The runner reconstructs additions with a cohort stock model:
+
+```text
+surviving_capacity[t] = sum(additions from the previous L - 1 years)
+additions[t] = max(operating_capacity[t] - surviving_capacity[t], 0)
+```
+
+The reference lifetime is 20 years. WRI reports this as a commonly used DAC lifetime assumption, referring to Fasihi et al. (2019):
+
+```text
+https://publications.wri.org/scaling-dac-in-the-us
+```
+
+The non-negative constraint prevents a temporary decline in modeled DACCS activity from generating negative construction jobs.
+
+### Construction Activity
+
+Rhodium reports average annual employment over an approximately five-year construction period. The runner therefore calculates the capacity simultaneously under construction:
+
+```text
+capacity_under_construction[t] = sum(additions commissioned from t to t + T - 1)
+```
+
+where `T = 5` years in the reference assumptions. Construction and Manufacturing use this quantity, while O&M uses operating capacity.
+
+Because the OPEN-PROM horizon ends in 2100, construction employment near the endpoint includes only projects commissioned by 2100. It does not assume unreported projects after the model horizon, so Construction and Manufacturing in 2100 should be interpreted as a model-horizon lower bound.
+
+### Employment Intensities
+
+The reference case is based on a Rhodium assessment of a commercial DAC facility with `0.5 Mt CO2/yr` capacity:
+
+```text
+https://rhg.com/research/direct-air-capture-workforce-development/
+```
+
+The published values and conversions are:
+
+```text
+Construction:  765 / 0.5 = 1,530 jobs per (Mt CO2/yr capacity under construction)
+Manufacturing: 450 / 0.5 =   900 jobs per (Mt CO2/yr capacity under construction)
+O&M:           340 / 0.5 =   680 jobs per (Mt CO2/yr operating capacity)
+```
+
+`Manufacturing` represents the source's supply-chain share, which includes equipment manufacturing, freight, and related activities. It is mapped to Manufacturing to preserve the categories already used by the jobs tool.
+
+The `low` and `high` cases use the newer Rhodium ranges for a first-of-a-kind 0.5 Mt CO2/yr DACCS project, including CO2 injection and storage:
+
+```text
+https://rhg.com/research/the-benefits-of-innovation-an-assessment-of-the-economic-opportunities-of-highly-durable-carbon-dioxide-removal/
+```
+
+These cases are sensitivity scenarios, not statistical confidence intervals. Their full values, units, scope, and source URLs are recorded in `daccs_jobs_assumptions.csv`.
+
+### Regional Productivity and Convergence
+
+The Rhodium factors are US-based. For each job category, the runner derives a regional multiplier from the existing jobs-intensity database:
+
+```text
+relative_intensity[r,f,c] = intensity[r,f,c] / median_region(intensity[f,c])
+regional_multiplier[r,c] = median_fuel(relative_intensity[r,f,c])
+normalized_multiplier[r,c] = regional_multiplier[r,c] / regional_multiplier[USA,c]
+DACCS_intensity[r,c] = US_DACCS_intensity[c] * normalized_multiplier[r,c]
+```
+
+This transfers the tool's existing regional labor-productivity pattern to DACCS without inventing country-level DACCS observations. The resulting DACCS coefficients then use the existing convergence-to-minimum logic through 2100.
+
+### Technical Progress
+
+DACCS uses `0.00` annual technical progress in the reference calculation. OPEN-PROM's cost-learning assumption is not treated as evidence of an equal decline in labor requirements.
+
+To run the same sensitivity used by solar and wind, change the DACCS row in the `techprogress` table in `energy_jobs_iiasadb_clean.R` from:
+
+```text
+DACCS, 0.00
+```
+
+to:
+
+```text
+DACCS, 0.0075
+```
+
+### DACCS Outputs
+
+The IAMC result contains:
+
+```text
+Energy Jobs|Construction|DACCS|Total
+Energy Jobs|Manufacturing|DACCS|Total
+Energy Jobs|O&M|DACCS|Total
+```
+
+With `--visualize=breakdown` or `--visualize=all`, the runner also writes:
+
+```text
+energy_jobs_cdr_selected_years.png
+```
+
+The chart currently shows DACCS jobs by category in 2030, 2050, 2070, and 2100. Its filter and facet layout already include `BECCS`, so BECCS will appear alongside DACCS once BECCS job rows are added to the calculation.
 
 ## Git Notes
 
