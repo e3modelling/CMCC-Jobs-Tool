@@ -27,9 +27,11 @@ The repository must contain:
 
 ```text
 run_openprom_jobs.R
+compare_openprom_scenarios.R
 energy_jobs_iiasadb_clean.R
 energy_jobs_intensity.csv
 daccs_jobs_assumptions.csv
+beccs_jobs_assumptions.csv
 global_production_shares.csv
 regmap_r5.csv
 regmap_r10.csv
@@ -58,10 +60,11 @@ https://cloud.r-project.org
 
 ## Running From VS Code
 
-The repository includes a VS Code task:
+The repository includes two VS Code tasks:
 
 ```text
 Run OPEN-PROM Energy Jobs
+Compare OPEN-PROM Scenarios
 ```
 
 To use it:
@@ -71,6 +74,12 @@ To use it:
 3. Select `Run OPEN-PROM Energy Jobs`.
 4. Paste the OPEN-PROM run folder path.
 5. Select the visualization mode.
+
+The comparison task reads the scenario CSV files already available in `energy_jobs_results/`.
+It first displays every eligible result as a numbered list with the scenario code, the descriptive
+name used in UPTAKE Deliverable D4.3, and the complete result name. Enter at least two numbers
+separated by commas, such as `1,3,5`. The task compares 2030, 2050, and 2070, so no year selection
+is required. S6 is omitted from the list. At least two completed scenario results are required.
 
 Example run folder:
 
@@ -104,6 +113,17 @@ Rscript run_openprom_jobs.R "C:\path\to\OPEN-PROM-run-folder" --visualize=all --
 
 The default is `reference`.
 
+Select a BECCS employment case:
+
+```powershell
+Rscript run_openprom_jobs.R "C:\path\to\OPEN-PROM-run-folder" --visualize=all --beccs-case=reference
+```
+
+The BECCS runner uses `reference` by default. The `low` and `high` cases remain available for
+sensitivity analysis by changing the argument to `--beccs-case=low` or `--beccs-case=high`.
+Section [BECCS Jobs Methodology](#beccs-jobs-methodology) documents the source and derivation
+of all three cases.
+
 Run only the total jobs plot:
 
 ```powershell
@@ -135,6 +155,62 @@ OPEN-PROM run folder path
 Visualization mode [none/total/breakdown/all]
 ```
 
+## Comparing Scenarios
+
+Run the comparison from the repository root after calculating at least two scenarios:
+
+```powershell
+Rscript compare_openprom_scenarios.R "energy_jobs_results"
+```
+
+To use the same numbered selection shown by the VS Code task:
+
+```powershell
+Rscript compare_openprom_scenarios.R "energy_jobs_results" --interactive
+```
+
+Select years or a subset of scenarios with command-line options:
+
+```powershell
+Rscript compare_openprom_scenarios.R "energy_jobs_results" --years=2030,2050,2070 --include=S0,S1,S3,S4
+```
+
+The runner identifies result files ending in `_energy_jobs_iamc.csv`. The chart legend combines each
+scenario code with the descriptive name used in Deliverable D4.3:
+
+```text
+S0 - NPI portfolio reference
+S1 - 1.5°C full portfolio
+S2 - BECCS-only engineered portfolio
+S3 - BECCS CAPEX support
+S4 - DACCS CAPEX support
+S5 - BECCS support + BIO100
+```
+
+S6 is excluded from the selection and from all comparison outputs. Its available implementation is
+closely aligned with the biomass-constrained S5 case and does not provide a sufficiently distinct
+experiment for the employment comparison. The manifest records the descriptive label, complete run
+name, and source file for every included scenario.
+
+The comparison produces two bar charts:
+
+```text
+scenario_comparison_total_jobs_world.png
+scenario_comparison_cdr_jobs.png
+```
+
+The first chart compares total World energy employment in millions of jobs. The consolidated CDR
+chart compares total DACCS and BECCS employment for the World, EU, China, and the US. Both charts
+place 2030, 2050, and 2070 on the horizontal axis and distinguish the selected scenarios by color.
+Each geographic row of the CDR chart uses one scale shared by DACCS and BECCS, while scales can
+differ among regions whose employment magnitudes differ substantially.
+
+EU employment is calculated as the sum of EU27 country results, preserving the country-specific
+labor intensities used by the employment model. China and the US use the `CHA` and `USA` rows.
+The runner also writes the aggregated values underlying each chart as CSV files. The World and
+regional CDR CSV files retain the Construction, Manufacturing, and O&M categories even though the
+consolidated comparison figure reports their total.
+
 ## Visualization Modes
 
 `none`
@@ -143,11 +219,13 @@ Writes only the CSV results.
 
 `total`
 
-Creates a line plot of total energy jobs for the largest regions.
+Creates a grouped bar chart of total energy jobs for the largest regions in 2025, 2030, 2050, and
+2070.
 
 `breakdown`
 
-Creates World-level stacked area plots by job category and by fuel. It also creates a stacked bar chart for carbon dioxide removal jobs in 2030, 2050, 2070, and 2100.
+Creates World-level stacked bar charts by job category and by fuel for 2025, 2030, 2050, and 2070.
+It also creates the DACCS and BECCS charts described in the technology sections below.
 
 `all`
 
@@ -181,12 +259,20 @@ If visualizations are enabled, PNGs are written to:
 energy_jobs_results/DAILY_NPi_2026-07-24_15-06-03_plots/
 ```
 
+Scenario-comparison outputs are written to:
+
+```text
+energy_jobs_results/scenario_comparison/
+```
+
 Possible PNG outputs:
 
 ```text
 energy_jobs_total_top_regions.png
 energy_jobs_by_category_world.png
 energy_jobs_by_fuel_world.png
+energy_jobs_cdr_selected_years.png
+energy_jobs_cdr_key_regions_selected_years.png
 ```
 
 `energy_jobs_results/` is ignored by Git, so generated CSV and PNG files are not committed accidentally.
@@ -200,19 +286,28 @@ The runner does the following:
 3. Adds the `scenario_model` identifier required by the jobs workflow.
 4. Loads `data/regionmappingOPDEV5.csv`.
 5. Extends the repository's region mappings with the OPEN-PROM region mapping.
-6. Applies OPEN-PROM compatibility adjustments.
-7. Calls `compute_energy_jobs_iiasadb()`.
-8. Writes the IAMC-style jobs CSV.
-9. Optionally writes PNG visualizations.
+6. Applies OPEN-PROM compatibility adjustments and separates bioenergy capacity by CCS status.
+7. Prepares DACCS and incremental BECCS CCS activity rows.
+8. Calls `compute_energy_jobs_iiasadb()`.
+9. Writes the IAMC-style jobs CSV.
+10. Optionally writes PNG visualizations.
 
 ## OPEN-PROM Compatibility Adjustments
 
-Biofuels electricity variables are mapped to Biomass:
+When OPEN-PROM reports both CCS components, the runner uses the disaggregated electricity variables:
 
 ```text
-Capacity|Electricity|Biofuels -> Capacity|Electricity|Biomass
-Capacity Additions|Electricity|Biofuels -> Capacity Additions|Electricity|Biomass
+Capacity|Electricity|Biofuels|w/o CCS -> Capacity|Electricity|Biomass
+Capacity Additions|Electricity|Biofuels|w/o CCS -> Capacity Additions|Electricity|Biomass
+Capacity|Electricity|Biofuels|w/ CCS -> Capacity|Electricity|BECCS Base
+Capacity Additions|Electricity|Biofuels|w/ CCS -> Capacity Additions|Electricity|BECCS Base
 ```
+
+The runner verifies that the two components sum to the aggregate `Biofuels` values for every
+region and year, allowing for the four-decimal rounding precision of the OPEN-PROM output. It then
+removes the aggregate capacity rows from the jobs input. This preserves
+the original Biomass activity while assigning the portion equipped with CCS to the BECCS result.
+Runs that lack a complete CCS disaggregation retain the aggregate Biomass calculation and issue a warning.
 
 Aggregate solar capacity additions are split into PV and CSP using installed-capacity shares:
 
@@ -500,7 +595,9 @@ If these rows are missing, check:
 
 ## DACCS Jobs Methodology
 
-DACCS is not added to the electricity `tech` vector since the technology is not part of the power sector. OPEN-PROM reports DACCS as a carbon-removal flow so the runner first converts the reported flow into standardized internal activity rows. Those rows then use the same job-intensity merge, technical-progress adjustment, regional convergence, jobs equation, and IAMC output
+DACCS activity enters the workflow through standardized internal rows. OPEN-PROM models DACCS outside
+the electricity technology vector, while the employment calculation still uses the common job-intensity
+merge, technical-progress adjustment, regional convergence, jobs equation, and IAMC output.
 
 ### OPEN-PROM Activity Variable
 
@@ -521,36 +618,44 @@ The unit must be exactly `Mt CO2/yr`. When multiple variables are available, the
 
 ### Operating Capacity
 
-OPEN-PROM reports annual removal rather than nameplate DACCS capacity. The runner estimates operating capacity as:
+OPEN-PROM variable `V06CapCDR` is the installed annual capture-capacity stock. The emissions module
+subtracts it directly from annual emissions, and the IAMC reporting layer expresses it in `Mt CO2/yr`.
+The employment calculation therefore uses the reported value directly:
 
 ```text
-operating_capacity[t] = annual_removal[t] / capacity_factor
+operating_capacity[t] = reported_OPEN-PROM_capacity[t]
 ```
 
-The reference capacity factor is `0.85`, based on the NETL sorbent DAC reference case:
+No additional capacity-factor conversion is applied. Applying one would increase a quantity that already
+represents annual capture capacity. The `0.85` factor used in a NETL reference plant remains documented in
+`daccs_jobs_assumptions.csv` for analyses based on nameplate equipment capacity or other external datasets:
 
 ```text
-https://www.netl.doe.gov/projects/files/DirectAirCaptureCaseStudiesorbentSystem_080122.pdf
+https://www.netl.doe.gov/projects/files/DirectAirCaptureCaseStudiesSolventSystem_083122.pdf
 ```
 
-The value is stored in `daccs_jobs_assumptions.csv` and can be changed for sensitivity analysis.
+### Capacity Additions
 
-### Capacity Additions and Plant Replacement
-
-The runner reconstructs additions with a cohort stock model:
+OPEN-PROM accumulates `V06CapCDR` from the previous year's stock and the model's new CDR capacity. It
+does not remove retired DACCS capacity from this stock. The runner follows that model boundary and derives
+commissioned capacity from the positive annual change:
 
 ```text
-surviving_capacity[t] = sum(additions from the previous L - 1 years)
-additions[t] = max(operating_capacity[t] - surviving_capacity[t], 0)
+additions[t] = max(operating_capacity[t] - operating_capacity[t - 1], 0)
 ```
 
-The reference lifetime is 20 years. WRI reports this as a commonly used DAC lifetime assumption, referring to Fasihi et al. (2019):
+The first reported year is treated as an existing stock and receives no construction activity. The runner
+also verifies that the input has consecutive annual observations before calculating additions.
+
+A 20-year DAC plant life is retained in `daccs_jobs_assumptions.csv` as an optional replacement
+sensitivity. WRI uses this lifetime in its assessment of DAC material requirements:
 
 ```text
 https://publications.wri.org/scaling-dac-in-the-us
 ```
 
-The non-negative constraint prevents a temporary decline in modeled DACCS activity from generating negative construction jobs.
+Introducing replacement cohorts would add construction activity that OPEN-PROM does not represent and
+should therefore be reported separately from the central model-consistent result.
 
 ### Construction Activity
 
@@ -588,7 +693,10 @@ The `low` and `high` cases use the newer Rhodium ranges for a first-of-a-kind 0.
 https://rhg.com/research/the-benefits-of-innovation-an-assessment-of-the-economic-opportunities-of-highly-durable-carbon-dioxide-removal/
 ```
 
-These cases are sensitivity scenarios, not statistical confidence intervals. Their full values, units, scope, and source URLs are recorded in `daccs_jobs_assumptions.csv`.
+The published project-level and supply-chain components are divided directly by `0.5 Mt CO2/yr`; no
+additional allocation shares are imposed. These cases are sensitivity scenarios rather than statistical
+confidence intervals. Their full values, units, scope, calculations, and source URLs are recorded in
+`daccs_jobs_assumptions.csv`.
 
 ### Regional Productivity and Convergence
 
@@ -605,7 +713,8 @@ This transfers the tool's existing regional labor-productivity pattern to DACCS 
 
 ### Technical Progress
 
-DACCS uses `0.00` annual technical progress in the reference calculation. OPEN-PROM's cost-learning assumption is not treated as evidence of an equal decline in labor requirements.
+The reference calculation sets DACCS annual technical progress to `0.00`. OPEN-PROM's learning parameter
+describes costs, while the available sources provide no matching labor-productivity trajectory.
 
 To run the same sensitivity used by solar and wind, change the DACCS row in the `techprogress` table in `energy_jobs_iiasadb_clean.R` from:
 
@@ -635,14 +744,182 @@ With `--visualize=breakdown` or `--visualize=all`, the runner also writes:
 energy_jobs_cdr_selected_years.png
 ```
 
-The chart currently shows DACCS jobs by category in 2030, 2050, 2070, and 2100. Its filter and facet layout already include `BECCS`, so BECCS will appear alongside DACCS once BECCS job rows are added to the calculation.
+The chart shows DACCS and BECCS jobs by category in 2030, 2050, 2070, and 2100. Both panels use one
+y-axis scale, expressed in thousands of jobs, to support direct comparison.
+
+## BECCS Jobs Methodology
+
+### Scope
+
+The current BECCS calculation covers bioenergy used for electricity generation with carbon capture.
+OPEN-PROM also reports biomass capture associated with hydrogen, liquids, heat, and demand sectors.
+Those activities require their own technology and employment assumptions and remain outside this calculation.
+
+The power-sector calculation uses:
+
+```text
+Capacity|Electricity|Biofuels|w/ CCS                 GW
+Capacity Additions|Electricity|Biofuels|w/ CCS       GW/yr
+Carbon Capture|Energy|Supply|Electricity|Biofuels    Mt CO2/yr
+```
+
+The runner validates each unit before calculating employment.
+
+### Treatment of Existing Biomass Jobs
+
+The previous Biomass result used aggregate `Biofuels` capacity. OPEN-PROM defines that aggregate as the
+sum of capacity with and without CCS. The runner now assigns these components to separate internal fuels:
+
+```text
+Biomass     = Biofuels|w/o CCS
+BECCS Base  = Biofuels|w/ CCS
+```
+
+Both components use the existing regional Biomass employment factors. Construction and Manufacturing
+continue to use capacity additions, while O&M continues to use installed capacity. Technical progress,
+regional convergence, and the final jobs equation remain unchanged.
+
+The disaggregation satisfies the following conservation identity for each region, year, and job category:
+
+```text
+jobs_biomass_without_ccs + jobs_beccs_base = jobs_biomass_before_disaggregation
+```
+
+`Secondary Energy|Liquids|Biomass` continues to feed the Refinery category under Biomass. The BECCS
+calculation described here does not change liquid-biofuel employment.
+
+### Incremental CCS Component
+
+The BECCS result includes a second internal component named `BECCS CCS`. It represents employment
+associated with capture equipment, engineering, the investment supply chain, and the source's allocated
+CO2 injection and storage activity. The final reported BECCS jobs combine the two components:
+
+```text
+total BECCS jobs = BECCS Base jobs + BECCS CCS jobs
+```
+
+Consequently, the change in total energy employment equals the incremental `BECCS CCS` component.
+The base-plant component was already present in the aggregate Biomass result.
+
+### Employment Source and Cases
+
+The employment factors come from Rhodium Group's *The Benefits of Innovation: An Assessment of the
+Economic Opportunities of Highly Durable Carbon Dioxide Removal*:
+
+```text
+https://rhg.com/research/the-benefits-of-innovation-an-assessment-of-the-economic-opportunities-of-highly-durable-carbon-dioxide-removal/
+```
+
+Rhodium evaluates an initial commercial-scale BECCS project with 0.5 Mt CO2/yr of capture capacity,
+a four-year construction period, and an expected operating life of 20-30 years. Its Figure 3 reports:
+
+| Employment component | Low | High | Unit in the source |
+| --- | ---: | ---: | --- |
+| Project-level investment | 210 | 340 | average annual jobs per 0.5 Mt CO2/yr project |
+| Investment supply chain | 210 | 320 | average annual jobs per 0.5 Mt CO2/yr project |
+| Project-level O&M | 30 | 90 | ongoing jobs per 0.5 Mt CO2/yr project |
+| O&M supply chain | 30 | 70 | ongoing jobs per 0.5 Mt CO2/yr project |
+
+Dividing by 0.5 gives the normalized factors used by the runner:
+
+| Tool category | Low | Reference | High | Model unit |
+| --- | ---: | ---: | ---: | --- |
+| Construction | 420 | 550 | 680 | jobs per Mt CO2/yr capture capacity under construction |
+| Manufacturing | 420 | 530 | 640 | jobs per Mt CO2/yr capture capacity under construction |
+| O&M | 60 | 120 | 180 | jobs per Mt CO2/yr operating capture |
+
+The reference values are arithmetic midpoints of the normalized low and high estimates. They are
+modelling assumptions derived from the published range. Rhodium does not report a separate reference case.
+
+The main calculation uses project-level O&M. This choice limits overlap with the existing Biomass
+coefficient, whose source does not separate plant operations from biomass supply and transport. The
+ongoing supply-chain factors are stored in `beccs_jobs_assumptions.csv` as
+`optional_ongoing_supply_chain`. They remain excluded from the runner and can support a broader-scope
+sensitivity calculation.
+
+Rhodium's BECCS estimates describe complete projects rather than an isolated capture retrofit. The
+`BECCS Base` component already represents the host bioenergy plant, so some overlap may remain in the
+project-level CCS proxy even after excluding ongoing supply-chain employment. The result retains the two
+components separately in `energy_jobs_components` during execution to make this scope transparent. A
+future capture-only employment source could replace the CCS proxy without changing the activity pipeline.
+
+Rhodium's totals include employment associated with CO2 injection and storage. The runner therefore
+does not add a separate storage factor.
+
+### Capture Capacity Under Construction
+
+OPEN-PROM reports BECCS electrical capacity, capacity additions, and annual power-sector biomass capture.
+The runner first derives a region- and year-specific capture rate:
+
+```text
+capture_rate[t] = power_sector_biomass_capture[t] / BECCS_electrical_capacity[t]
+```
+
+It then converts electrical capacity additions into commissioned annual capture capacity:
+
+```text
+commissioned_capture_capacity[t] = BECCS_capacity_additions[t] * capture_rate[t]
+```
+
+Rhodium reports average annual investment employment over four construction years. The activity used for
+Construction and Manufacturing is therefore:
+
+```text
+capture_capacity_under_construction[t]
+  = sum(commissioned capture capacity from t through t + 3)
+```
+
+O&M uses annual power-sector biomass capture directly:
+
+```text
+BECCS_CCS_O&M_jobs[t]
+  = power_sector_biomass_capture[t] * O&M_jobs_per_unit[t]
+```
+
+Construction and Manufacturing near 2100 include projects commissioned within the OPEN-PROM horizon.
+The corresponding employment values are lower-bound estimates because the input contains no commissioning
+activity after 2100.
+
+### Regional Intensities and Technical Progress
+
+Rhodium's employment factors represent US projects. The runner applies the same normalized regional
+labor-intensity pattern used for DACCS, derived from the existing jobs database and normalized to the US.
+The resulting BECCS CCS factors then follow the standard regional convergence calculation through 2100.
+
+`BECCS Base` retains the existing Biomass technical-progress value of `0.00`. `BECCS CCS` also uses `0.00`
+in the reference calculation because the source provides no annual labor-productivity trajectory. A code
+comment identifies `0.0075` as an optional sensitivity consistent with the existing solar and wind setting.
+
+### BECCS Outputs and Charts
+
+The IAMC result contains:
+
+```text
+Energy Jobs|Construction|BECCS|Total
+Energy Jobs|Manufacturing|BECCS|Total
+Energy Jobs|O&M|BECCS|Total
+```
+
+With `--visualize=breakdown` or `--visualize=all`, the runner writes two CDR bar charts:
+
+```text
+energy_jobs_cdr_selected_years.png
+energy_jobs_cdr_key_regions_selected_years.png
+```
+
+The first chart reports World DACCS and BECCS employment in 2030, 2050, 2070, and 2100. The regional
+chart reports DACCS and BECCS employment for EU, China, and US in 2030, 2040, 2050, 2060, and 2070.
+China and US use the OPEN-PROM `CHA` and `USA` results. EU employment is the sum of the EU27
+member-country results, preserving each country's jobs intensity. In the sample OPEN-PROM data, the
+same EU27 set reconstructs the reported aggregate `EU` capacity and capture series within their
+four-decimal rounding precision.
 
 ## Git Notes
 
-Commit the runner, VS Code task, ignore rule, and this guide:
+Commit the BECCS implementation and its documented assumptions:
 
 ```powershell
-git add run_openprom_jobs.R .vscode/tasks.json .gitignore OPENPROM_ENERGY_JOBS_RUNNER_GUIDE.md
-git commit -m "Add OPEN-PROM energy jobs runner"
-git push origin master
+git add run_openprom_jobs.R energy_jobs_iiasadb_clean.R beccs_jobs_assumptions.csv OPENPROM_ENERGY_JOBS_RUNNER_GUIDE.md
+git commit -m "Add BECCS jobs calculation"
+git push origin BECCS_add
 ```
