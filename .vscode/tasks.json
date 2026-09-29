@@ -4,7 +4,7 @@
     {
       "label": "Run OPEN-PROM Energy Jobs",
       "type": "process",
-      "command": "Rscript",
+      "command": "C:\\Program Files\\R\\R-4.6.0\\bin\\x64\\Rscript.exe",
       "args": [
         "${workspaceFolder}/run_openprom_jobs.R",
         "${input:openpromRunFolder}",
@@ -23,6 +23,30 @@
         "panel": "dedicated",
         "clear": true
       }
+    },
+    {
+      "label": "Compare OPEN-PROM Scenarios",
+      "type": "process",
+      "command": "C:\\Program Files\\R\\R-4.6.0\\bin\\x64\\Rscript.exe",
+      "args": [
+        "${workspaceFolder}/compare_openprom_scenarios.R",
+        "${workspaceFolder}/energy_jobs_results",
+        "--interactive"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
     }
   ],
   "inputs": [
@@ -30,7 +54,7 @@
       "id": "openpromRunFolder",
       "type": "promptString",
       "description": "OPEN-PROM run folder path",
-      "default": "C:\\Users\\Plessias\\Downloads\\OneDrive_1_7-24-2026\\DAILY_NPi_2026-07-24_15-06-03"
+      "default": "C:\\Users\\sonja\\CMCC-Jobs-Tool\\OPENPROM_run_DAILY_1p5C_2026-08-26"
     },
     {
       "id": "visualizationMode",

@@ -1,7 +1,7 @@
 # Run the standalone energy jobs workflow on an OPEN-PROM run folder.
 #
 # Usage:
-#   Rscript run_openprom_jobs.R "C:/path/to/OPEN-PROM/run" [output_csv] [--visualize=none|total|breakdown|all] [--daccs-case=low|reference|high]
+#   Rscript run_openprom_jobs.R "C:/path/to/OPEN-PROM/run" [output_csv] [--visualize=none|total|breakdown|all] [--daccs-case=low|reference|high] [--beccs-case=low|reference|high]
 #   Rscript run_openprom_jobs.R
 
 required_packages <- c(
@@ -80,6 +80,7 @@ parse_arguments <- function(args) {
     visualize = NULL,
     plots_dir = NULL,
     daccs_case = "reference",
+    beccs_case = "reference",
     prompted = FALSE
   )
   positional <- character()
@@ -91,6 +92,8 @@ parse_arguments <- function(args) {
       options$plots_dir <- sub("^--plots-dir=", "", arg)
     } else if (startsWith(arg, "--daccs-case=")) {
       options$daccs_case <- sub("^--daccs-case=", "", arg)
+    } else if (startsWith(arg, "--beccs-case=")) {
+      options$beccs_case <- sub("^--beccs-case=", "", arg)
     } else {
       positional <- c(positional, arg)
     }
@@ -109,7 +112,7 @@ parse_arguments <- function(args) {
 args <- commandArgs(trailingOnly = TRUE)
 parsed <- parse_arguments(args)
 if (length(args) < 1) {
-  message("Usage: Rscript run_openprom_jobs.R <run_dir> [output_csv] [--visualize=none|total|breakdown|all] [--daccs-case=low|reference|high]")
+  message("Usage: Rscript run_openprom_jobs.R <run_dir> [output_csv] [--visualize=none|total|breakdown|all] [--daccs-case=low|reference|high] [--beccs-case=low|reference|high]")
   parsed$run_dir <- read_interactive_path("OPEN-PROM run folder path: ")
   if (!nzchar(parsed$run_dir)) {
     stop("No run folder path provided.", call. = FALSE)
@@ -203,9 +206,93 @@ append_oil_refinery_proxy <- function(data) {
   rbind(data, liquids)
 }
 
+validate_openprom_component_identity <- function(data, aggregate_variable, component_variables) {
+  variables <- c(aggregate_variable, component_variables)
+  comparison <- data %>%
+    filter(.data$Variable %in% variables) %>%
+    select(Model, Scenario, Region, Variable, matches("^[0-9]{4}$")) %>%
+    pivot_longer(
+      cols = matches("^[0-9]{4}$"),
+      names_to = "year",
+      values_to = "value"
+    ) %>%
+    pivot_wider(names_from = Variable, values_from = value)
+
+  complete_rows <- comparison %>%
+    filter(if_all(all_of(variables), is.finite)) %>%
+    mutate(
+      difference = abs(
+        .data[[aggregate_variable]] -
+          .data[[component_variables[[1]]]] -
+          .data[[component_variables[[2]]]]
+      ),
+      # OPEN-PROM writes these series to four decimal places. The absolute term admits the
+      # largest rounding residual from the sample files; the relative term scales for large values.
+      tolerance = 1.01e-4 + 1e-8 * abs(.data[[aggregate_variable]])
+    )
+
+  if (any(complete_rows$difference > complete_rows$tolerance)) {
+    stop(
+      "OPEN-PROM aggregate variable does not equal the sum of its CCS components: ",
+      aggregate_variable,
+      call. = FALSE
+    )
+  }
+}
+
+
+validate_openprom_units <- function(data, variables, expected_unit) {
+  invalid_units <- data %>%
+    filter(.data$Variable %in% variables, !is.na(.data$Unit), .data$Unit != expected_unit) %>%
+    distinct(Unit) %>%
+    pull(Unit)
+
+  if (length(invalid_units) > 0) {
+    stop(
+      paste(variables, collapse = ", "), " must use '", expected_unit, "'. Found: ",
+      paste(invalid_units, collapse = ", "),
+      call. = FALSE
+    )
+  }
+}
+
+
 rename_openprom_variables <- function(data) {
-  data$Variable[data$Variable == "Capacity|Electricity|Biofuels"] <- "Capacity|Electricity|Biomass"
-  data$Variable[data$Variable == "Capacity Additions|Electricity|Biofuels"] <- "Capacity Additions|Electricity|Biomass"
+  capacity_variables <- c(
+    "Capacity|Electricity|Biofuels",
+    "Capacity|Electricity|Biofuels|w/ CCS",
+    "Capacity|Electricity|Biofuels|w/o CCS"
+  )
+  additions_variables <- c(
+    "Capacity Additions|Electricity|Biofuels",
+    "Capacity Additions|Electricity|Biofuels|w/ CCS",
+    "Capacity Additions|Electricity|Biofuels|w/o CCS"
+  )
+  has_components <- all(c(capacity_variables, additions_variables) %in% unique(data$Variable))
+
+  if (has_components) {
+    validate_openprom_units(data, capacity_variables, "GW")
+    validate_openprom_units(data, additions_variables, "GW/yr")
+    validate_openprom_component_identity(data, capacity_variables[[1]], capacity_variables[2:3])
+    validate_openprom_component_identity(data, additions_variables[[1]], additions_variables[2:3])
+
+    # The aggregate already contains both components. Removing it prevents duplicate biomass jobs.
+    data <- data %>%
+      filter(!.data$Variable %in% c(capacity_variables[[1]], additions_variables[[1]]))
+    data$Variable[data$Variable == capacity_variables[[2]]] <- "Capacity|Electricity|BECCS Base"
+    data$Variable[data$Variable == capacity_variables[[3]]] <- "Capacity|Electricity|Biomass"
+    data$Variable[data$Variable == additions_variables[[2]]] <- "Capacity Additions|Electricity|BECCS Base"
+    data$Variable[data$Variable == additions_variables[[3]]] <- "Capacity Additions|Electricity|Biomass"
+  } else {
+    # Runs without CCS detail retain the original aggregate Biomass calculation.
+    data$Variable[data$Variable == capacity_variables[[1]]] <- "Capacity|Electricity|Biomass"
+    data$Variable[data$Variable == additions_variables[[1]]] <- "Capacity Additions|Electricity|Biomass"
+    warning(
+      "OPEN-PROM Biofuels capacity is not fully disaggregated by CCS status; ",
+      "Biomass jobs will remain aggregated and BECCS jobs will not be reported separately."
+    )
+  }
+
   data
 }
 
@@ -297,9 +384,12 @@ prepare_openprom_iamc <- function(input_mif) {
 }
 
 save_total_jobs_plot <- function(total_jobs, plots_dir) {
+  selected_years <- c(2025L, 2030L, 2050L, 2070L)
   total_plot_data <- total_jobs %>%
+    ungroup() %>%
     filter(!is.na(jobs)) %>%
-    mutate(year = as.integer(year), jobs_million = jobs / 1e6)
+    mutate(year = as.integer(year), jobs_million = jobs / 1e6) %>%
+    filter(year %in% selected_years)
 
   if (nrow(total_plot_data) == 0) {
     warning("No total jobs data available for visualization.")
@@ -311,30 +401,45 @@ save_total_jobs_plot <- function(total_jobs, plots_dir) {
     filter(year == latest_year, Region != "World") %>%
     arrange(desc(jobs)) %>%
     slice_head(n = 12) %>%
-    pull(Region)
+    pull(Region) %>%
+    as.character()
 
-  plot_data <- total_plot_data %>% filter(Region %in% plot_regions)
+  plot_data <- total_plot_data %>%
+    filter(Region %in% plot_regions) %>%
+    mutate(
+      year = factor(year, levels = selected_years),
+      Region = factor(Region, levels = rev(plot_regions))
+    )
   output_file <- file.path(plots_dir, "energy_jobs_total_top_regions.png")
 
-  plot <- ggplot(plot_data, aes(x = year, y = jobs_million, color = Region)) +
-    geom_line(linewidth = 0.9) +
+  plot <- ggplot(plot_data, aes(x = Region, y = jobs_million, fill = year)) +
+    geom_col(position = position_dodge(width = 0.82), width = 0.74) +
+    coord_flip() +
+    scale_fill_brewer(palette = "Dark2", drop = FALSE) +
     labs(
       title = "Total energy jobs by region",
-      x = "Year",
+      x = NULL,
       y = "Jobs (million)",
-      color = "Region"
+      fill = "Year"
     ) +
     theme_minimal(base_size = 12) +
-    theme(legend.position = "bottom")
+    theme(
+      legend.position = "bottom",
+      legend.margin = margin(t = 8),
+      axis.title.x = element_text(margin = margin(t = 10))
+    )
 
-  ggsave(output_file, plot = plot, width = 11, height = 7, dpi = 160)
+  ggsave(output_file, plot = plot, width = 11, height = 8, dpi = 160)
   output_file
 }
 
 save_breakdown_plots <- function(energy_jobs, plots_dir) {
+  selected_years <- c(2025L, 2030L, 2050L, 2070L)
   breakdown_data <- energy_jobs %>%
     filter(!is.na(jobs)) %>%
-    mutate(year = as.integer(year), jobs_million = jobs / 1e6)
+    mutate(year = as.integer(year), jobs_million = jobs / 1e6) %>%
+    filter(year %in% selected_years) %>%
+    mutate(year = factor(year, levels = selected_years))
 
   if (nrow(breakdown_data) == 0) {
     warning("No category/fuel jobs data available for visualization.")
@@ -347,7 +452,7 @@ save_breakdown_plots <- function(energy_jobs, plots_dir) {
     group_by(year, category) %>%
     summarise(jobs_million = sum(jobs_million, na.rm = TRUE), .groups = "drop") %>%
     ggplot(aes(x = year, y = jobs_million, fill = category)) +
-    geom_area(alpha = 0.85) +
+    geom_col(width = 0.72) +
     labs(
       title = "Energy jobs by category",
       x = "Year",
@@ -365,7 +470,7 @@ save_breakdown_plots <- function(energy_jobs, plots_dir) {
     group_by(year, fuel) %>%
     summarise(jobs_million = sum(jobs_million, na.rm = TRUE), .groups = "drop") %>%
     ggplot(aes(x = year, y = jobs_million, fill = fuel)) +
-    geom_area(alpha = 0.85) +
+    geom_col(width = 0.72) +
     labs(
       title = "Energy jobs by fuel",
       x = "Year",
@@ -392,8 +497,11 @@ save_cdr_jobs_plot <- function(energy_jobs, plots_dir) {
       !is.na(jobs)
     ) %>%
     group_by(year, fuel, category) %>%
-    summarise(jobs_million = sum(jobs, na.rm = TRUE) / 1e6, .groups = "drop") %>%
-    mutate(year = factor(year, levels = selected_years))
+    summarise(jobs_thousand = sum(jobs, na.rm = TRUE) / 1e3, .groups = "drop") %>%
+    mutate(
+      fuel = factor(fuel, levels = cdr_fuels),
+      year = factor(year, levels = selected_years)
+    )
 
   if (nrow(cdr_plot_data) == 0) {
     warning("No DACCS or BECCS jobs data are available for the selected-year CDR plot.")
@@ -401,19 +509,75 @@ save_cdr_jobs_plot <- function(energy_jobs, plots_dir) {
   }
 
   output_file <- file.path(plots_dir, "energy_jobs_cdr_selected_years.png")
-  plot <- ggplot(cdr_plot_data, aes(x = year, y = jobs_million, fill = category)) +
+  plot <- ggplot(cdr_plot_data, aes(x = year, y = jobs_thousand, fill = category)) +
     geom_col(width = 0.72) +
-    facet_wrap(~fuel, scales = "free_y") +
+    facet_wrap(~fuel) +
     labs(
-      title = "Carbon dioxide removal jobs in selected years",
       x = "Year",
-      y = "Jobs (million)",
+      y = "Jobs (thousand)",
       fill = "Category"
     ) +
     theme_minimal(base_size = 12) +
     theme(legend.position = "bottom")
 
   ggsave(output_file, plot = plot, width = 9, height = 6, dpi = 160)
+  output_file
+}
+
+save_cdr_key_regions_plot <- function(energy_jobs, plots_dir) {
+  selected_years <- c(2030L, 2040L, 2050L, 2060L, 2070L)
+  eu27_regions <- c(
+    "AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "EST", "FIN",
+    "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LVA", "LTU", "LUX",
+    "MLT", "NLD", "POL", "PRT", "ROU", "SVK", "SVN", "ESP", "SWE"
+  )
+  # OPEN-PROM reports China under model region code CHA. EU jobs are summed from the EU27
+  # country results so that each member retains its country-specific jobs intensity.
+  source_regions <- c(eu27_regions, "CHA", "USA")
+  region_levels <- c("EU", "China", "US")
+  cdr_fuels <- c("DACCS", "BECCS")
+
+  plot_data <- energy_jobs %>%
+    filter(
+      Region %in% source_regions,
+      fuel %in% cdr_fuels,
+      year %in% selected_years,
+      !is.na(jobs)
+    ) %>%
+    mutate(
+      plot_region = case_when(
+        .data$Region %in% eu27_regions ~ "EU",
+        .data$Region == "CHA" ~ "China",
+        .data$Region == "USA" ~ "US"
+      )
+    ) %>%
+    group_by(plot_region, year, fuel, category) %>%
+    summarise(jobs_thousand = sum(jobs, na.rm = TRUE) / 1e3, .groups = "drop") %>%
+    mutate(
+      plot_region = factor(plot_region, levels = region_levels),
+      fuel = factor(fuel, levels = cdr_fuels),
+      year = factor(year, levels = selected_years)
+    )
+
+  if (nrow(plot_data) == 0) {
+    warning("No DACCS or BECCS jobs data are available for the selected regions and years.")
+    return(character())
+  }
+
+  output_file <- file.path(plots_dir, "energy_jobs_cdr_key_regions_selected_years.png")
+  plot <- ggplot(plot_data, aes(x = year, y = jobs_thousand, fill = category)) +
+    geom_col(width = 0.72) +
+    facet_grid(plot_region ~ fuel, scales = "free_y") +
+    labs(
+      title = "Carbon dioxide removal jobs in key regions",
+      x = "Year",
+      y = "Jobs (thousand)",
+      fill = "Category"
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "bottom")
+
+  ggsave(output_file, plot = plot, width = 11, height = 9, dpi = 160)
   output_file
 }
 
@@ -431,6 +595,7 @@ save_energy_jobs_visualizations <- function(total_jobs, energy_jobs, plots_dir, 
   if (mode %in% c("breakdown", "all")) {
     output_files <- c(output_files, save_breakdown_plots(energy_jobs, plots_dir))
     output_files <- c(output_files, save_cdr_jobs_plot(energy_jobs, plots_dir))
+    output_files <- c(output_files, save_cdr_key_regions_plot(energy_jobs, plots_dir))
   }
 
   output_files
@@ -456,9 +621,33 @@ daccs_job_intensity <- create_daccs_regional_job_intensity(
   base_job_intensity = energy_jobs_iiasadb_regions,
   assumptions = daccs_assumptions
 )
+
+beccs_assumptions <- load_beccs_jobs_assumptions(
+  path = file.path(repo_dir, "beccs_jobs_assumptions.csv"),
+  case = parsed$beccs_case
+)
+beccs_ccs_job_activity <- prepare_beccs_ccs_job_activity(
+  iamc_input_data = iamc_input_data,
+  assumptions = beccs_assumptions
+)
+beccs_base_job_intensity <- create_beccs_base_job_intensity(
+  base_job_intensity = energy_jobs_iiasadb_regions
+)
+beccs_ccs_job_intensity <- create_beccs_ccs_regional_job_intensity(
+  base_job_intensity = energy_jobs_iiasadb_regions,
+  assumptions = beccs_assumptions
+)
+
 energy_jobs_iiasadb_regions <- bind_rows(
   energy_jobs_iiasadb_regions,
-  daccs_job_intensity
+  daccs_job_intensity,
+  beccs_base_job_intensity,
+  beccs_ccs_job_intensity
+)
+
+additional_job_activity <- bind_rows(
+  daccs_job_activity,
+  beccs_ccs_job_activity
 )
 
 energy_jobs_iamc <- compute_energy_jobs_iiasadb(
@@ -467,7 +656,7 @@ energy_jobs_iamc <- compute_energy_jobs_iiasadb(
   technical_progress = TRUE,
   regional_convergence = TRUE,
   manufacturing = "current_shares",
-  additional_job_activity = daccs_job_activity
+  additional_job_activity = additional_job_activity
 )
 
 write.csv(energy_jobs_iamc, output_csv, row.names = FALSE)
@@ -488,3 +677,4 @@ if (length(visualization_files) > 0) {
 
 message("Note: Resource|Extraction|Coal/Gas/Oil is proxied from Primary Energy in Mtoe; Secondary Energy|Liquids|Oil is proxied from total Secondary Energy|Liquids in TWh and converted to EJ.")
 message("DACCS jobs case: ", parsed$daccs_case, ". Assumptions are documented in daccs_jobs_assumptions.csv.")
+message("BECCS jobs case: ", parsed$beccs_case, ". Assumptions are documented in beccs_jobs_assumptions.csv.")
